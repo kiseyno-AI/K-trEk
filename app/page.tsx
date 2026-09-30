@@ -3,12 +3,12 @@
 import {
   ArrowUpRight,
   CalendarDays,
+  ExternalLink,
   LoaderCircle,
   MapPin,
   Music2,
   Search,
   Sparkles,
-  Ticket,
 } from 'lucide-react';
 import Image from 'next/image';
 import { useEffect, useMemo, useState } from 'react';
@@ -27,11 +27,13 @@ type EventItem = {
   time?: string;
   ticketUrl: string;
   category: string;
-  isPreview?: boolean;
+  source: string;
+  ctaLabel: string;
 };
 
 type EventsResponse = {
   events: EventItem[];
+  sources?: string[];
   mode: 'live' | 'preview';
   updatedAt: string;
   message?: string;
@@ -51,7 +53,8 @@ const previewEvents: EventItem[] = [
     time: '19:30:00',
     ticketUrl: 'https://www.ticketmaster.com/search?q=k-pop',
     category: 'K‑Pop',
-    isPreview: true,
+    source: 'Ticketmaster',
+    ctaLabel: 'Ticketmaster 검색',
   },
   {
     id: 'preview-culture',
@@ -66,7 +69,8 @@ const previewEvents: EventItem[] = [
     time: '18:00:00',
     ticketUrl: 'https://www.ticketmaster.com/search?q=korean',
     category: 'Culture',
-    isPreview: true,
+    source: '뉴욕한국문화원',
+    ctaLabel: '행사 정보',
   },
   {
     id: 'preview-indie',
@@ -81,7 +85,8 @@ const previewEvents: EventItem[] = [
     time: '20:00:00',
     ticketUrl: 'https://www.ticketmaster.com/search?q=korean+music',
     category: 'K‑Indie',
-    isPreview: true,
+    source: 'Ticketmaster',
+    ctaLabel: 'Ticketmaster 검색',
   },
 ];
 
@@ -143,13 +148,23 @@ export default function Home() {
     return () => controller.abort();
   }, []);
 
-  const categories = useMemo(
-    () => [
+  const categories = useMemo(() => {
+    const available = new Set(data.events.map((event) => event.category));
+    const preferred = [
+      '콘서트',
+      '공연',
+      '영화',
+      '전시',
+      '음식',
+      '강연',
+      '문화',
+    ];
+    return [
       '전체',
-      ...Array.from(new Set(data.events.map((event) => event.category))),
-    ],
-    [data.events],
-  );
+      ...preferred.filter((item) => available.has(item)),
+      ...Array.from(available).filter((item) => !preferred.includes(item)),
+    ];
+  }, [data.events]);
 
   const filteredEvents = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('ko');
@@ -193,7 +208,7 @@ export default function Home() {
             variant="outline"
           >
             <span className="mr-1.5 size-1.5 animate-pulse rounded-full bg-emerald-400" />
-            NYC + 75 miles
+            NYC + 근교
           </Badge>
         </div>
       </header>
@@ -212,10 +227,16 @@ export default function Home() {
             <span className="headline-accent">K-이벤트만.</span>
           </h1>
           <p className="mt-7 max-w-xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">
-            뉴욕과 근교의 한국 아티스트 공연, 문화 행사, 페스티벌을 한곳에서
-            확인하고 바로 예매하세요.
+            뉴욕과 근교의 콘서트, 공연, 영화, 전시, 음식과 강연을 공식 출처에서
+            한데 모아 확인하세요.
           </p>
         </div>
+
+        {!loading && data.sources?.length ? (
+          <p className="mt-4 text-xs font-medium text-muted-foreground">
+            출처 · {data.sources.join(' · ')}
+          </p>
+        ) : null}
 
         <div className="mt-10 grid gap-3 rounded-[26px] border border-white/10 bg-white/[0.055] p-3 shadow-[0_24px_80px_rgb(0_0_0/26%)] backdrop-blur-xl sm:grid-cols-[minmax(0,1fr)_auto]">
           <label className="flex min-h-12 items-center gap-3 rounded-2xl bg-black/20 px-4 focus-within:ring-2 focus-within:ring-primary/60">
@@ -249,8 +270,8 @@ export default function Home() {
         {data.mode === 'preview' && !loading ? (
           <div className="mt-4 flex items-start gap-3 rounded-2xl border border-amber-300/15 bg-amber-200/[0.06] px-4 py-3 text-sm leading-6 text-amber-100/80">
             <Sparkles className="mt-1 size-4 shrink-0 text-amber-300" />
-            지금은 화면 예시입니다. Ticketmaster API 키를 연결하면 실제 행사와
-            구매 링크가 자동으로 표시됩니다.
+            지금은 일부 화면 예시입니다. 공식 행사 출처를 다시 확인하고
+            있습니다.
           </div>
         ) : null}
       </section>
@@ -296,6 +317,9 @@ export default function Home() {
                   <Badge className="absolute left-4 top-4 border-0 bg-black/55 px-2.5 text-white backdrop-blur-md">
                     {event.category}
                   </Badge>
+                  <span className="absolute right-4 top-4 rounded-full bg-black/55 px-2.5 py-1 text-[10px] font-bold tracking-wide text-white/85 backdrop-blur-md">
+                    {event.source}
+                  </span>
                   <p className="absolute bottom-4 left-4 right-4 text-xs font-semibold text-white/80">
                     {formatEventDate(event.date, event.time)}
                   </p>
@@ -330,11 +354,10 @@ export default function Home() {
                     target="_blank"
                     rel="noreferrer"
                     className="mt-auto flex min-h-12 items-center justify-between rounded-2xl bg-foreground px-4 text-sm font-bold text-background transition hover:bg-primary hover:text-primary-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-card"
-                    aria-label={`${event.title} 티켓 보기`}
+                    aria-label={`${event.title} ${event.ctaLabel}`}
                   >
                     <span className="flex items-center gap-2">
-                      <Ticket className="size-4" />{' '}
-                      {event.isPreview ? 'Ticketmaster 검색' : '티켓 보기'}
+                      <ExternalLink className="size-4" /> {event.ctaLabel}
                     </span>
                     <ArrowUpRight className="size-4" />
                   </a>
@@ -356,8 +379,8 @@ export default function Home() {
       </section>
 
       <footer className="relative z-10 border-t border-white/10 px-5 py-8 text-center text-xs leading-6 text-muted-foreground">
-        이벤트 정보와 이미지는 Ticketmaster Discovery API를 통해 제공됩니다.
-        최종 일정과 가격은 예매 페이지에서 확인해 주세요.
+        Ticketmaster, 뉴욕한국문화원, The Korea Society의 공식 정보를 모아
+        보여드립니다. 최종 일정과 예약 조건은 각 행사 페이지에서 확인해 주세요.
       </footer>
     </main>
   );
