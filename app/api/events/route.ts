@@ -1,7 +1,7 @@
 const TICKETMASTER_ENDPOINT =
   'https://app.ticketmaster.com/discovery/v2/events.json';
 
-const NYC_GEOHASH = 'dr5regw3pg6';
+const NYC_GEOHASH = 'dr5regw3';
 const SEARCH_TERMS = ['K-pop', 'Korean', 'Korea', 'Korean music'];
 
 const koreanMarkers = [
@@ -157,17 +157,18 @@ export async function GET() {
     });
 
     const events = Array.from(uniqueEvents.values())
-      .filter((event) =>
-        koreanMarkers.some((marker) => relevanceText(event).includes(marker)),
-      )
       .filter(
         (event) =>
           event.dates?.start?.localDate && event.url && chooseImage(event),
       )
       .sort((a, b) =>
-        (a.dates?.start?.localDate ?? '').localeCompare(
-          b.dates?.start?.localDate ?? '',
-        ),
+        (a.dates?.start?.localDate ?? '').localeCompare(b.dates?.start?.localDate ?? '') ||
+        Number(
+          koreanMarkers.some((marker) => relevanceText(b).includes(marker)),
+        ) -
+          Number(
+            koreanMarkers.some((marker) => relevanceText(a).includes(marker)),
+          ),
       )
       .slice(0, 36)
       .map(normalizeEvent);
