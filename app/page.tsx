@@ -6,7 +6,6 @@ import {
   ExternalLink,
   LoaderCircle,
   MapPin,
-  Music2,
   Search,
   Sparkles,
 } from 'lucide-react';
@@ -191,8 +190,15 @@ export default function Home() {
             className="flex items-center gap-3"
             aria-label="K-Scene NYC 홈"
           >
-            <span className="grid size-10 place-items-center rounded-2xl bg-primary text-primary-foreground shadow-[0_12px_30px_rgb(255_76_76/24%)]">
-              <Music2 className="size-5" />
+            <span className="relative size-11 overflow-hidden rounded-xl bg-white shadow-[0_12px_30px_rgb(38_132_178/24%)] ring-1 ring-white/20">
+              <Image
+                src="/k-scene-logo.jpg"
+                alt=""
+                fill
+                priority
+                sizes="44px"
+                className="object-cover"
+              />
             </span>
             <span>
               <strong className="block text-[15px] font-bold tracking-[-0.02em]">

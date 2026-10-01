@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: 'K-Scene NYC | 뉴욕 한국 공연·행사',
   description:
     '뉴욕과 근교의 한국 아티스트 공연, K-pop 콘서트, 문화 행사를 한눈에 확인하고 바로 예매하세요.',
+  icons: {
+    icon: '/k-scene-logo.jpg',
+    apple: '/k-scene-logo.jpg',
+  },
   openGraph: {
     title: 'K-Scene NYC',
     description: '뉴욕의 한국 공연과 이벤트',
