@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.SITE_URL ?? 'https://k-scene-nyc.shawn-kang.chatgpt.site',
+    process.env.SITE_URL ?? 'https://korean-events-nyc.shawn-kang.chatgpt.site',
   ),
   title: 'K-Scene NYC | 뉴욕 한국 공연·행사',
   description:

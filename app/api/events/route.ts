@@ -396,7 +396,7 @@ async function fetchKccnyEvents(today: string) {
         headers: {
           Accept: 'application/rss+xml, application/xml;q=0.9, text/xml;q=0.8',
           'User-Agent':
-            'K-Scene NYC event aggregator (+https://k-scene-nyc.shawn-kang.chatgpt.site)',
+            'K-Scene NYC event aggregator (+https://korean-events-nyc.shawn-kang.chatgpt.site)',
         },
       });
       if (!response.ok) throw new Error(`KCCNY returned ${response.status}`);
@@ -515,7 +515,7 @@ async function fetchKoreaSocietyEvents(today: string) {
     headers: {
       Accept: 'application/json',
       'User-Agent':
-        'K-Scene NYC event aggregator (+https://k-scene-nyc.shawn-kang.chatgpt.site)',
+        'K-Scene NYC event aggregator (+https://korean-events-nyc.shawn-kang.chatgpt.site)',
     },
   });
   if (!response.ok)
