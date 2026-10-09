@@ -109,6 +109,19 @@ function formatEventDate(date: string, time?: string) {
     : formattedDate;
 }
 
+function todayInNewYork() {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'America/New_York',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).formatToParts(new Date());
+  const value = Object.fromEntries(
+    parts.map((part) => [part.type, part.value]),
+  );
+  return `${value.year}-${value.month}-${value.day}`;
+}
+
 export default function Home() {
   const [data, setData] = useState<EventsResponse>({
     events: previewEvents,
@@ -147,8 +160,13 @@ export default function Home() {
     return () => controller.abort();
   }, []);
 
+  const upcomingEvents = useMemo(() => {
+    const today = todayInNewYork();
+    return data.events.filter((event) => event.date >= today);
+  }, [data.events]);
+
   const categories = useMemo(() => {
-    const available = new Set(data.events.map((event) => event.category));
+    const available = new Set(upcomingEvents.map((event) => event.category));
     const preferred = [
       '콘서트',
       '공연',
@@ -163,11 +181,11 @@ export default function Home() {
       ...preferred.filter((item) => available.has(item)),
       ...Array.from(available).filter((item) => !preferred.includes(item)),
     ];
-  }, [data.events]);
+  }, [upcomingEvents]);
 
   const filteredEvents = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('ko');
-    return data.events.filter((event) => {
+    return upcomingEvents.filter((event) => {
       const matchesCategory =
         category === '전체' || event.category === category;
       const haystack =
@@ -176,7 +194,7 @@ export default function Home() {
         );
       return matchesCategory && (!needle || haystack.includes(needle));
     });
-  }, [category, data.events, query]);
+  }, [category, query, upcomingEvents]);
 
   return (
     <main className="min-h-screen overflow-hidden bg-background text-foreground">

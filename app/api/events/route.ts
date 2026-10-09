@@ -529,9 +529,10 @@ async function fetchKoreaSocietyEvents(today: string) {
     .filter((event): event is EventCard => Boolean(event));
 }
 
-function dedupeEvents(events: EventCard[]) {
+function dedupeEvents(events: EventCard[], today: string) {
   const unique = new Map<string, EventCard>();
   events.forEach((event) => {
+    if (event.date < today) return;
     const key = `${event.date}-${event.title
       .toLocaleLowerCase('en')
       .replace(/[^a-z0-9가-힣]+/g, '')}`;
@@ -555,6 +556,7 @@ export async function GET() {
     results.flatMap((result) =>
       result.status === 'fulfilled' ? result.value : [],
     ),
+    today,
   ).slice(0, 72);
   const sources = [
     results[0].status === 'fulfilled' && results[0].value.length
