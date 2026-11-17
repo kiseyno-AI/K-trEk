@@ -59,14 +59,15 @@ export function createTripCommunityStore(
     async savePreferences(userId, input: TripPreferenceInput, now) {
       await database
         .prepare(
-          'INSERT INTO trip_member_preferences(user_id,category_ids,draft_vote_ids,submitted_vote_ids,updated_at) VALUES(?,?,?,?,?) ON CONFLICT(user_id) DO UPDATE SET category_ids=excluded.category_ids,draft_vote_ids=excluded.draft_vote_ids,submitted_vote_ids=excluded.submitted_vote_ids,updated_at=excluded.updated_at',
+          'INSERT INTO trip_member_preferences(user_id,category_ids,draft_vote_ids,submitted_vote_ids,updated_at) VALUES(?,?,?,?,?) ON CONFLICT(user_id) DO UPDATE SET category_ids=excluded.category_ids,draft_vote_ids=excluded.draft_vote_ids,submitted_vote_ids=CASE WHEN ? THEN excluded.submitted_vote_ids ELSE trip_member_preferences.submitted_vote_ids END,updated_at=excluded.updated_at',
         )
         .bind(
           userId,
           JSON.stringify(input.categoryIds),
           JSON.stringify(input.draftVoteIds),
-          JSON.stringify(input.submittedVoteIds),
+          JSON.stringify(input.submitVote === true ? input.submittedVoteIds : []),
           now,
+          input.submitVote === true ? 1 : 0,
         )
         .run();
     },

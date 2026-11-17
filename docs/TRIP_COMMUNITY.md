@@ -19,7 +19,13 @@ All endpoints use the existing server-side `ktravel_session`. Every response is 
 }
 ```
 
-PUT requires exactly `categoryIds`, `draftVoteIds` and `submittedVoteIds`. Category IDs must be one of the eight keys in `CATEGORIES`; `all` is not a preference. Both vote lists allow up to 20 unique, currently published activity IDs. Empty lists are valid. Each account sees and replaces only its own preferences; saved timestamps are epoch milliseconds. A member may save up to 120 times per minute. Vote preferences are persisted selections, not an aggregate election or ballot-locking mechanism. Published activities hidden after saving are omitted from reads.
+PUT requires `categoryIds`, `draftVoteIds` and `submittedVoteIds`, and accepts optional boolean `submitVote`. Category IDs must be one of the eight keys in `CATEGORIES`; `all` is not a preference. Both vote lists allow up to 20 unique IDs. Draft IDs must be published. Ordinary autosync updates categories/drafts and atomically preserves any submitted ballot, even when a stale browser sends an empty list.
+
+Only `submitVote: true` replaces the member’s submitted ballot: 1–20 published activities before the shared voting deadline (2027-01-15 23:59:59 America/New_York). It returns 409 after closing. Each account sees and writes only its own row. Resubmission replaces that row and counts once per member. Success is displayed only after a canonical persisted response; failures preserve the draft and allow retry. GET restores submitted votes from D1 rather than trusting browser storage. `updatedAt` is the last preference save, not a dedicated ballot submission timestamp. A member may save up to 120 times per minute. Hidden activities are omitted from reads.
+
+Shawn and Sun administrators can `GET /api/members?view=votes`. It returns only nonempty submitted ballots as `{"votes":[{"id":"...","name":"...","submittedVoteIds":["..."]}]}`. The header’s Votes dialog aggregates one vote per activity per member and lists named ballots; it loads on opening or explicit retry, never polls. Ordinary members and visitors cannot read group votes. Reports and the full member-preference endpoint remain Shawn-only. No new table or migration is required beyond existing `0006_trip_community.sql`.
+
+Older browser-only submissions cannot be recovered centrally without the participant returning and submitting them. Refresh the site and use Submit vote to confirm them in D1.
 
 ## Reports
 

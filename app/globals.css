@@ -1277,6 +1277,9 @@ header {
   color: #2d665a;
   font-weight: 700;
 }
+.backdrop aside > p.vote-error {
+  color: #8b2d29;
+}
 .submitted svg {
   width: 17px;
 }

@@ -19,7 +19,7 @@ const activity = toActivity(parseActivity({
 
 // A small hook owner/reconciliation harness: browser, media and network owners
 // are replaced; actual page/control callbacks, memo and state ownership run.
-async function mountedPage({ fetch: fetchMock, voiceEnabled = true } = {}) {
+async function mountedPage({ fetch: fetchMock, voiceEnabled = true, saveVote = async (ids) => ids } = {}) {
   let current;
   let clock = Date.parse('2026-11-16T12:00:00Z');
   const dirty = new Set(), effects = [], microtasks = [], timers = new Map();
@@ -74,7 +74,7 @@ async function mountedPage({ fetch: fetchMock, voiceEnabled = true } = {}) {
   const client = { record: (...args) => events.push(args), setVisible: noop, setVoiceEnabled: noop, dispose: noop, pagehide: noop, markHeard: async () => {} };
   const globals = {
     Date: class extends Date { static now() { return clock; } },
-    performance, crypto, AbortController, URL,
+    performance, crypto, AbortController, URL, Error,
     document: { visibilityState: 'visible', hidden: false, addEventListener: noop, removeEventListener: noop, activeElement: null },
     window: { innerWidth: 1440, addEventListener: noop, removeEventListener: noop },
     matchMedia: () => ({ matches: true, addEventListener: noop, removeEventListener: noop }),
@@ -106,7 +106,7 @@ async function mountedPage({ fetch: fetchMock, voiceEnabled = true } = {}) {
       if (id === './host-reviews') return { HostReviews: element('section') };
       if (id === './trip-community') return {
         CommunityControls: element('section'), ReportComposer: element('section'),
-        useMemberPreferences: () => ({ recordCategory: noop, syncError: '', flushPreferences: async () => {} }),
+        useMemberPreferences: () => ({ recordCategory: noop, syncError: '', flushPreferences: async () => {}, submitVote: saveVote }),
       };
       if (id === '../lib/trip-session') return { readTripSession: async () => ({ id: 'member-one', name: 'Alex', role: 'member' }) };
       if (id === '../lib/site-path') return { sitePath: (value) => value };
@@ -169,6 +169,35 @@ async function mountedPage({ fetch: fetchMock, voiceEnabled = true } = {}) {
     tick: async () => { clock += 1000; intervals.forEach((callback) => callback()); await settle(); },
   };
 }
+
+await test('the vote drawer waits for a database acknowledgement and keeps failures retryable', async () => {
+  let resolve, reject, calls = 0;
+  const view = await mountedPage({ saveVote: () => {
+    calls++;
+    return new Promise((yes, no) => { resolve = yes; reject = no; });
+  } });
+  view.find((node) => node.type === 'article' && node.props['data-activity-id'] === activity.id).props.onClick({ currentTarget: null });
+  await view.settle();
+  view.find((node) => node.type === 'button' && node.props.className === 'select').props.onClick();
+  await view.settle();
+  view.find((node) => node.props['aria-label'] === 'My picks 1').props.onClick();
+  await view.settle();
+  const first = view.find((node) => node.type === 'button' && node.props.className === 'submit').props.onClick();
+  await view.settle();
+  assert.equal(calls, 1);
+  assert.equal(view.find((node) => node.props.className === 'submitted'), null);
+  assert.equal(view.find((node) => node.props.className === 'submit').props.disabled, true);
+  reject(new Error('The database is unavailable.'));
+  await first; await view.settle();
+  assert.ok(view.find((node) => node.props.role === 'alert' && node.props.children === 'The database is unavailable.'));
+  assert.equal(view.find((node) => node.props.className === 'submitted'), null);
+  assert.equal(view.find((node) => node.props.className === 'submit').props.disabled, false);
+  const retry = view.find((node) => node.props.className === 'submit').props.onClick();
+  resolve([activity.id]);
+  await retry; await view.settle();
+  assert.ok(view.find((node) => node.props.className === 'submitted'));
+  assert.equal(calls, 2);
+});
 
 await test('disabled Voice never creates audio or interaction owners during card navigation and voting', async () => {
   const view = await mountedPage({ voiceEnabled: false });
