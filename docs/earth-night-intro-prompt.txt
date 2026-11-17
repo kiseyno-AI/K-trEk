@@ -1,0 +1,6 @@
+Use case: stylized-concept
+Asset type: full-viewport website intro background
+Primary request: create a cinematic photorealistic view of Earth at night from low orbit, East Asia and the Korean peninsula visible, with dense warm city lights, a thin cool-blue atmospheric rim, deep black space, and subtle stars.
+Composition/framing: 16:9 landscape, globe sweeping diagonally through the frame with generous dark negative space around it; designed to fill a website using cover crop.
+Lighting/mood: sophisticated, quiet, premium travel-film opening; believable orbital lighting and a restrained sunrise glow at the horizon.
+Constraints: no text, labels, borders, logos, watermark, interface elements, exaggerated lens flare, or political boundaries.

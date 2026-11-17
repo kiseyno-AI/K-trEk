@@ -1,0 +1,1544 @@
+{
+  "version": 1,
+  "crs": "EPSG:4326",
+  "checked_at": "2026-11-15",
+  "attribution": "Contains geographic data © OpenStreetMap contributors (ODbL), operator-referenced map POIs and Korean local-government geographic records. Map verification does not verify bookings, routes or clinical qualifications.",
+  "attribution_url": "https://www.openstreetmap.org/copyright",
+  "origin": {
+    "name_en": "Seoul Station main-line terminal",
+    "longitude": 126.9707793,
+    "latitude": 37.5545547,
+    "precision": "venue",
+    "pin_label": "Seoul Station main-line terminal — origin",
+    "source_urls": [
+      "https://www.openstreetmap.org/node/5772099311",
+      "https://api.openstreetmap.org/api/0.6/node/5772099311.json"
+    ],
+    "checked_at": "2026-11-15",
+    "evidence": "Primary OSM node identifies the Korail ground-level/main-line station at 405 Hangang-daero, not an underground subway stop. The supplied preliminary planning anchor was replaced with this actual mapped terminal point."
+  },
+  "activities": [
+    {
+      "id": "food-samwon-garden",
+      "name_ko": "삼원가든",
+      "name_en": "Samwon Garden",
+      "latitude": 37.5249856,
+      "longitude": 127.0324446,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Samwon Garden",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "835 Eonju-ro, Gangnam-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/5585913921",
+        "https://dinehill.co.kr/samwon-garden/overview/"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 5585913921
+      }
+    },
+    {
+      "id": "food-hanilkwan-apgujeong",
+      "name_ko": "한일관 압구정본점",
+      "name_en": "Hanilkwan Apgujeong Main Branch",
+      "latitude": 37.5276984,
+      "longitude": 127.0325587,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Hanilkwan Apgujeong Main Branch",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "14 Apgujeong-ro 38-gil, Gangnam-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/4757284321",
+        "https://m.hanilkwan.co.kr/shopinfo/m_lo1.html"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 4757284321
+      }
+    },
+    {
+      "id": "food-korea-house",
+      "name_ko": "한국의집 궁중음식 다이닝",
+      "name_en": "Korea House Royal Cuisine Dining",
+      "latitude": 37.5602034,
+      "longitude": 126.9946836,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "Korea House Royal Cuisine Dining",
+      "pin_description": "Korea House building at 10 Toegye-ro 36-gil. This is the royal-cuisine venue site, not the unrelated restaurant named Korea House on Toegye-ro 34-gil or a Gohojae product reservation.",
+      "matched_address": "10 Toegye-ro 36-gil, Jung-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/768500162"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 768500162
+      }
+    },
+    {
+      "id": "food-byeokje-galbi-bangi",
+      "name_ko": "벽제갈비 방이본점",
+      "name_en": "Byeokje Galbi Bangi Main Branch",
+      "latitude": 37.5099817,
+      "longitude": 127.1262134,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Byeokje Galbi Bangi Main Branch",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "1-4 Yangjae-daero 71-gil, Songpa-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/12062668223",
+        "https://www.thebyeokje.com/bangi"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 12062668223
+      }
+    },
+    {
+      "id": "food-balwoo-gongyang",
+      "name_ko": "발우공양",
+      "name_en": "Balwoo Gongyang",
+      "latitude": 37.5737728,
+      "longitude": 126.983174,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Balwoo Gongyang",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "56 Ujeongguk-ro, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/5622741722",
+        "https://www.balwoo.or.kr/"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 5622741722
+      }
+    },
+    {
+      "id": "food-jin-jin",
+      "name_ko": "진진",
+      "name_en": "Jin Jin",
+      "latitude": 37.5538,
+      "longitude": 126.918437,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Jin Jin",
+      "pin_description": "Jin Jin Main Branch at 60 World Cup buk-ro 1-gil. The Michelin address matches this POI; the nearby Jin Jin Ga-yeon at number 62 is a different branch.",
+      "matched_address": "60 World Cup buk-ro 1-gil, Mapo-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://guide.michelin.com/kr/en/seoul-capital-area/kr-seoul/restaurant/jin-jin",
+        "https://www.google.com/maps?cid=6238934608394136882",
+        "https://maps.google.com/maps?cid=6238934608394136882&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "6238934608394136882"
+      }
+    },
+    {
+      "id": "food-born-and-bred",
+      "name_ko": "본앤브레드 서울 신관",
+      "name_en": "Born and Bred Seoul New Building",
+      "latitude": 37.5667901,
+      "longitude": 127.0445014,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Born and Bred Seoul New Building",
+      "pin_description": "The New Hall at 1 Majang-ro 42-gil matches the operator’s new-building page. The different Born and Bred node at 57 Majang-ro 37-gil was deliberately excluded.",
+      "matched_address": "1 Majang-ro 42-gil, Seongdong-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/13946958785",
+        "https://bandb.co.kr/kr/restaurant/restaurant.php?idx=1"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 13946958785
+      }
+    },
+    {
+      "id": "food-bicena",
+      "name_ko": "비채나",
+      "name_en": "Bicena",
+      "latitude": 37.5126072,
+      "longitude": 127.1025386,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Bicena",
+      "pin_description": "Bicena’s Lotte World Tower POI at 300 Olympic-ro, 81st floor. This is the building/restaurant location, with no floor-height claim; the unrelated Seocho restaurant named Bicena was excluded.",
+      "matched_address": "81F, Lotte World Tower, 300 Olympic-ro, Songpa-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://app.lottehotel.com/seoul-signiel/en/dining/restaurant-bicena",
+        "https://www.google.com/maps?cid=6631055894280381414",
+        "https://maps.google.com/maps?q=Bicena+Lotte+World+Tower+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "6631055894280381414"
+      }
+    },
+    {
+      "id": "food-samcheonggak",
+      "name_ko": "삼청각 한식당",
+      "name_en": "Samcheonggak Korean Restaurant",
+      "latitude": 37.5971464,
+      "longitude": 126.98432,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Samcheonggak Korean Restaurant",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "3 Daesagwan-ro, Seongbuk-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/13805210142",
+        "https://www.samcheonggak.or.kr/dining/restaurant/?rIdx=20230714183808627"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 13805210142
+      }
+    },
+    {
+      "id": "food-hwa-hae-dang",
+      "name_ko": "화해당 여의도점",
+      "name_en": "Hwa Hae Dang Yeouido",
+      "latitude": 37.5270863,
+      "longitude": 126.916814,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Hwa Hae Dang Yeouido",
+      "pin_description": "The Yeouido POI is at 15 Gukhoe-daero 62-gil and lists the supplied phone number 02-785-4422. The Sinsa/Dosan-area namesake was excluded.",
+      "matched_address": "15 Gukhoe-daero 62-gil, Yeongdeungpo-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://guide.michelin.com/us/en/seoul-capital-area/kr-seoul/restaurant/hwa-hae-dang",
+        "https://www.google.com/maps?cid=14223695179754936108",
+        "https://maps.google.com/maps?q=Hwa+Hae+Dang+Yeouido+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "14223695179754936108"
+      }
+    },
+    {
+      "id": "history-gyeongbokgung",
+      "name_ko": "경복궁",
+      "name_en": "Gyeongbokgung Palace",
+      "latitude": 37.5759259,
+      "longitude": 126.976816,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "Gwanghwamun Gate — Gyeongbokgung entry reference",
+      "pin_description": "The palace’s mapped main gate at 161 Sajik-ro. The pin marks the entrance landmark, not the center or full boundary of the palace grounds.",
+      "matched_address": "161 Sajik-ro, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/170199440"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 170199440
+      }
+    },
+    {
+      "id": "history-changdeokgung",
+      "name_ko": "창덕궁과 후원",
+      "name_en": "Changdeokgung Palace and Secret Garden",
+      "latitude": 37.5778607,
+      "longitude": 126.9899805,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "Donhwamun Gate — Changdeokgung entry reference",
+      "pin_description": "The palace’s mapped public entrance gate at 99 Yulgok-ro. The Secret Garden is inside the wider palace and requires its own timed booking.",
+      "matched_address": "99 Yulgok-ro, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/170199455"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 170199455
+      }
+    },
+    {
+      "id": "history-bukchon",
+      "name_ko": "북촌한옥마을",
+      "name_en": "Bukchon Hanok Village",
+      "latitude": 37.579046,
+      "longitude": 126.9863882,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Bukchon Culture Center — suggested walk start",
+      "pin_description": "Suggested meeting/start reference at Bukchon Culture Center, 37 Gyedong-gil. This pin does not represent the whole residential village or authorize access to restricted streets.",
+      "matched_address": "37 Gyedong-gil, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/4243714890"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 4243714890
+      }
+    },
+    {
+      "id": "history-jongmyo",
+      "name_ko": "종묘",
+      "name_en": "Jongmyo Shrine",
+      "latitude": 37.5749525,
+      "longitude": 126.9938788,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "Jongmyo Shrine",
+      "pin_description": "A representative point on the mapped Jongmyo Shrine site. It identifies the shrine compound, not a timed admission reservation or a particular gate.",
+      "matched_address": "Jongno, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/relation/19286505"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "relation",
+        "id": 19286505
+      }
+    },
+    {
+      "id": "history-suwon-hwaseong",
+      "name_ko": "수원화성",
+      "name_en": "Suwon Hwaseong Fortress",
+      "latitude": 37.2775815,
+      "longitude": 127.0167614,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Paldalmun Gate — suggested fortress-walk reference",
+      "pin_description": "A suggested meeting landmark at Paldalmun Gate. The wider fortress walls and Hwaseong Haenggung are separate sites; choose the actual walking segment and nearby pedestrian access when planning.",
+      "matched_address": "Paldalmun Rotary, Suwon, Gyeonggi",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/1024560873"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 1024560873
+      }
+    },
+    {
+      "id": "history-korean-folk-village",
+      "name_ko": "한국민속촌",
+      "name_en": "Korean Folk Village",
+      "latitude": 37.25720972,
+      "longitude": 127.114696,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "Korean Folk Village front-gate tourist information center",
+      "pin_description": "The municipality-supplied visitor-information point stands in front of the main ticket gate. This is an arrival reference for the village site, not a performance or experience-program meeting point.",
+      "matched_address": "93 Minsokchon-ro, Giheung-gu, Yongin, Gyeonggi",
+      "source_kind": "government_geographic_record",
+      "source_urls": [
+        "https://www.data.go.kr/data/15013112/standard.do",
+        "https://www.koreanfolk.co.kr/ticket/admission-fees"
+      ],
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "history-war-memorial",
+      "name_ko": "전쟁기념관",
+      "name_en": "War Memorial of Korea",
+      "latitude": 37.5359715,
+      "longitude": 126.9772916,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "War Memorial of Korea",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "29 Itaewon-ro, Yongsan-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/229891123"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 229891123
+      }
+    },
+    {
+      "id": "history-seodaemun-prison",
+      "name_ko": "서대문형무소역사관",
+      "name_en": "Seodaemun Prison History Hall",
+      "latitude": 37.5745368,
+      "longitude": 126.9563173,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Seodaemun Prison History Hall",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "251 Tongil-ro, Seodaemun-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/368871454"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 368871454
+      }
+    },
+    {
+      "id": "history-naksan-city-wall",
+      "name_ko": "한양도성 낙산구간",
+      "name_en": "Seoul City Wall — Naksan Section",
+      "latitude": 37.5879473,
+      "longitude": 127.0038755,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Hyehwamun Gate — Naksan route start reference",
+      "pin_description": "The mapped Hyehwamun Gate marks the northern reference for the Hyehwamun–Gwanghuimun Naksan route. Join the pedestrian wall trail nearby; the pin is not the entire 3.2 km wall segment.",
+      "matched_address": "307 Changgyeonggung-ro, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/348885649"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 348885649
+      }
+    },
+    {
+      "id": "history-deoksugung",
+      "name_ko": "덕수궁",
+      "name_en": "Deoksugung Palace",
+      "latitude": 37.5650259,
+      "longitude": 126.9765475,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "Daehanmun Gate — Deoksugung entry reference",
+      "pin_description": "The mapped main gate of Deoksugung. This is an entrance landmark rather than the full palace boundary.",
+      "matched_address": "Deoksugung-gil, Jung-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/377289797"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 377289797
+      }
+    },
+    {
+      "id": "culture-national-museum",
+      "name_ko": "국립중앙박물관",
+      "name_en": "National Museum of Korea",
+      "latitude": 37.523953,
+      "longitude": 126.9803196,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "National Museum of Korea",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "137 Seobinggo-ro, Yongsan-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/168364800"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 168364800
+      }
+    },
+    {
+      "id": "culture-leeum",
+      "name_ko": "리움미술관",
+      "name_en": "Leeum Museum of Art",
+      "latitude": 37.5383468,
+      "longitude": 126.998989,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "Leeum Museum of Art",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "Itaewon-ro 55-gil, Yongsan-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/350284406"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 350284406
+      }
+    },
+    {
+      "id": "culture-ddp",
+      "name_ko": "DDP 동대문디자인플라자",
+      "name_en": "Dongdaemun Design Plaza",
+      "latitude": 37.5670686,
+      "longitude": 127.009899,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "Dongdaemun Design Plaza",
+      "pin_description": "The mapped Dongdaemun Design Plaza building. The separate nearby bicycle-rental station sharing its name was excluded.",
+      "matched_address": "281 Eulji-ro, Jung-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/relation/10647068"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "relation",
+        "id": 10647068
+      }
+    },
+    {
+      "id": "culture-hikr-ground",
+      "name_ko": "하이커 그라운드",
+      "name_en": "HiKR Ground",
+      "latitude": 37.5685333,
+      "longitude": 126.9815602,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "HiKR Ground",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "40 Cheonggyecheon-ro, Jung-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/368898266"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 368898266
+      }
+    },
+    {
+      "id": "culture-nanta-myeongdong",
+      "name_ko": "명동난타극장",
+      "name_en": "Myeongdong Nanta Theatre",
+      "latitude": 37.563452,
+      "longitude": 126.9837703,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Myeongdong Nanta Theatre",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "26 Myeongdong-gil, Jung-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/13805210232"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 13805210232
+      }
+    },
+    {
+      "id": "culture-gugak-saturday",
+      "name_ko": "국립국악원 토요명품",
+      "name_en": "National Gugak Center Saturday Performance",
+      "latitude": 37.4775049,
+      "longitude": 127.0085657,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "National Gugak Center campus",
+      "pin_description": "The mapped National Gugak Center campus. The particular Saturday performance hall and seasonal schedule must be checked with the program; this pin does not claim a specific auditorium entrance.",
+      "matched_address": "Nambusunhwan-ro, Seocho-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/relation/4050012"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "relation",
+        "id": 4050012
+      }
+    },
+    {
+      "id": "culture-hanboknam",
+      "name_ko": "한복남 경복궁점",
+      "name_en": "Hanboknam Gyeongbokgung Branch",
+      "latitude": 37.5761968,
+      "longitude": 126.9732928,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Hanboknam Gyeongbokgung Branch",
+      "pin_description": "The Gyeongbokgung branch at 133-5 Sajik-ro matches the operator and Korea Tourism Organization addresses. The Bukchon branch and a nearby Premium listing were excluded.",
+      "matched_address": "133-5 Sajik-ro, Jongno-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://hanboknam.com/hanboknam/branch/gyeongbok.html",
+        "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=63312",
+        "https://www.google.com/maps?cid=775185894828863382",
+        "https://maps.google.com/maps?q=Hanboknam+Gyeongbokgung+133-5+Sajik-ro+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "775185894828863382"
+      }
+    },
+    {
+      "id": "culture-ikseondong",
+      "name_ko": "익선동 한옥거리",
+      "name_en": "Ikseondong Hanok Street",
+      "latitude": 37.5737132,
+      "longitude": 126.9901271,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Ikseon-dong Hanok Village — suggested alley-walk reference",
+      "pin_description": "Use the mapped hanok-village visitor landmark as a suggested meeting reference for an alley walk. The pin is not the neighborhood’s full boundary or a reservation at a café.",
+      "matched_address": "Ikseon-dong Hanok Village walking landmark, Jongno-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://english.visitseoul.net/attractions/IkseongdongHanokVillage_/37013",
+        "https://www.google.com/maps?cid=10117955504964711899",
+        "https://maps.google.com/maps?q=Ikseondong+Hanok+Village+entrance+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "10117955504964711899"
+      }
+    },
+    {
+      "id": "culture-bukchon-crafts",
+      "name_ko": "북촌전통공예체험관",
+      "name_en": "Bukchon Traditional Crafts Experience Center",
+      "latitude": 37.5825003,
+      "longitude": 126.9860402,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Bukchon Traditional Crafts Experience Center",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "24-5 Bukchon-ro 12-gil, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/11379297386"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 11379297386
+      }
+    },
+    {
+      "id": "culture-mmca-seoul",
+      "name_ko": "국립현대미술관 서울",
+      "name_en": "MMCA Seoul",
+      "latitude": 37.5797081,
+      "longitude": 126.9808579,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "MMCA Seoul",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "30 Samcheong-ro, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/4392549190"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 4392549190
+      }
+    },
+    {
+      "id": "nature-seoul-forest",
+      "name_ko": "서울숲",
+      "name_en": "Seoul Forest",
+      "latitude": 37.5431392,
+      "longitude": 127.0418716,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Seoul Forest Visitor Center — suggested walk start",
+      "pin_description": "Start/meet at the mapped visitor-center building. This identifies a specific arrival landmark within Seoul Forest, not the full park boundary.",
+      "matched_address": "Seongsu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/871884992"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 871884992
+      }
+    },
+    {
+      "id": "nature-seoul-botanic-park",
+      "name_ko": "서울식물원",
+      "name_en": "Seoul Botanic Park",
+      "latitude": 37.5710656,
+      "longitude": 126.8346641,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "Seoul Botanic Park garden site",
+      "pin_description": "A representative point on the mapped botanic-garden site. The greenhouse, themed gardens and open park areas have different admission conditions; this is not an exact greenhouse-door pin.",
+      "matched_address": "Magok, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/465318366"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 465318366
+      }
+    },
+    {
+      "id": "nature-haneul-park",
+      "name_ko": "하늘공원",
+      "name_en": "Haneul Park",
+      "latitude": 37.5657613,
+      "longitude": 126.8912686,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Haneul Park Entrance — suggested walk start",
+      "pin_description": "The specifically named Haneul Park Entrance POI in Sangam-dong is used as the suggested walking start. It is not the park’s interior center or the unrelated Nowon park.",
+      "matched_address": "Haneul Park Entrance, 1535-2 Sangam-dong, Mapo-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://www.google.com/maps?cid=11321170631720549356",
+        "https://maps.google.com/maps?q=Haneul+Park+entrance+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "11321170631720549356"
+      }
+    },
+    {
+      "id": "nature-seokchon-lake",
+      "name_ko": "석촌호수",
+      "name_en": "Seokchon Lake",
+      "latitude": 37.5094122,
+      "longitude": 127.0981983,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Seoul Nori Madang — west-lake walk reference",
+      "pin_description": "Suggested meeting landmark at Seoul Nori Madang beside the west lake. The pin identifies the mapped performance-space site, not both lakes or a guaranteed event.",
+      "matched_address": "124 Jamsil-ro, Songpa-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/73533847"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 73533847
+      }
+    },
+    {
+      "id": "nature-seonyudo-park",
+      "name_ko": "선유도공원",
+      "name_en": "Seonyudo Park",
+      "latitude": 37.5431304,
+      "longitude": 126.8965223,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Seonyugyo footbridge — park approach reference",
+      "pin_description": "The mapped pedestrian bridge provides a suggested approach/meeting landmark for the park walk. The pin refers to the bridge feature, not the whole island or vehicle parking inside the park.",
+      "matched_address": "Yeongdeungpo, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/270322121"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 270322121
+      }
+    },
+    {
+      "id": "nature-banpo-hangang",
+      "name_ko": "반포한강공원·달빛무지개분수",
+      "name_en": "Banpo Hangang Park and Moonlight Rainbow Fountain",
+      "latitude": 37.5076669,
+      "longitude": 126.9927035,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Banpo Hangang Park Information Center — suggested walk start",
+      "pin_description": "A suggested arrival/meeting reference at the park information center. Walk onward to the bridge/fountain viewing area; the pin does not establish a fountain operating date.",
+      "matched_address": "Banpo Hangang Park Information Center, 115-5 Banpo-dong, Seocho-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://www.google.com/maps?cid=5559955854222967119",
+        "https://maps.google.com/maps?cid=5559955854222967119&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "5559955854222967119"
+      }
+    },
+    {
+      "id": "nature-olympic-park",
+      "name_ko": "올림픽공원",
+      "name_en": "Olympic Park",
+      "latitude": 37.518314,
+      "longitude": 127.1152298,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "World Peace Gate — suggested Olympic Park walk start",
+      "pin_description": "The mapped World Peace Gate is the suggested arrival/meeting landmark. It does not represent the whole park or admission to performances and sports facilities.",
+      "matched_address": "Songpa, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/relation/16563734"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "relation",
+        "id": 16563734
+      }
+    },
+    {
+      "id": "nature-hwadam",
+      "name_ko": "화담숲",
+      "name_en": "Hwadam Botanic Garden",
+      "latitude": 37.339749,
+      "longitude": 127.2888711,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Hwadamsup Ticket Office — suggested garden-walk start",
+      "pin_description": "The specifically mapped ticket office provides a suggested garden-arrival reference. It does not confirm a reservation, an access date or vehicle parking at the gate.",
+      "matched_address": "Hwadamsup ticket office, Doung-ri, Docheok-myeon, Gwangju, Gyeonggi",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://www.hwadamsup.com/",
+        "https://www.google.com/maps?cid=12434702141558076081",
+        "https://maps.google.com/maps?q=%ED%99%94%EB%8B%B4%EC%88%B2+%EB%A7%A4%ED%91%9C%EC%86%8C&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "12434702141558076081"
+      }
+    },
+    {
+      "id": "nature-gwanggyo-lake",
+      "name_ko": "광교호수공원",
+      "name_en": "Gwanggyo Lake Park",
+      "latitude": 37.2806748,
+      "longitude": 127.0659375,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Freiburg Observatory — suggested lake-walk reference",
+      "pin_description": "The mapped Freiburg Observatory is a specific meeting landmark on the lake walk. The pin is not the whole lake park or a promise of tower access.",
+      "matched_address": "Gwanggyohosu-ro, Yeongtong-gu, Suwon, Gyeonggi",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/1164161888"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 1164161888
+      }
+    },
+    {
+      "id": "nature-dumulmeori",
+      "name_ko": "두물머리",
+      "name_en": "Dumulmeori",
+      "latitude": 37.5338587,
+      "longitude": 127.3163124,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Dumulmeori Tourist Information Office — suggested walk start",
+      "pin_description": "The named tourist-information office near the waterfront is a suggested arrival/meeting reference. It is not the full river-confluence landscape, a motorway interchange or a car-park availability claim.",
+      "matched_address": "Yangpyeong, Gyeonggi · conditional day trip",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/13944570247"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 13944570247
+      }
+    },
+    {
+      "id": "experience-lotte-world",
+      "name_ko": "롯데월드 어드벤처",
+      "name_en": "Lotte World Adventure",
+      "latitude": 37.5110774,
+      "longitude": 127.0981905,
+      "coordinate_status": "verified",
+      "precision": "site",
+      "pin_label": "Lotte World Adventure",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "240 Olympic-ro, Songpa-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/4792473821"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 4792473821
+      }
+    },
+    {
+      "id": "experience-seoul-sky",
+      "name_ko": "서울스카이 전망대",
+      "name_en": "Seoul Sky Observatory",
+      "latitude": 37.5125366,
+      "longitude": 127.1026546,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Seoul Sky Observatory",
+      "pin_description": "The specifically mapped SEOUL SKY observatory POI at Lotte World Tower. The pin identifies its geographic building position, not a floor-height or Sky Bridge reservation.",
+      "matched_address": "300 Olympic-ro, Songpa-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/6572750575"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 6572750575
+      }
+    },
+    {
+      "id": "experience-n-seoul-tower",
+      "name_ko": "N서울타워 전망대",
+      "name_en": "N Seoul Tower Observatory",
+      "latitude": 37.5511694,
+      "longitude": 126.9882266,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "N Seoul Tower",
+      "pin_description": "The tower POI at 105 Namsangongwon-gil. This is the tower’s geographic building position, not the gift shop or a transport reservation.",
+      "matched_address": "105 Namsangongwon-gil, Yongsan-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://www.nseoultower.co.kr/eng/visit/use2.asp",
+        "https://www.google.com/maps?cid=6699200636580889253",
+        "https://maps.google.com/maps?q=N+Seoul+Tower+105+Namsangongwon-gil+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "6699200636580889253"
+      }
+    },
+    {
+      "id": "experience-eland-cruise",
+      "name_ko": "이랜드크루즈 여의도 한강유람선",
+      "name_en": "Eland Cruise Yeouido Hangang Cruise",
+      "latitude": 37.5258814,
+      "longitude": 126.9384148,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "Eland Cruise Yeouido Hangang Cruise",
+      "pin_description": "The mapped Yeouido E-Land Cruise terminal facility, not an arbitrary point on the river or a guaranteed departure berth for a booked sailing.",
+      "matched_address": "280 Yeouidong-ro, Yeongdeungpo-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/394095887"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 394095887
+      }
+    },
+    {
+      "id": "experience-paju-dmz",
+      "name_ko": "파주 DMZ 제3땅굴·도라전망대 투어",
+      "name_en": "Paju DMZ Third Tunnel and Dora Observatory Tour",
+      "latitude": 37.89094256,
+      "longitude": 126.7398789,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Imjingak Tourist Information Center — DMZ arrival reference",
+      "pin_description": "The municipality-supplied information-center point is opposite the Imjingak peace-tour ticket office. Use it as an arrival/check-in inquiry reference, not as a confirmed tour departure or permission to drive a private vehicle into the Third Tunnel controlled zone.",
+      "matched_address": "148-63 Imjingak-ro, Munsan-eup, Paju, Gyeonggi",
+      "source_kind": "government_geographic_record",
+      "source_urls": [
+        "https://www.data.go.kr/data/15013112/standard.do",
+        "https://tour.paju.go.kr/tour/tourInfo/tourInfo01.jsp"
+      ],
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "experience-ongo-cooking",
+      "name_ko": "온고푸드 북촌 단체 한식 쿠킹클래스",
+      "name_en": "Ongo Food Bukchon Group Cooking Class",
+      "latitude": 37.5869602,
+      "longitude": 126.9827927,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Ongo Food Bukchon Group Cooking Class",
+      "pin_description": "O’ngo Food Communications at the current operator address, 137-11 Bukchon-ro. This is the Bukchon group-class venue; old Insadong addresses were excluded.",
+      "matched_address": "137-11 Bukchon-ro, Jongno-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://ongofood.com/events/",
+        "https://ongofood.com/contact/",
+        "https://www.google.com/maps?cid=2611937794377934344",
+        "https://maps.google.com/maps?q=Ongo+Food+137-11+Bukchon-ro+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "2611937794377934344"
+      }
+    },
+    {
+      "id": "experience-running-man",
+      "name_ko": "런닝맨 체험관 인사동점",
+      "name_en": "Running Man Experience Center Insadong",
+      "latitude": 37.5718175,
+      "longitude": 126.9873541,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Running Man Experience Center Insadong",
+      "pin_description": "The Insadong experience-center POI at 12 Insadong-gil, Daeil Building basement level. It identifies this branch, not another Running Man facility.",
+      "matched_address": "B1, Daeil Building, 12 Insadong-gil, Jongno-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://english.visitseoul.net/other/RunningManExperienceCenter/ENPf78gji",
+        "https://www.google.com/maps?cid=12476697434498504705",
+        "https://maps.google.com/maps?q=Running+Man+Insadong+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "12476697434498504705"
+      }
+    },
+    {
+      "id": "experience-kiwoom-baseball",
+      "name_ko": "고척스카이돔 키움 야구 관람",
+      "name_en": "Kiwoom Heroes Baseball at Gocheok Sky Dome",
+      "latitude": 37.4981936,
+      "longitude": 126.8670731,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "Kiwoom Heroes Baseball at Gocheok Sky Dome",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "430 Gyeongin-ro, Guro-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/258637347"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 258637347
+      }
+    },
+    {
+      "id": "experience-1million-dance",
+      "name_ko": "1MILLION K-pop 댄스클래스",
+      "name_en": "1MILLION K-pop Dance Class",
+      "latitude": 37.5411632,
+      "longitude": 127.0575391,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "1MILLION K-pop Dance Class",
+      "pin_description": "The studio POI matches the operator’s and Seoul Tourism Organization’s address: 33 Ttukseom-ro 13-gil, Seongdong-gu.",
+      "matched_address": "33 Ttukseom-ro 13-gil, Seongdong-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://1milliondance.com/",
+        "https://english.visitseoul.net/partners-en/startup-project-2024/2024-startup-1million/ENNaj166o",
+        "https://www.google.com/maps?cid=2687637538882518675",
+        "https://maps.google.com/maps?q=1MILLION+Dance+Studio+33+Ttukseom-ro+13-gil+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "2687637538882518675"
+      }
+    },
+    {
+      "id": "experience-branme-color",
+      "name_ko": "BRANME 성수 퍼스널컬러 그룹 워크숍",
+      "name_en": "BRANME Seongsu Personal Color Group Workshop",
+      "latitude": 37.5430253,
+      "longitude": 127.0575534,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "BRANME Seongsu Personal Color Group Workshop",
+      "pin_description": "The operator-linked BRANME Seongsu POI identifies Room 237, 2F, Woori Cube Building. Its Google feature ID matches the operator’s Seongsu directions link; the Bundang headquarters and Busan branch were excluded.",
+      "matched_address": "Room 237, 2F, Woori Cube Building, 11-10 Yeonmujang-ro, Seongdong-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://branme.co.kr/en/seongsu/",
+        "https://www.google.com/maps?cid=3663042282230683553",
+        "https://maps.google.com/maps?q=BRANME+Seongsu+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "3663042282230683553"
+      }
+    },
+    {
+      "id": "shopping-the-hyundai",
+      "name_ko": "더현대 서울",
+      "name_en": "The Hyundai Seoul",
+      "latitude": 37.5260497,
+      "longitude": 126.928296,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "The Hyundai Seoul",
+      "pin_description": "The department-store POI at 108 Yeoui-daero matches this Yeouido branch, not another Hyundai Department Store.",
+      "matched_address": "108 Yeoui-daero, Yeongdeungpo-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://thehyundaiseoul.ehyundai.com/about/the-hyundai-seoul",
+        "https://www.google.com/maps?cid=16935389788396067446",
+        "https://maps.google.com/maps?q=The+Hyundai+Seoul+108+Yeoui-daero+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "16935389788396067446"
+      }
+    },
+    {
+      "id": "shopping-coex-library",
+      "name_ko": "스타필드 코엑스몰·별마당도서관",
+      "name_en": "Starfield COEX Mall and Starfield Library",
+      "latitude": 37.5101676,
+      "longitude": 127.0600884,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Starfield COEX Mall and Starfield Library",
+      "pin_description": "The specific Starfield Library POI inside the COEX complex. The pin marks the library as the meeting reference, not the entire shopping complex.",
+      "matched_address": "Samseong-dong, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/5185480724"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 5185480724
+      }
+    },
+    {
+      "id": "shopping-shinsegae-main",
+      "name_ko": "신세계백화점 본점",
+      "name_en": "Shinsegae Main Department Store",
+      "latitude": 37.5610519,
+      "longitude": 126.9805722,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "Shinsegae Main — The Heritage building",
+      "pin_description": "The mapped Heritage building of the main department-store complex. Other main-store buildings and individual restaurant counters are separate.",
+      "matched_address": "Namdaemunsijang-gil, Jung-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/301284814"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 301284814
+      }
+    },
+    {
+      "id": "shopping-gwangjang-market",
+      "name_ko": "광장시장",
+      "name_en": "Gwangjang Market",
+      "latitude": 37.5706569,
+      "longitude": 126.9992409,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Gwangjang Market mapped entrance — suggested exploration start",
+      "pin_description": "The specific OSM entrance node belongs to the mapped market building. Use it as an arrival/meeting reference; it does not represent the whole market or reserve seats at a vendor.",
+      "matched_address": "Jong-ro side of Gwangjang Market, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/node/10294667571",
+        "https://www.openstreetmap.org/way/607083156"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "node",
+        "id": 10294667571
+      }
+    },
+    {
+      "id": "shopping-myeongdong",
+      "name_ko": "명동 쇼핑거리",
+      "name_en": "Myeongdong Shopping Street",
+      "latitude": 37.5639768,
+      "longitude": 126.9841424,
+      "coordinate_status": "verified",
+      "precision": "area_start",
+      "pin_label": "Myeongdong Arts Theater — suggested shopping-street meeting landmark",
+      "pin_description": "The theater is a specific landmark for meeting before exploring the shopping streets. The pin is not the full shopping district or admission to the theater.",
+      "matched_address": "35 Myeongdong-gil, Jung-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/way/355626334"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "way",
+        "id": 355626334
+      }
+    },
+    {
+      "id": "shopping-ssamzigil",
+      "name_ko": "쌈지길",
+      "name_en": "Ssamzigil",
+      "latitude": 37.5742559,
+      "longitude": 126.9848198,
+      "coordinate_status": "verified",
+      "precision": "building",
+      "pin_label": "Ssamzigil",
+      "pin_description": "The mapped venue feature matches this named place and its district. This is a geographic venue pin, not a claim about a specific table, room or booking.",
+      "matched_address": "44 Insadong-gil, Jongno-gu, Seoul",
+      "source_kind": "osm_feature",
+      "source_urls": [
+        "https://www.openstreetmap.org/relation/14280713"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "type": "relation",
+        "id": 14280713
+      }
+    },
+    {
+      "id": "shopping-adererror-seongsu",
+      "name_ko": "아더에러 성수 스페이스",
+      "name_en": "ADER ERROR Seongsu Space",
+      "latitude": 37.5422211,
+      "longitude": 127.0565311,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "ADER ERROR Seongsu Space",
+      "pin_description": "ADER ERROR SEONGSU at 82 Seongsui-ro. This is Seongsu Space, not the different ADERERROR Ov Shop at 26 Yeonmujang-gil.",
+      "matched_address": "82 Seongsui-ro, Seongdong-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://adererror.com/",
+        "https://www.google.com/maps?cid=9037249081505500256",
+        "https://maps.google.com/maps?cid=9037249081505500256&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "9037249081505500256"
+      }
+    },
+    {
+      "id": "shopping-olive-young-n",
+      "name_ko": "올리브영N 성수",
+      "name_en": "Olive Young N Seongsu",
+      "latitude": 37.5441151,
+      "longitude": 127.054556,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Olive Young N Seongsu",
+      "pin_description": "The specifically named Olive Young N Seongsu POI at 13 Yeonmujang 7-gil. Nearby ordinary Olive Young branches were excluded.",
+      "matched_address": "13 Yeonmujang 7-gil, Seongdong-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://newsroom.cj.net/cj-olive-young-n-seongsu-redefining-retail/",
+        "https://www.google.com/maps?cid=5819355147860464207",
+        "https://maps.google.com/maps?cid=5819355147860464207&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "5819355147860464207"
+      }
+    },
+    {
+      "id": "shopping-musinsa-daelim",
+      "name_ko": "무신사 스토어 성수@대림창고",
+      "name_en": "MUSINSA Store Seongsu at Daelim Warehouse",
+      "latitude": 37.5415531,
+      "longitude": 127.0563857,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "MUSINSA Store Seongsu at Daelim Warehouse",
+      "pin_description": "MUSINSA Store Seongsu @ Daelim Warehouse, 74 Seongsui-ro, 1F. The operator’s published address matches this POI; MUSINSA STANDARD and the separate Megastore were excluded.",
+      "matched_address": "1F, 74 Seongsui-ro, Seongdong-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://www.musinsa.com/content/cms/13353",
+        "https://www.google.com/maps?cid=4405362039429069399",
+        "https://maps.google.com/maps?cid=4405362039429069399&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "4405362039429069399"
+      }
+    },
+    {
+      "id": "shopping-haus-nowhere-dosan",
+      "name_ko": "하우스 도산 — HAUS NOWHERE DOSAN",
+      "name_en": "HAUS NOWHERE DOSAN",
+      "latitude": 37.525382,
+      "longitude": 127.0356949,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "HAUS NOWHERE DOSAN",
+      "pin_description": "The specifically named HAUS NOWHERE DOSAN POI at 50 Apgujeong-ro 46-gil matches the operator’s store page. The Seongsu HAUS NOWHERE location was excluded.",
+      "matched_address": "50 Apgujeong-ro 46-gil, Gangnam-gu, Seoul",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://www.gentlemonster.com/int/en/stores/detail/779149629756556663",
+        "https://www.google.com/maps?cid=8162491523638111706",
+        "https://maps.google.com/maps?cid=8162491523638111706&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "8162491523638111706"
+      }
+    },
+    {
+      "id": "wellness-cheongdam-oracle",
+      "name_ko": "청담오라클피부과",
+      "name_en": "Cheongdam Oracle Dermatology",
+      "latitude": 37.5114905,
+      "longitude": 127.0437264,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Cheongdam Oracle Dermatology",
+      "pin_description": "The operator’s own location page embeds this named branch POI. The resolved POI marker matches the branch address; map viewport-center coordinates were not used.",
+      "matched_address": "612 Seolleung-ro, Gangnam-gu",
+      "source_kind": "operator_embedded_map",
+      "source_urls": [
+        "https://en.cdoracleclinic.com/maps",
+        "https://www.google.com/maps?cid=16136255910989996451",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8483504818246!2d127.04115147632128!3d37.51149472728162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4097c534edf%3A0xdfef7f41eb5b21a3!2z7LKt64u07Jik65287YG07ZS867aA6rO87J2Y7JuQ!5e0!3m2!1sen!2skr!4v1715672499154!5m2!1sen!2skr"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "16136255910989996451"
+      }
+    },
+    {
+      "id": "wellness-cnp-dogok",
+      "name_ko": "차앤박피부과 도곡양재",
+      "name_en": "CNP Dermatology Dogok Yangjae",
+      "latitude": 37.485674,
+      "longitude": 127.033902,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "CNP Dermatology Dogok Yangjae",
+      "pin_description": "The operator’s own location page embeds this named branch POI. The resolved POI marker matches the branch address; map viewport-center coordinates were not used.",
+      "matched_address": "248 Gangnam-daero, Gangnam-gu",
+      "source_kind": "operator_embedded_map",
+      "source_urls": [
+        "https://www.cnpskin.com/pc/cnp-eng/about-us/branches.html?bmain=view&uid=28",
+        "https://www.google.com/maps?cid=7418551086190514848",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1331.128424110083!2d127.03382381433407!3d37.484921373141304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1494e487c27%3A0x14e990d833630676!2z64-E6rOh7JaR7J6sIOywqOyVpOuwle2UvOu2gOqzvA!5e0!3m2!1sko!2skr!4v1517554460710"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "7418551086190514848"
+      }
+    },
+    {
+      "id": "wellness-leaders-cheongdam",
+      "name_ko": "리더스피부과 청담명품거리점",
+      "name_en": "Leaders Dermatology Cheongdam Luxury Street",
+      "latitude": 37.5265497,
+      "longitude": 127.0461088,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Leaders Dermatology Cheongdam Luxury Street",
+      "pin_description": "The operator’s own location page embeds this named branch POI. The resolved POI marker matches the branch address; map viewport-center coordinates were not used.",
+      "matched_address": "445 Apgujeong-ro, Gangnam-gu",
+      "source_kind": "operator_embedded_map",
+      "source_urls": [
+        "https://leaders-eng.com/",
+        "https://www.google.com/maps?cid=12869690333488199836",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.213327903468!2d127.04127848952372!3d37.52646825436606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca5f540baabb5%3A0xb29a532bf8d7b89c!2z66as642U7Iqk7ZS867aA6rO8IOyyreuLtOuqhe2SiOqxsOumrOygkA!5e0!3m2!1sen!2skr!4v1710984500123!5m2!1sen!2skr"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "12869690333488199836"
+      }
+    },
+    {
+      "id": "wellness-renewme-dongdaemun",
+      "name_ko": "리뉴미피부과 동대문점",
+      "name_en": "Renewme Skin Clinic Dongdaemun",
+      "latitude": 37.5665377,
+      "longitude": 127.0063656,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Renewme Skin Clinic Dongdaemun",
+      "pin_description": "The operator’s own location page embeds this named branch POI. The resolved POI marker matches the branch address; map viewport-center coordinates were not used.",
+      "matched_address": "251 Eulji-ro, Jung-gu",
+      "source_kind": "operator_embedded_map",
+      "source_urls": [
+        "https://english.renewmi.com/about/dongdaemun/",
+        "https://www.google.com/maps?cid=16952282770029701188",
+        "https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca322c079f651%3A0xeb429b5cbf986844!2z66as64m066-47ZS867aA6rO87J2Y7JuQIOuPmeuMgOusuOygkA!5e0!3m2!1sko!2skr!4v1789114165990!5m2!1sko!2skr"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "16952282770029701188"
+      }
+    },
+    {
+      "id": "wellness-banobagi",
+      "name_ko": "바노바기피부과",
+      "name_en": "Banobagi Dermatology",
+      "latitude": 37.5082096,
+      "longitude": 127.0360211,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Banobagi Dermatology",
+      "pin_description": "BANOBAGI DERMATOLOGIC CENTER in Doonam Building, 219 Bongeunsa-ro. The public map POI matches the dermatology operator’s branch address; the plastic-surgery branch was excluded.",
+      "matched_address": "219 Bongeunsa-ro, Gangnam-gu",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://english.skinbanobagi.com/web/skinSub/infomation.php",
+        "https://www.google.com/maps?cid=16029072017009688009",
+        "https://maps.google.com/maps?q=Banobagi+Dermatology+219+Bongeunsa-ro+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "16029072017009688009"
+      }
+    },
+    {
+      "id": "wellness-arumdaun-nara",
+      "name_ko": "강남 아름다운나라피부과",
+      "name_en": "Gangnam Arumdaun Nara Dermatology",
+      "latitude": 37.497901,
+      "longitude": 127.028709,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Gangnam Arumdaun Nara Dermatology",
+      "pin_description": "The Seoul medical-tourism location page explicitly places its map marker at this pair for the institution at 390 Gangnam-daero. This is geographic verification only, not verification of practitioner credentials or care.",
+      "matched_address": "390 Gangnam-daero, Gangnam-gu, Seoul",
+      "source_kind": "government_location_map",
+      "source_urls": [
+        "https://medical.visitseoul.net/organization/hospital/hospitalDetail/2229"
+      ],
+      "checked_at": "2026-11-15"
+    },
+    {
+      "id": "wellness-wells-apgujeong",
+      "name_ko": "웰스피부과 압구정",
+      "name_en": "Wells Dermatology Apgujeong",
+      "latitude": 37.5240384,
+      "longitude": 127.0287029,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Wells Dermatology Apgujeong",
+      "pin_description": "WELLS Dermatology in Apgujeong Building, 842 Nonhyeon-ro, 8F. The operator’s directions link references the same Google POI/cid; this pin does not identify a floor-height or confirm care.",
+      "matched_address": "842 Nonhyeon-ro, Gangnam-gu",
+      "source_kind": "public_map_poi",
+      "source_urls": [
+        "https://wellsskin.com/clinic/",
+        "https://www.google.com/maps?cid=11422472919385308980",
+        "https://maps.google.com/maps?q=WELLS+Dermatology+842+Nonhyeon-ro+Seoul&output=embed&hl=en"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "11422472919385308980"
+      }
+    },
+    {
+      "id": "wellness-id-gangnam",
+      "name_ko": "아이디의원 강남점",
+      "name_en": "id Clinic Gangnam",
+      "latitude": 37.5013479,
+      "longitude": 127.0254601,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "id Clinic Gangnam",
+      "pin_description": "The operator’s own location page embeds this named branch POI. The resolved POI marker matches the branch address; map viewport-center coordinates were not used.",
+      "matched_address": "437 Gangnam-daero, Seocho-gu",
+      "source_kind": "operator_embedded_map",
+      "source_urls": [
+        "https://www.idclinic.co.kr/en/gn",
+        "https://www.google.com/maps?cid=5405759880040857660",
+        "https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca152e4f3f677%3A0x4b051df84ee4c03c!2zaWQgY2xpbmljIEdhbmduYW0gLyDpn5Slm71pZOe-juWuueOCr-ODquODi-ODg-OCr-OCq-ODs-ODiuODoOW6lyAvIOqwleuCqOyVhOydtOuUlOydmOybkA!5e0!3m2!1sko!2skr!4v1782895268605!5m2!1sko!2skr"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "5405759880040857660"
+      }
+    },
+    {
+      "id": "wellness-jfeel-hongdae",
+      "name_ko": "제이필의원 홍대점",
+      "name_en": "Jfeel Clinic Hongdae",
+      "latitude": 37.5567706,
+      "longitude": 126.9240999,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Jfeel Clinic Hongdae",
+      "pin_description": "The operator’s own location page embeds this named branch POI. The resolved POI marker matches the branch address; map viewport-center coordinates were not used.",
+      "matched_address": "166 Yanghwa-ro, Mapo-gu",
+      "source_kind": "operator_embedded_map",
+      "source_urls": [
+        "https://www.jfeeldermatology.com/",
+        "https://www.google.com/maps?cid=5603063523414067362",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.927553791561!2d126.9240999!3d37.5567706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c99a7a387f59d%3A0x4dc21496970b48a2!2z7KCc7J207ZWE7J2Y7JuQIO2ZjeuMgOygkA!5e0!3m2!1sen!2skr!4v1781686896224!5m2!1sen!2skr"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "5603063523414067362"
+      }
+    },
+    {
+      "id": "wellness-lienjang-gangnam",
+      "name_ko": "리엔장 강남",
+      "name_en": "Lienjang Gangnam",
+      "latitude": 37.4984101,
+      "longitude": 127.0266569,
+      "coordinate_status": "verified",
+      "precision": "venue",
+      "pin_label": "Lienjang Gangnam",
+      "pin_description": "The operator’s own location page embeds this named branch POI. The resolved POI marker matches the branch address; map viewport-center coordinates were not used.",
+      "matched_address": "403 Gangnam-daero, Seocho-gu",
+      "source_kind": "operator_embedded_map",
+      "source_urls": [
+        "https://gangnam.lienjang.com/en",
+        "https://www.google.com/maps?cid=4739517152341690089",
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.4030884452386!2d127.0266569!3d37.4984101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3076d362ee1%3A0x41c625bd303286e9!2z66as7JeU7J6l7ISx7ZiV7Jm46rO87J2Y7JuQKOqwleuCqOuzuOygkCk!5e0!3m2!1sko!2skr!4v1779155918217!5m2!1sko!2skr"
+      ],
+      "checked_at": "2026-11-15",
+      "source_feature": {
+        "provider": "Google Maps",
+        "cid": "4739517152341690089"
+      }
+    }
+  ]
+}

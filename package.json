@@ -1,6 +1,6 @@
 {
   "name": "sites-project",
-  "version": "0.1.0",
+  "version": "0.3.3",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
@@ -10,7 +10,16 @@
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "test": "node scripts/prototype-smoke.mjs && node scripts/import-activity-photos.mjs --check && node --experimental-strip-types --test tests/*.test.mjs",
+    "build:public": "KTRAVEL_BASE_PATH=/ktravel vinext build && node scripts/prepare-public-path.mjs",
+    "start:public": "wrangler dev --config dist/server/wrangler.json --local --ip 127.0.0.1 --port 4330 --persist-to .wrangler/state --env-file \"$HOME/.config/ktravel/kakao.env\"",
+    "db:setup": "node --experimental-strip-types scripts/db-setup.mjs",
+    "ui:check": "node scripts/ui-registry.mjs check --root .",
+    "check:routes": "node scripts/check-driving-routes.mjs",
+    "release:public": "node scripts/release-public.mjs",
+    "check:assets": "node scripts/check-public-assets.mjs",
+    "check:sharing": "node scripts/check-sharing-preview.mjs"
   },
   "dependencies": {
     "react": "19.2.6",

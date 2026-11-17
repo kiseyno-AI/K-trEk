@@ -1,0 +1,61 @@
+{
+  "national": {
+    "src": "/trip/night/korea.webp",
+    "west": 123.75,
+    "east": 132.75,
+    "north": 42.75,
+    "south": 29.25
+  },
+  "cities": {
+    "temple": {
+      "src": "/trip/night/temple.webp",
+      "photo": "ISS073-E-420107",
+      "west": 128.84765625,
+      "east": 129.638671875,
+      "north": 36.17335693522159,
+      "south": 35.53222622770338,
+      "nativeMeters": 9.56,
+      "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center"
+    },
+    "jeju": {
+      "src": "/trip/night/jeju.webp",
+      "photo": "ISS070-E-69369",
+      "west": 126.123046875,
+      "east": 126.9140625,
+      "north": 33.797408767572485,
+      "south": 33.13755119234615,
+      "nativeMeters": 7.78,
+      "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center"
+    },
+    "busan": {
+      "src": "/trip/night/busan.webp",
+      "photo": "ISS066-E-158810",
+      "west": 128.671875,
+      "east": 129.462890625,
+      "north": 35.53222622770338,
+      "south": 34.885930940753155,
+      "nativeMeters": 8,
+      "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center"
+    },
+    "seoul": {
+      "src": "/trip/night/seoul.webp",
+      "photo": "ISS064-E-40609",
+      "west": 126.5625,
+      "east": 127.353515625,
+      "north": 37.85750715625204,
+      "south": 37.23032838760387,
+      "nativeMeters": 11.62,
+      "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center"
+    },
+    "yangyang": {
+      "src": "/trip/night/yangyang.webp",
+      "photo": "ISS070-E-80674",
+      "west": 127.7,
+      "east": 129.5,
+      "north": 38.7,
+      "south": 37.1,
+      "nativeMeters": 122.63,
+      "credit": "Earth Science and Remote Sensing Unit, NASA Johnson Space Center"
+    }
+  }
+}

@@ -36,3 +36,23 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Local source index
+/graphify-out/
+
+*.tsbuildinfo
+
+# Wrangler local secrets
+.dev.vars*
+
+# Private runtime data and credentials
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.db-*
+*.log
+*.har
+/credentials/
+/secrets/
+/.omx/

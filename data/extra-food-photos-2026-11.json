@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "checked_at": "2026-11-16",
+  "photos": [
+    {
+      "id": "food-myeongdong-kyoja-main",
+      "name_ko": "명동교자 본점",
+      "image_url": "/trip/photos/food-extra-myeongdong-kyoja.webp",
+      "image_rights": "licensed",
+      "role": "venue",
+      "caption": "Kalguksu at Myeongdong Kyoja (2023 archival dish photograph).",
+      "attribution": "Mobius6 · CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/) · resized and converted to WebP; derivative under the same license",
+      "author": "Mobius6",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kalguksu_20230430_001.jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kalguksu_20230430_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kalguksu_20230430_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "rightsEvidence": "Commons uploader’s own-work declaration and CC BY-SA 4.0 license shown on the primary file page.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "food-myeongdong-kyoja-main"
+        ],
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Kalguksu_20230430_001.jpg",
+        "description": "Kalguksu at Myeongdong Kyoja (2023 archival dish photograph).",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 1200,
+      "height": 1061,
+      "bytes": 127764,
+      "sha256": "4333cb13b9171e6c532697a9fc5828bb3f81cff1f3b802f799cdce897f7c5152",
+      "capture": {
+        "status": 200,
+        "contentType": "image/jpeg",
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality 86; no creative alteration or watermark removal.",
+        "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kalguksu_20230430_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword search API",
+        "apiUrl": "https://dapi.kakao.com/v2/local/search/keyword.json?query=%EB%AA%85%EB%8F%99%EA%B5%90%EC%9E%90+%EB%B3%B8%EC%A0%90&x=126.98&y=37.57&radius=6000",
+        "placeId": "1479300828",
+        "placeName": "명동교자 명동역점 신관 본점",
+        "roadAddress": "서울 중구 퇴계로 129",
+        "latitude": 37.5611814714638,
+        "longitude": 126.986083137398,
+        "sourcePage": "https://place.map.kakao.com/1479300828",
+        "checked_at": "2026-11-16",
+        "confidence": "high: exact named restaurant POI and matching road address; not a surveyed entrance"
+      }
+    },
+    {
+      "id": "food-hadongkwan-myeongdong",
+      "name_ko": "하동관 명동본점",
+      "image_url": "/trip/photos/food-extra-hadongkwan.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Gomtang at Hadongkwan’s Myeongdong main branch.",
+      "attribution": "MICHELIN Guide / Hadongkwan listing; photographer not identified · official source reference · reuse license unverified",
+      "author": "MICHELIN Guide / Hadongkwan listing; photographer not identified",
+      "sourcePage": "https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/hadongkwan",
+      "originalUrl": "https://prod-pics.guide.michelin.com/api/public/content/af62ec51677b4569bd8dd74305c23c81.jpeg",
+      "downloadUrl": "https://prod-pics.guide.michelin.com/api/public/content/af62ec51677b4569bd8dd74305c23c81.jpeg",
+      "license": "Official source reference; reuse license unverified",
+      "licenseURL": "https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/hadongkwan",
+      "rightsEvidence": "The primary publisher’s own named-restaurant gallery identifies this subject; no transferable reuse license has been verified.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "food-hadongkwan-myeongdong"
+        ],
+        "sourcePage": "https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/hadongkwan",
+        "description": "Gomtang at Hadongkwan’s Myeongdong main branch.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 1000,
+      "height": 1000,
+      "bytes": 86008,
+      "sha256": "be2632272a263d5f140068f969bfbaec2db8944995873955c32531827982ad78",
+      "capture": {
+        "status": 200,
+        "contentType": "image/jpeg",
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality 86; no creative alteration or watermark removal.",
+        "finalUrl": "https://prod-pics.guide.michelin.com/api/public/content/af62ec51677b4569bd8dd74305c23c81.jpeg"
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword search API",
+        "apiUrl": "https://dapi.kakao.com/v2/local/search/keyword.json?query=%ED%95%98%EB%8F%99%EA%B4%80+%EB%AA%85%EB%8F%99%EB%B3%B8%EC%A0%90&x=126.98&y=37.57&radius=6000",
+        "placeId": "1822111964",
+        "placeName": "하동관 명동본점",
+        "roadAddress": "서울 중구 명동9길 12",
+        "latitude": 37.564430335182415,
+        "longitude": 126.98502310323119,
+        "sourcePage": "https://place.map.kakao.com/1822111964",
+        "checked_at": "2026-11-16",
+        "confidence": "high: exact named restaurant POI and matching road address; not a surveyed entrance"
+      }
+    },
+    {
+      "id": "food-tosokchon-samgyetang",
+      "name_ko": "토속촌삼계탕",
+      "image_url": "/trip/photos/food-extra-tosokchon.webp",
+      "image_rights": "licensed",
+      "role": "venue",
+      "caption": "Samgyetang at Tosokchon in Jongno, Seoul (2016 archival photograph).",
+      "attribution": "Korea.net / Korean Culture and Information Service (photographer: Jeon Han) · CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0/) · resized and converted to WebP; derivative under the same license",
+      "author": "Korea.net / Korean Culture and Information Service (photographer: Jeon Han)",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Malbok_Tosokchon_Samgyetang_04_(28730504880).jpg",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Malbok_Tosokchon_Samgyetang_04_%2828730504880%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Malbok_Tosokchon_Samgyetang_04_%2828730504880%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "rightsEvidence": "Commons verified KOCIS license template, Flickr review and VRTS ticket 2014070110000717 confirm CC BY-SA 2.0; restrictive historic EXIF boilerplate is superseded by verified license evidence.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "food-tosokchon-samgyetang"
+        ],
+        "sourcePage": "https://commons.wikimedia.org/wiki/File:Malbok_Tosokchon_Samgyetang_04_(28730504880).jpg",
+        "description": "Samgyetang at Tosokchon in Jongno, Seoul (2016 archival photograph).",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 1200,
+      "height": 745,
+      "bytes": 61226,
+      "sha256": "f375effb8400ac5d583aefb4972b7bfc07e32595eefe74632391a6dbc7aa88d8",
+      "capture": {
+        "status": 200,
+        "contentType": "image/jpeg",
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality 86; no creative alteration or watermark removal.",
+        "finalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Malbok_Tosokchon_Samgyetang_04_%2828730504880%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword search API",
+        "apiUrl": "https://dapi.kakao.com/v2/local/search/keyword.json?query=%ED%86%A0%EC%86%8D%EC%B4%8C%EC%82%BC%EA%B3%84%ED%83%95&x=126.98&y=37.57&radius=6000",
+        "placeId": "26545925",
+        "placeName": "토속촌삼계탕",
+        "roadAddress": "서울 종로구 자하문로5길 5",
+        "latitude": 37.5777229294346,
+        "longitude": 126.971494461387,
+        "sourcePage": "https://place.map.kakao.com/26545925",
+        "checked_at": "2026-11-16",
+        "confidence": "high: exact named restaurant POI and matching road address; not a surveyed entrance"
+      }
+    },
+    {
+      "id": "food-woo-lae-oak",
+      "name_ko": "우래옥 본점",
+      "image_url": "/trip/photos/food-extra-woo-lae-oak.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Bulgogi at Woo Lae Oak in Jung-gu, Seoul.",
+      "attribution": "MICHELIN Guide / Woo Lae Oak listing; photographer not identified · official source reference · reuse license unverified",
+      "author": "MICHELIN Guide / Woo Lae Oak listing; photographer not identified",
+      "sourcePage": "https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/woo-lae-oak",
+      "originalUrl": "https://prod-pics.guide.michelin.com/api/public/content/b9f21cbd44d340bda27994534abddebf.jpeg",
+      "downloadUrl": "https://prod-pics.guide.michelin.com/api/public/content/b9f21cbd44d340bda27994534abddebf.jpeg",
+      "license": "Official source reference; reuse license unverified",
+      "licenseURL": "https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/woo-lae-oak",
+      "rightsEvidence": "The primary publisher’s own named-restaurant gallery identifies this subject; no transferable reuse license has been verified.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "food-woo-lae-oak"
+        ],
+        "sourcePage": "https://guide.michelin.com/en/seoul-capital-area/kr-seoul/restaurant/woo-lae-oak",
+        "description": "Bulgogi at Woo Lae Oak in Jung-gu, Seoul.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 1000,
+      "height": 1000,
+      "bytes": 133910,
+      "sha256": "0e6921f7dff2e89137cd4ed50ee08d41cee69f322fa516054ad7fe676b0498f3",
+      "capture": {
+        "status": 200,
+        "contentType": "image/jpeg",
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality 86; no creative alteration or watermark removal.",
+        "finalUrl": "https://prod-pics.guide.michelin.com/api/public/content/b9f21cbd44d340bda27994534abddebf.jpeg"
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword search API",
+        "apiUrl": "https://dapi.kakao.com/v2/local/search/keyword.json?query=%EC%9A%B0%EB%9E%98%EC%98%A5+%EB%B3%B8%EC%A0%90&x=126.98&y=37.57&radius=6000",
+        "placeId": "8025375",
+        "placeName": "우래옥 본점",
+        "roadAddress": "서울 중구 창경궁로 62-29",
+        "latitude": 37.56821185731751,
+        "longitude": 126.99871865898974,
+        "sourcePage": "https://place.map.kakao.com/8025375",
+        "checked_at": "2026-11-16",
+        "confidence": "high: exact named restaurant POI and matching road address; not a surveyed entrance"
+      }
+    },
+    {
+      "id": "food-gwanghwamun-mijin",
+      "name_ko": "광화문미진 본점",
+      "image_url": "/trip/photos/food-extra-gwanghwamun-mijin.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Cold buckwheat noodles at Gwanghwamun Mijin’s Jong-ro main branch.",
+      "attribution": "Korea Tourism Organization / VISITKOREA (watermarked source photograph) · official source reference · reuse license unverified",
+      "author": "Korea Tourism Organization / VISITKOREA (watermarked source photograph)",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=82484",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/47/3083647_image2_1.JPG",
+      "downloadUrl": "https://tong.visitkorea.or.kr/cms/resource/47/3083647_image2_1.JPG",
+      "license": "Official source reference; reuse license unverified",
+      "licenseURL": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=82484",
+      "rightsEvidence": "The primary publisher’s own named-restaurant gallery identifies this subject; no transferable reuse license has been verified.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "food-gwanghwamun-mijin"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=82484",
+        "description": "Cold buckwheat noodles at Gwanghwamun Mijin’s Jong-ro main branch.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 940,
+      "height": 705,
+      "bytes": 94980,
+      "sha256": "edb3e84610e287fbc3a699055399e843fb35887d5751f85bc184b8b244ea56f6",
+      "capture": {
+        "status": 200,
+        "contentType": "image/jpg",
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality 86; no creative alteration or watermark removal.",
+        "finalUrl": "https://tong.visitkorea.or.kr/cms/resource/47/3083647_image2_1.JPG"
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword search API",
+        "apiUrl": "https://dapi.kakao.com/v2/local/search/keyword.json?query=%EA%B4%91%ED%99%94%EB%AC%B8%EB%AF%B8%EC%A7%84+%EB%B3%B8%EC%A0%90&x=126.98&y=37.57&radius=6000",
+        "placeId": "21326655",
+        "placeName": "광화문미진 본점",
+        "roadAddress": "서울 종로구 종로 19",
+        "latitude": 37.570844667978704,
+        "longitude": 126.9799234417087,
+        "sourcePage": "https://place.map.kakao.com/21326655",
+        "checked_at": "2026-11-16",
+        "confidence": "high: exact named restaurant POI and matching road address; not a surveyed entrance"
+      }
+    }
+  ]
+}

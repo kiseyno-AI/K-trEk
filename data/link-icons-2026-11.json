@@ -1,0 +1,18 @@
+{
+  "google-maps": {
+    "file": "/trip/icons/google-maps.png",
+    "source": "https://www.google.com/images/branding/product/1x/maps_64dp.png"
+  },
+  "youtube": {
+    "file": "/trip/icons/youtube.png",
+    "source": "https://www.youtube.com/favicon.ico"
+  },
+  "naver": {
+    "file": "/trip/icons/naver.png",
+    "source": "https://www.naver.com/favicon.ico"
+  },
+  "catchtable": {
+    "file": "/trip/icons/catchtable.png",
+    "source": "https://app.catchtable.co.kr/static/app/real/20261114164416/assets/favicon.ico"
+  }
+}

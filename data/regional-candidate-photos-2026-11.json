@@ -1,0 +1,392 @@
+{
+  "checked_at": "2026-11-16",
+  "photos": [
+    {
+      "id": "nature-garden-morning-calm",
+      "image_url": "/trip/photos/regional-morning-calm.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Autumn landscape at the Garden of Morning Calm.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110690",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/85/2833485_image2_1.jpg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "nature-garden-morning-calm"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=110690",
+        "description": "Autumn landscape at the Garden of Morning Calm.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 940,
+      "height": 627,
+      "bytes": 177516,
+      "sha256": "be39e0010a6b952c1a220985ae448b0e5bbab126310d57289c4def5dfe4941c6",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "18090322",
+        "placeName": "아침고요수목원 매표소",
+        "roadAddress": "경기 가평군 상면 수목원로 432",
+        "address": "경기 가평군 상면 행현리 623-3",
+        "latitude": 37.7439383800015,
+        "longitude": 127.352546109442,
+        "sourcePage": "https://place.map.kakao.com/18090322",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    },
+    {
+      "id": "nature-nami-island",
+      "image_url": "/trip/photos/regional-nami-island.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Winter riverside landscape on Nami Island.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111127",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/40/3576840_image2_1.jpg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "nature-nami-island"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=111127",
+        "description": "Winter riverside landscape on Nami Island.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 940,
+      "height": 625,
+      "bytes": 149914,
+      "sha256": "a3fa64103d6ef7ba164ae8df486937776ee0204bf748cb340a5045221bdc0e11",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "950653889",
+        "placeName": "남이섬종합휴양지선착장",
+        "roadAddress": "",
+        "address": "경기 가평군 가평읍 달전리 145-2",
+        "latitude": 37.803751599961,
+        "longitude": 127.526161428908,
+        "sourcePage": "https://place.map.kakao.com/950653889",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    },
+    {
+      "id": "nature-pocheon-art-valley",
+      "image_url": "/trip/photos/regional-pocheon-art-valley.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Cheonjuho Lake and quarry cliffs at Pocheon Art Valley.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=66111",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource_photo/21/3512021_image2_1.jpg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "nature-pocheon-art-valley"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=66111",
+        "description": "Cheonjuho Lake and quarry cliffs at Pocheon Art Valley.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 940,
+      "height": 705,
+      "bytes": 155994,
+      "sha256": "bf4ef37fa3f3010800aca69de5c65e13e42bfa364bf839c2e126d8e29910ee45",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "11520510",
+        "placeName": "포천아트밸리",
+        "roadAddress": "경기 포천시 신북면 아트밸리로 234",
+        "address": "경기 포천시 신북면 기지리 282",
+        "latitude": 37.92317414931059,
+        "longitude": 127.23724560487442,
+        "sourcePage": "https://place.map.kakao.com/11520510",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    },
+    {
+      "id": "experience-gwangmyeong-cave",
+      "image_url": "/trip/photos/regional-gwangmyeong-cave.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Illuminated stairs and rock walls inside Gwangmyeong Cave.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=194429",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/73/2649973_image2_1.jpg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "experience-gwangmyeong-cave"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=194429",
+        "description": "Illuminated stairs and rock walls inside Gwangmyeong Cave.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 699,
+      "height": 466,
+      "bytes": 99094,
+      "sha256": "864ec3ab731e3acb4b8fba67fb27bca92c661e5fe310a13ddcf499aa80244131",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "26314882",
+        "placeName": "광명동굴",
+        "roadAddress": "",
+        "address": "경기 광명시 가학동 34-1",
+        "latitude": 37.42646315305282,
+        "longitude": 126.86573588470833,
+        "sourcePage": "https://place.map.kakao.com/26314882",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    },
+    {
+      "id": "experience-gangchon-gimyujeong-railbike",
+      "image_url": "/trip/photos/regional-gangchon-rail-park.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Riders on Gangchon’s Gimyujeong railbike track.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=72722",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/42/2739742_image2_1.jpeg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "experience-gangchon-gimyujeong-railbike"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=72722",
+        "description": "Riders on Gangchon’s Gimyujeong railbike track.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 699,
+      "height": 466,
+      "bytes": 99222,
+      "sha256": "fb27274f101fa8e6e3be0e380d4ddbbe64d0da76be349c2bf4ce4376ace53f4d",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "18711877",
+        "placeName": "강촌레일파크 김유정레일바이크",
+        "roadAddress": "강원특별자치도 춘천시 신동면 김유정로 1383",
+        "address": "강원특별자치도 춘천시 신동면 증리 323-2",
+        "latitude": 37.81577266333592,
+        "longitude": 127.71233232586323,
+        "sourcePage": "https://place.map.kakao.com/18711877",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    },
+    {
+      "id": "experience-yeongjong-seaside-railbike",
+      "image_url": "/trip/photos/regional-yeongjong-rail-bike.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Railbikes on the coastal track at Yeongjong Seaside Railbike.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=112553",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/89/3112889_image2_1.jpg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "experience-yeongjong-seaside-railbike"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=112553",
+        "description": "Railbikes on the coastal track at Yeongjong Seaside Railbike.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 940,
+      "height": 540,
+      "bytes": 107650,
+      "sha256": "3679f687f998bef214bdddcebd53e83768ae54b1dbdb6c64262c583ed5bb7e3d",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "750245312",
+        "placeName": "영종씨사이드 레일바이크",
+        "roadAddress": "인천 영종구 구읍로 75",
+        "address": "인천 영종구 중산동 1967-1",
+        "latitude": 37.4884615125396,
+        "longitude": 126.576866650862,
+        "sourcePage": "https://place.map.kakao.com/750245312",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    },
+    {
+      "id": "food-bonsuwon-galbi-main",
+      "image_url": "/trip/photos/regional-bonsuwon-galbi.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Jumbo beef galbi dishes at Bonsuwon Galbi.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=86767",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/08/1022308_image2_1.jpg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "food-bonsuwon-galbi-main"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=86767",
+        "description": "Jumbo beef galbi dishes at Bonsuwon Galbi.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 531,
+      "height": 699,
+      "bytes": 57818,
+      "sha256": "bfc4b88c7c7733691db5ede01fe0e8e616989443c21574ee48958dc8a4a9b1e7",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "7908963",
+        "placeName": "본수원갈비 본점",
+        "roadAddress": "경기 수원시 팔달구 중부대로223번길 41",
+        "address": "경기 수원시 팔달구 우만동 51-20",
+        "latitude": 37.27796181430103,
+        "longitude": 127.04060364807957,
+        "sourcePage": "https://place.map.kakao.com/7908963",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    },
+    {
+      "id": "food-chuncheon-tongnamujip-main",
+      "image_url": "/trip/photos/regional-tongnamujip-dakgalbi.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Dakgalbi ingredients on an iron pan at Tongnamujip Dakgalbi.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=188463",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/12/587812_image2_1.jpg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "food-chuncheon-tongnamujip-main"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=188463",
+        "description": "Dakgalbi ingredients on an iron pan at Tongnamujip Dakgalbi.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 500,
+      "height": 462,
+      "bytes": 52974,
+      "sha256": "8b16cf8103f55948070b350dea3398b6bedb80888656be2fcb71f4e39bc99f69",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "8107636",
+        "placeName": "통나무집닭갈비 본점",
+        "roadAddress": "강원특별자치도 춘천시 신북읍 신샘밭로 763",
+        "address": "강원특별자치도 춘천시 신북읍 천전리 38-26",
+        "latitude": 37.93312540516689,
+        "longitude": 127.79328557859613,
+        "sourcePage": "https://place.map.kakao.com/8107636",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    },
+    {
+      "id": "food-sinseung-banjeom-incheon",
+      "image_url": "/trip/photos/regional-sinseung-banjeom.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Yuni-jjajang noodles at Sinseung Banjeom.",
+      "attribution": "Korea Tourism Organization / VISITKOREA gallery · official source reference · reuse license unverified",
+      "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=216846",
+      "originalUrl": "https://tong.visitkorea.or.kr/cms/resource/96/3426696_image2_1.jpg",
+      "license": "Official source reference; reuse license unverified",
+      "rightsEvidence": "The publisher’s named-place gallery identifies this photograph; no transferable reuse permission was verified. All source markings are retained.",
+      "subjectEvidence": {
+        "activity_ids": [
+          "food-sinseung-banjeom-incheon"
+        ],
+        "sourcePage": "https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=216846",
+        "description": "Yuni-jjajang noodles at Sinseung Banjeom.",
+        "visually_confirmed": true,
+        "checked_at": "2026-11-16"
+      },
+      "width": 940,
+      "height": 627,
+      "bytes": 101684,
+      "sha256": "e8a07eb4806c6a35de2f58b963ff75b7abd7e00b7d4b6a49804db75a5622172e",
+      "capture": {
+        "status": 200,
+        "checked_at": "2026-11-16",
+        "transformation": "EXIF orientation applied; scaled inside 1200×1200 without upscaling; WebP quality86. No creative alteration or watermark removal."
+      },
+      "coordinate": {
+        "crs": "EPSG:4326",
+        "source": "Kakao Local keyword API",
+        "placeId": "9175466",
+        "placeName": "신승반점 본점",
+        "roadAddress": "인천 제물포구 차이나타운로44번길 31-3",
+        "address": "인천 제물포구 북성동2가 11-31",
+        "latitude": 37.4754680156144,
+        "longitude": 126.617805923634,
+        "sourcePage": "https://place.map.kakao.com/9175466",
+        "checked_at": "2026-11-16",
+        "confidence": "Exact named facility/restaurant or explicitly selected ticket-office/ferry-departure POI; not a surveyed entrance."
+      }
+    }
+  ]
+}

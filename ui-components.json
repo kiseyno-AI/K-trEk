@@ -1,0 +1,1503 @@
+{
+  "schemaVersion": 1,
+  "platform": "web",
+  "catalogue": "docs/ui/spaceui-free.json",
+  "sourceRoots": [
+    "app",
+    "lib"
+  ],
+  "sourceExtensions": [
+    ".js",
+    ".mjs",
+    ".cjs",
+    ".jsx",
+    ".ts",
+    ".tsx",
+    ".vue",
+    ".svelte",
+    ".html",
+    ".css",
+    ".scss",
+    ".svg",
+    ".swift",
+    ".storyboard",
+    ".xib",
+    ".kt",
+    ".dart",
+    ".xml",
+    ".xaml"
+  ],
+  "sources": [
+    {
+      "file": "app/activity-explorer.tsx",
+      "sha256": "832df1d00a6b1c2301941c47ddc7d5c77ae4232927055edefa9ea3e61ac3cf92",
+      "components": [
+        "activity-explorer",
+        "night-map",
+        "picks-drawer",
+        "trip-access",
+        "vote-countdown",
+        "trip-voice",
+        "host-reviews",
+        "trip-community"
+      ]
+    },
+    {
+      "file": "app/admin/activity-editor.tsx",
+      "sha256": "169520131acf8c67084596f45c82b3cc55b257f35694b3029811863c32d5c2f1",
+      "components": [
+        "activity-admin"
+      ]
+    },
+    {
+      "file": "app/admin/admin.module.css",
+      "sha256": "c79ef917c4baeef2551bba88fe9f5647ea8814fb070c4e6f29dfbe263950e513",
+      "components": [
+        "activity-admin"
+      ]
+    },
+    {
+      "file": "app/admin/page.tsx",
+      "sha256": "384a68d294a00f85256fd4b71a8bf5cc8fd02e26d0cf73b6bde43a6af07e0bf8",
+      "components": [
+        "activity-admin"
+      ]
+    },
+    {
+      "file": "app/animated-countdown.module.css",
+      "sha256": "e52ecbd3e213d5a8fcf17b2b367f1a42b2028a12712f8aaa85c12f31ed47e674",
+      "components": [
+        "vote-countdown"
+      ]
+    },
+    {
+      "file": "app/animated-countdown.tsx",
+      "sha256": "f7b994001f7ec960987be5399d13f94a00e55c4dacd2e0795c7354c91492f843",
+      "components": [
+        "vote-countdown"
+      ]
+    },
+    {
+      "file": "app/api/activities/[id]/reviews/route.ts",
+      "components": [],
+      "supportReason": "Server-only published-activity host-review PATCH wrapper; delegates same-origin/session permissions, exact four-field validation and targeted persistence to the community handlers.",
+      "sha256": "2834c5824bed25e72c12a1aa94e00ea6eabbd07f08bc9fe8e2a31d575480e52e"
+    },
+    {
+      "file": "app/api/activities/[id]/route.ts",
+      "sha256": "88ac5e6f3a914686e9f76a9bf2d81fdb93b170844b7cdf0dd0129ecb80474d1c",
+      "components": [],
+      "supportReason": "Validated and authorized D1 activity update endpoint."
+    },
+    {
+      "file": "app/api/activities/route.ts",
+      "sha256": "13ce2f4f9a963e92efce00d36fc4742bf48f87dc87f074ad15b6045be1b4ec7d",
+      "components": [],
+      "supportReason": "Validated D1 activity listing and protected creation endpoint."
+    },
+    {
+      "file": "app/api/assistant/route.ts",
+      "components": [],
+      "supportReason": "Local-loopback-only authenticated assistant endpoint wrapper; injects server D1/session bindings and explicitly isolated provider configuration without exposing secrets to the browser.",
+      "sha256": "1e128365b4f6d853d5e603b553ba2fd39fab2a0a2568287bc1d896302f580042"
+    },
+    {
+      "file": "app/api/events/route.ts",
+      "sha256": "036bd0d8f9699013365a9108fec81ee69b455632c18c1ad66cfc2a7d2519d73c",
+      "components": [],
+      "supportReason": "Legacy server route retained outside the prototype UI."
+    },
+    {
+      "file": "app/api/favorites/route.ts",
+      "sha256": "e1a7f84edfe89271b5412f90bd63544636a779bb5a3f9032eafd674e3364dbba",
+      "components": [],
+      "supportReason": "Server-only account/session authorization, per-member persistence or shared validated departure configuration; no UI root."
+    },
+    {
+      "file": "app/api/members/route.ts",
+      "components": [],
+      "supportReason": "Server-only Shawn-authorized registered-member snapshot endpoint; exposes names, roles and persisted preferences/favorites without credentials or session data.",
+      "sha256": "d732ac923b9fa6aaf82d4a33e1b261b152b7b38274bb3dfbf3e10328a0f95f4e"
+    },
+    {
+      "file": "app/api/preferences/route.ts",
+      "components": [],
+      "supportReason": "Server-only session-bound GET/PUT preferences endpoint; each member reads and saves only their own category, draft and submitted vote arrays.",
+      "sha256": "51843fd0f5872620b4a77b5238fb366983aff97cbbff243fcb654cbbb314d815"
+    },
+    {
+      "file": "app/api/reports/route.ts",
+      "components": [],
+      "supportReason": "Server-only report creation and Shawn inbox/read-state wrapper; bounded same-origin payloads and private no-store responses.",
+      "sha256": "54702aed02b61d153c372cb818ec1ac7ca3d1a71dc2265c5502f0a609a980a73"
+    },
+    {
+      "file": "app/api/session/name/route.ts",
+      "sha256": "947e0555b5b1c6983323ea376ebca74ce696c9bc7c0fdb8179a7a2aeb1e85e6f",
+      "components": [],
+      "supportReason": "Server-only account/session authorization, per-member persistence or shared validated departure configuration; no UI root."
+    },
+    {
+      "file": "app/api/session/route.ts",
+      "sha256": "13b07e601b5f319c3e65589229379e69d63355a7c8bdb5c79f04fbea4376f91b",
+      "components": [],
+      "supportReason": "Server-only account/session authorization, per-member persistence or shared validated departure configuration; no UI root."
+    },
+    {
+      "file": "app/api/voice/route.ts",
+      "components": [],
+      "supportReason": "Local-only authenticated voice endpoint wrapper; resolves published activities or user-owned stored assistant messages and reads private speech/provider runtime bindings; no UI root.",
+      "sha256": "7f21cc013333c0148194dbe1078396db3a2b6f9a0aa3bddf90f0f0504cdb4deb"
+    },
+    {
+      "file": "app/directions/[id]/route.ts",
+      "sha256": "2bc63ab0f89e47e878c21e11b0692ff9a61ddc93ae7f283ebb8b43f3364f3eba",
+      "components": [],
+      "supportReason": "Public read-only fixed-origin Kakao directions endpoint; key remains in server environment and only published verified DB IDs can route."
+    },
+    {
+      "file": "app/globals.css",
+      "sha256": "c610cb199aa9dc25dd1ed655ce66e9a93c9a721e2c51588d4c305b0c1c594968",
+      "components": [
+        "activity-explorer",
+        "night-map",
+        "picks-drawer",
+        "trip-access",
+        "vote-countdown"
+      ]
+    },
+    {
+      "file": "app/host-reviews.module.css",
+      "components": [
+        "host-reviews"
+      ],
+      "sha256": "4c8d6b6e8343db9582374f9032b191d11be2808dc0279678947dbda618c87335"
+    },
+    {
+      "file": "app/host-reviews.tsx",
+      "components": [
+        "host-reviews"
+      ],
+      "sha256": "fa6846bc4c11396e9d777fab88a31b3341626947b9e04b51cd1b7a5c46e4a383"
+    },
+    {
+      "file": "app/layout.tsx",
+      "sha256": "430797d5852dfe338df363c961d20e035185039f8260f2fb7bf33eeee72f1959",
+      "components": [
+        "activity-explorer"
+      ]
+    },
+    {
+      "file": "app/page.tsx",
+      "sha256": "40f5992e59be78bae016d250e082a178a3adb602cb8d2b7fc88b503acb207a50",
+      "components": [
+        "activity-explorer"
+      ]
+    },
+    {
+      "file": "app/planet-canvas.tsx",
+      "sha256": "7f937c78cf59394862d0a903453b353831db65847009874ea6298bac5a024b40",
+      "components": [
+        "night-map"
+      ]
+    },
+    {
+      "file": "app/planet-shaders.ts",
+      "sha256": "3604359ccc8886b1bcc98140008faafa3984737b1c759504cc2856f55120b942",
+      "components": [],
+      "supportReason": "GLSL sphere, geographic line and analytic point-sprite sources owned by the canonical night-map renderer."
+    },
+    {
+      "file": "app/trip-community.module.css",
+      "components": [
+        "trip-community"
+      ],
+      "sha256": "1727236b70e424b81433308fa93f824ab90f178fcbc8ce369088ebbed19726b2"
+    },
+    {
+      "file": "app/trip-community.tsx",
+      "components": [
+        "trip-community"
+      ],
+      "sha256": "cba0b49fa44f2b31396053069be345dd19ee678c729a6bc0daf43be20979d7bf"
+    },
+    {
+      "file": "app/trip-login.tsx",
+      "sha256": "39862dad8421f60b8d4f2be7a911de59ca00e6a078901235e25e0b9ca24bca73",
+      "components": [
+        "trip-access"
+      ]
+    },
+    {
+      "file": "app/trip-voice.module.css",
+      "sha256": "582fccd9c5a4ca08619c4e71452f9bb79d295e0a5c2508b3bbce98b222a786ab",
+      "components": [
+        "trip-voice"
+      ]
+    },
+    {
+      "file": "app/trip-voice.tsx",
+      "sha256": "d3d94dc18ab24cc63265f96791f4ea687ce971a406c5edbaba283cc526bff978",
+      "components": [
+        "trip-voice"
+      ]
+    },
+    {
+      "file": "lib/activities.ts",
+      "sha256": "d8ea080763ec2cab1b6adc75f440bb457f469ee91ce1a69e6875d7ff0d9afa00",
+      "components": [],
+      "supportReason": "Shared activity types, canonical field definitions, validation and public card adapter."
+    },
+    {
+      "file": "lib/activity-pagination.ts",
+      "components": [],
+      "supportReason": "Browser-safe activity slicing, complete-row capacity measurement and node-owned ResizeObserver/native resize fallback; caps grid pages at15 and releases observer/listener on disposal.",
+      "sha256": "396ae752b65656e25b4ac4c47885bcd09cbfc77f307b1a369e4d2dfc402b677b"
+    },
+    {
+      "file": "lib/activity-presentation.ts",
+      "sha256": "d045308e2c242cdf81dd5bcb7e6551976a7f622f8343c54ed60744907afb9b26",
+      "components": [],
+      "supportReason": "Pure card fact presentation: hide restaurant stay suggestions and deduplicate identical booking/group text without editing stored facts."
+    },
+    {
+      "file": "lib/activity-seed.ts",
+      "sha256": "abb3330935738a0aa67cf4c67acb6b134b1b92362e4302ab81c6d73f98caa42b",
+      "components": [],
+      "supportReason": "Exactly three explicitly illustrative seed records for local D1 setup."
+    },
+    {
+      "file": "lib/activity-store.ts",
+      "sha256": "8b28b08d1ab2010f8f3de6069d41e05f91f1a265ef50092396aea00de254e4ec",
+      "components": [],
+      "supportReason": "Server-only prepared-statement D1 persistence for activity routes and editor."
+    },
+    {
+      "file": "lib/admin-access.ts",
+      "sha256": "d4959cdaa0911753a4edbb92aab672f32700cdf3f53380373e167fdd2f1c0ad7",
+      "components": [],
+      "supportReason": "Server authorization and bounded same-origin JSON parsing for activity writes."
+    },
+    {
+      "file": "lib/card-morph.ts",
+      "sha256": "ac5c11fefb6427f3c1bb95ac96da8cf3179ec5c5640fe1b84a05b6a99d12b4bc",
+      "components": [],
+      "supportReason": "Finite measured card/photo/copy flight geometry used by the explorer; live paragraphs are never scaled and the existing owner cancels/releases every animation."
+    },
+    {
+      "file": "lib/carousel-wheel.ts",
+      "sha256": "c6c39683ff5c62b58c7a637638d631214256fff99f0e5c5dde390fe06427fb35",
+      "components": [],
+      "supportReason": "One bounded navigation decision per wheel gesture, with fresh stroke/reversal rearming before old tiny momentum ends; the carousel owns one decoder. No recurring resource or UI root."
+    },
+    {
+      "file": "lib/driving-route.ts",
+      "sha256": "0b9ac22f6cd8d61a380d119c630dbb2006a2a0359b22e481a886c1031e746a33",
+      "components": [],
+      "supportReason": "Browser-safe normalized driving route response types shared by the route adapter and map renderer."
+    },
+    {
+      "file": "lib/kakao-directions.ts",
+      "sha256": "ba7f5202b72919fa3004c96ed87e70ebcb16bd7a572a0189f1c5beae57a7021e",
+      "components": [],
+      "supportReason": "Server-only Kakao adapter with validated DB-only destinations, bounded provider response, deadline, in-flight deduplication and quota guard."
+    },
+    {
+      "file": "lib/planet-camera.ts",
+      "sha256": "a1b39852783a1b4a3a785d93ef605ac129679daff8c94b5a0d73e5cfd5189ef3",
+      "components": [],
+      "supportReason": "Pure camera framing, interpolation and geographic projection consumed by night-map and its public tests."
+    },
+    {
+      "file": "lib/planet-telemetry.ts",
+      "sha256": "f9e3c0b27d927e8138f9d40d3beb78a4a65c4be3901823a0c37512627af84dfc",
+      "components": [],
+      "supportReason": "Bounded diagnostic publishing for the existing renderer; no UI root."
+    },
+    {
+      "file": "lib/route-ribbon.ts",
+      "sha256": "1b1e442e9e3dbbd994581e9f43b617b333439c046c9c6c0c892d5d4e81befba6",
+      "components": [],
+      "supportReason": "Prepared geographic road quad vertices and cumulative distance; the persistent WebGL renderer owns upload, projection and flow."
+    },
+    {
+      "file": "lib/site-path.ts",
+      "sha256": "acc9631b885168bc7e41cb8e442161fedb063bee59f6489290e94f49d431f096",
+      "components": [],
+      "supportReason": "Configured base-path prefix for local trip assets and editor API URLs; external photo URLs remain unchanged."
+    },
+    {
+      "file": "lib/trip-admin.ts",
+      "sha256": "f8b3ad8918bd23ea973c3b02bc0ba49758fac12b312dc09ebbce5e89318beeae",
+      "components": [],
+      "supportReason": "Server-only account/session authorization, per-member persistence or shared validated departure configuration; no UI root."
+    },
+    {
+      "file": "lib/trip-assistant-context.ts",
+      "components": [],
+      "supportReason": "Server-only pure retrieval and answer validation over published public card facts and the current user's bounded trip summary; preserves unknown evidence, restricts cited sources and rejects private/off-topic/injected requests without exposing other members or reports.",
+      "sha256": "426f90e0aaa9db67074a065e329abe9734565eb8c8a66694c5db5dc2a8a19a43"
+    },
+    {
+      "file": "lib/trip-assistant-store.ts",
+      "components": [],
+      "supportReason": "Server-only prepared D1 assistant persistence: account/session event deduplication, clamped visible active time, recent browsing summaries, persisted member preferences, proactive pattern claims and owner-scoped stored/heard replies.",
+      "sha256": "79a54209a939fd6bf3964f69cc5b2c2bd12126699ccbed4c5b07e18cc6cf33e5"
+    },
+    {
+      "file": "lib/trip-assistant.ts",
+      "components": [],
+      "supportReason": "Server-only local assistant request handler: exact bounded discriminated chat/event/heard inputs, authoritative session identity, persistent throttling, eligible deduplicated proactive patterns and isolated bounded generation with public-context fallback.",
+      "sha256": "a54476346ef83111a65ccd85462e70a9a2aa0e9b5ba32aa82ae0d2ec8ae93466"
+    },
+    {
+      "file": "lib/trip-auth-store.ts",
+      "sha256": "63094b1675703d6702e5f41a4e8bc20a537b9c4605d009ad9f5a3ed19ee056fe",
+      "components": [],
+      "supportReason": "Server-only account/session authorization, per-member persistence or shared validated departure configuration; no UI root."
+    },
+    {
+      "file": "lib/trip-auth.ts",
+      "sha256": "88dfa0c8cffd6abb5fe3b81d803041b54b267cb35e258119e10a356949390eea",
+      "components": [],
+      "supportReason": "Server-only account/session authorization, per-member persistence or shared validated departure configuration; no UI root."
+    },
+    {
+      "file": "lib/trip-community-client.ts",
+      "components": [],
+      "supportReason": "Browser-safe bounded authenticated JSON and identity-owned preference synchronization: read before write, restore/seed after hydration, explicit unique category choices, finite debounce, serialized latest-wins writes, logout flush and abort/disposal; no UI root.",
+      "sha256": "a1eebec14d61905137a87bbfb9ddd18f2957b0a6f59ddb5a95a492e6f7d78f6c"
+    },
+    {
+      "file": "lib/trip-community-store.ts",
+      "components": [],
+      "supportReason": "Server-only prepared D1 persistence for member preferences, bounded unread-first reports, registered-member snapshots and four-field published-activity review updates; no component roots.",
+      "sha256": "978a8385ca3f3340fafd1ec9168066d10fbd114be721f40e1b6f539fdddcf6b3"
+    },
+    {
+      "file": "lib/trip-community.ts",
+      "components": [],
+      "supportReason": "Server-only community public request handlers: authoritative session/normalized host permissions, exact bounded input validation, persistent rate limits, generic errors and private responses for reports, preferences, members and inline reviews.",
+      "sha256": "6c8648030759ec6c78a8a20ef5975a1bd237816dd1ed1a39105691c07323d918"
+    },
+    {
+      "file": "lib/trip-interaction-client.ts",
+      "components": [],
+      "supportReason": "Browser-safe identity-owned assistant lifecycle: immediate visible-session start, stable32event outbox, visible-only active duration/one-minute heartbeat, finite12/20second requests, pagehide keepalive, stale-reply suppression, explicit-only report sends and complete abort/timer disposal; no component root.",
+      "sha256": "154cd9fa57b7420c85303195e43e1a8566be1671ab1e368dc5e7aa8ea4a5f703"
+    },
+    {
+      "file": "lib/trip-origin-store.ts",
+      "sha256": "8a47b6d3dc0fbd4659082823c294b82fcb2e083b9bbd3b0c04a2224c23cd80c4",
+      "components": [],
+      "supportReason": "Server-only account/session authorization, per-member persistence or shared validated departure configuration; no UI root."
+    },
+    {
+      "file": "lib/trip-origin.ts",
+      "sha256": "8b9eed03ce8f8343ca6d0d23d3f2fd857398a1737af6ddbbfc53b8ebef9ef348",
+      "components": [],
+      "supportReason": "Shared validated named WGS84 origin contract and allowlisted station presets; no UI root or credentials."
+    },
+    {
+      "file": "lib/trip-session.ts",
+      "sha256": "14537d1d0c103bcb449854cb74a12f20b58d0a39f44db7c3c8e6374a61d78aaf",
+      "components": [],
+      "supportReason": "Bounded initial session read with an owned six-second request deadline and disposal abort; failure releases the first-login gate without changing server sessions."
+    },
+    {
+      "file": "lib/trip-voice-player.ts",
+      "components": [],
+      "supportReason": "Browser-only opt-in media owner with account-scoped bounded normalized heard-text/event ledger; marks original and actual spoken transcripts only after native play success, sends stored assistant message IDs only, and releases its single media source, URL, deadlines and listeners on stop/disposal.",
+      "sha256": "7056b271801e56f3a34233ce021b4da98b4c8213ece16dfdd6fbd2037b50b055"
+    },
+    {
+      "file": "lib/trip-voice-scope.ts",
+      "sha256": "78922e66e173c76455903f23bfc28250265b7eed16365fc6b459a0fa72c49506",
+      "components": [],
+      "supportReason": "Shared loopback-host gate keeps experimental voice controls and API unavailable through the public proxy."
+    },
+    {
+      "file": "lib/trip-voice.ts",
+      "components": [],
+      "supportReason": "Server-only bounded voice generation for approved greeting/selection events or owner-authorized stored assistant replies; assistant speech uses a <=300character/45word excerpt with actual transcript header and no arbitrary raw client text.",
+      "sha256": "59fd5c51b4bbd5a7fc369dc130f89987d611448cec7a284dbeac7a911e6b7cfb"
+    },
+    {
+      "file": "lib/utils.ts",
+      "sha256": "9304a861c8673bee09e0f12de31773abbde503b02e59dfd74763ddec2e37cf05",
+      "components": [],
+      "supportReason": "Existing shared class-name composition helper; no component roots."
+    },
+    {
+      "file": "lib/vote-planning.ts",
+      "sha256": "daeea5d86a2830257ef0186a97d1b11e73b801c5d16a008554f1fd9f60f841bd",
+      "components": [],
+      "supportReason": "Shared twenty-pick limit, New York deadline arithmetic and km/mile formatting; no timer ownership."
+    }
+  ],
+  "components": [
+    {
+      "id": "night-map",
+      "label": "Continuous Earth camera and Korea lights",
+      "patterns": [],
+      "customReason": "One persistent geographic scene with12,492 varied-size lights:6,732 quieter irregular land-coverage points plus SVG-weighted city hubs, a smooth dark eastern ridge, unlit neighbors and red endpoints; no catalogue renderer fits.",
+      "implementation": {
+        "file": "app/planet-canvas.tsx",
+        "anchor": "export function PlanetCanvas"
+      },
+      "styles": [
+        {
+          "file": "app/globals.css",
+          "anchor": ".planet-canvas {"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".map-place-label {\n  position: absolute;"
+        }
+      ],
+      "usages": [
+        {
+          "id": "trip-map-stage",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "<PlanetCanvas",
+          "selector": ".map-stage",
+          "variant": "one persistent scene with a Seoul-centered journey frame",
+          "states": [
+            "orbit",
+            "continuous Korea approach",
+            "independent ambient shimmer capped at 12fps",
+            "red selected endpoints and journey connection",
+            "Seoul local detail",
+            "Seoul and destination together",
+            "left-shifted detail frame",
+            "interrupted or reversed camera",
+            "hidden-document pause and resume",
+            "static night lights under reduced motion",
+            "12,492 irregular lights:5,760preservedcitylightsand6,732dispersedpoints;boundedclose-upsize/strength",
+            "unlit China and Japan",
+            "unassigned map coordinates",
+            "Seoul Station departure and exact venue destination connected even for short journeys",
+            "local Han River with actual island cutouts and25district geography",
+            "English local area labels with endpoint clearance",
+            "bounded10buffers5programs4textures and optional geography asset fallback",
+            "actual camera arrival callback before browse cards",
+            "Kakao road vertices and route-aware framing",
+            "local Seoul density with Gangnam and Jongno hubs",
+            "optional local light asset failure preserves the globe",
+            "4.4px geographic route ribbon with directional ivory highlights",
+            "solid bright route under reduced motion",
+            "10buffers5programs10shaders4textures; one existing ambient clock",
+            "selected drive/bus/subway/mixed geometry",
+            "cyan bus and violet subway; quieter walk",
+            "one reusable route buffer and at most four mode batches",
+            "missing transit geometry never falls back to drive",
+            "cached label and viewport dimensions",
+            "route-aware measured endpoint labels",
+            "shared named configurable departure",
+            "province and regional city/gu outlines in existing buffer",
+            "4Hzdeduplicateddiagnosticpublishingwithforcedroute/finalupdates",
+            "identicalper-starshimmercomputedoncepervertex",
+            "18s startup-only deadline",
+            "synchronous initialization failure releases browse readiness",
+            "context loss/draw failure releases partial GPU resources",
+            "normal quality and owned timers retained",
+            "selectable departure updates marker/label and continuous origin-destination framing",
+            "departure change clears old geometry without scene remount"
+          ]
+        }
+      ],
+      "uses": [],
+      "checks": [
+        "scripts/prototype-smoke.mjs",
+        "tests/planet-camera.test.mjs",
+        "docs/MOTION_PERFORMANCE.md",
+        "docs/NIGHT_IMAGERY.md",
+        "tests/korea-light-coverage.test.mjs",
+        "tests/seoul-geography.test.mjs",
+        "docs/SEOUL_GEOGRAPHY.md",
+        "tests/planet-light-style.test.mjs",
+        "tests/seoul-lights.test.mjs",
+        "docs/SEOUL_LIGHTS.md",
+        "tests/kakao-directions.test.mjs",
+        "scripts/check-driving-routes.mjs",
+        "tests/route-ribbon.test.mjs",
+        "scripts/check-public-assets.mjs",
+        "docs/TRANSIT_GEOMETRY_2026_11.md",
+        "docs/TRANSPORT_SELECTION_2026_11.md",
+        "tests/korea-regions.test.mjs",
+        "tests/trip-origin.test.mjs",
+        "docs/GEOGRAPHIC_CONTEXT_2026_11.md",
+        "docs/CAMERA_PERFORMANCE_2026_11.md",
+        "tests/planet-telemetry.test.mjs",
+        "tests/planet-startup.test.mjs",
+        "docs/MOBILE_CANVAS_STARTUP_2026_11.md",
+        "docs/MOBILE_STARTUP_2026_11.md",
+        "docs/DEPARTURE_SELECTION_0_3_3.md"
+      ]
+    },
+    {
+      "id": "activity-explorer",
+      "label": "Activity explorer carousel and compact grid",
+      "patterns": [
+        {
+          "slug": "dirt-carousel",
+          "relationship": "analogue"
+        },
+        {
+          "slug": "morphing-area",
+          "relationship": "analogue"
+        },
+        {
+          "slug": "liquid-metal-border",
+          "relationship": "analogue"
+        },
+        {
+          "slug": "like-button",
+          "relationship": "analogue"
+        },
+        {
+          "slug": "blur-reveal-text",
+          "relationship": "analogue"
+        }
+      ],
+      "implementation": {
+        "file": "app/activity-explorer.tsx",
+        "anchor": "export default function ActivityExplorer"
+      },
+      "styles": [
+        {
+          "file": "app/globals.css",
+          "anchor": ".activity-card {\n  position: absolute;"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".detail-panel {\n  margin-top: 18px;"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".browse-filters {\n  display: grid;"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".activity-grid {\n  display: grid;"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".card-photo {"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".app-version {"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".grid-pagination[data-empty='true'] {"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".grid-fit-notice {"
+        }
+      ],
+      "usages": [
+        {
+          "id": "home-explore",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "className=\"explore\"",
+          "selector": ".explore",
+          "variant": "night map activity picker with swipe carousel or compact grid",
+          "states": [
+            "intro",
+            "filtered",
+            "empty",
+            "focused",
+            "swiped",
+            "detail",
+            "favorite",
+            "selected",
+            "8.5-second intro without skip",
+            "centered category-only filtering",
+            "at most five mounted cards in list mode",
+            "repeated keyboard arrows with focus transfer",
+            "short viewport compact card",
+            "English-only public place names and copy",
+            "intro sentence removed",
+            "returning map without mounted cards",
+            "cancelable reveal under keyboard/category/detail changes",
+            "reduced-motion immediate return",
+            "centered category container at viewport center",
+            "self-hosted Noto Sans KR throughout",
+            "twenty-pick limit",
+            "one-second vote deadline countdown paused with visibility",
+            "single first-main word entrance with unchanging Noto Sans KR",
+            "finite thin gold edge sweep on active card hover/focus",
+            "native icon squash on enabled pointer/keyboard press",
+            "no whole-explorer blur entrance",
+            "first intro and return wait actual camera arrival before right-side820ms/95mscardentry",
+            "compact city/district labels",
+            "front Details only; no draft selection",
+            "filled category badges and high contrast heart",
+            "centered Review vote below hours-only segmented countdown",
+            "no unknown travel badge",
+            "rightward category departure before replacement",
+            "queued latest category during finite entrance",
+            "content-sized vote count with9pxsidepadding",
+            "readable title line boxes and photograph-only flex shrinking",
+            "compact complete long titles/actions at320px",
+            "one card per trackpad gesture, including momentum tail",
+            "small trackpad packets accumulate",
+            "collapsed cards cannot scroll vertically",
+            "scoped non-passive listener disposes on unmount",
+            "Ctrl pinch zoom stays native",
+            "initial session timeout opens login",
+            "grid photo lazy loading",
+            "grid entrance animates visible cards only",
+            "square left photograph and right copy on mobile list cards",
+            "grid overrides carousel pointer-event suppression",
+            "grid shows only measured complete rows with at most fifteen cards",
+            "grid has no inner vertical scroll or partial cards",
+            "grid detail return keeps its page",
+            "ResizeObserver measures available rows and disconnects on node disposal",
+            "native resize fallback removes its listener on disposal",
+            "new stationary-cursor stroke bursts rearm despite preceding tiny momentum",
+            "small decaying rebounds and early direction jitter do not double-step"
+          ]
+        },
+        {
+          "id": "database-trip-root",
+          "file": "app/page.tsx",
+          "anchor": "<ActivityExplorer",
+          "selector": ".trip-shell",
+          "variant": "D1-backed published activities",
+          "states": [
+            "70 supplied candidates across seven categories",
+            "three hidden illustrative samples",
+            "38 licensed assignments and32 actual official references with unverified reuse rights",
+            "70 sourced venue/site pins including16 named area starting points; travel time remains unknown",
+            "public ktravel subpath",
+            "75 published candidates including five additional Seoul restaurants",
+            "84 published candidates including18 restaurants and9 regional additions; all published photos local"
+          ]
+        },
+        {
+          "id": "activity-detail",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "className=\"detail-view\"",
+          "selector": ".detail-panel",
+          "variant": "finite card movement into an inset scrolling detail panel",
+          "states": [
+            "opening",
+            "closing",
+            "reading",
+            "photo pending",
+            "verified and unverified metadata",
+            "reduced motion",
+            "background paused",
+            "Seoul area fallback for unknown venue coordinates",
+            "photo caption and license attribution",
+            "English booking, group, language and evidence details",
+            "actual clinic branch images with explicit source rights",
+            "driving route loading",
+            "Kakao current drive time and distance",
+            "missing key",
+            "quota or provider failure",
+            "manual retry",
+            "aborted request on back or reselection",
+            "live taxi estimate and subway/bus/mixed travel list",
+            "kilometres and miles together",
+            "restaurant stay suggestions hidden",
+            "identical booking and group reservation shown once",
+            "sources links only; retained linked photo credits",
+            "820ms photo/surface/copy continuity without scaling live text",
+            "aligned source/destination photo crossfade",
+            "temporary decorative content removed on finish or interruption",
+            "Vote/Voted near title",
+            "Shawn and Sun optional1to5stars and comment rows",
+            "brand icons on booking/maps/video links",
+            "removed traffic and unverified Google boilerplate",
+            "no duplicate station-to-destination sentence",
+            "taxi estimate and tolls inside Drive row",
+            "native pressed route buttons and text color legend",
+            "rightward detail departure before camera return",
+            "Back during morph queues departure until arrival",
+            "one card per trackpad gesture, including momentum tail",
+            "small trackpad packets accumulate",
+            "collapsed cards cannot scroll vertically",
+            "scoped non-passive listener disposes on unmount",
+            "Ctrl pinch zoom stays native",
+            "initial session timeout opens login",
+            "new stationary-cursor stroke bursts rearm despite preceding tiny momentum",
+            "small decaying rebounds and early direction jitter do not double-step"
+          ]
+        },
+        {
+          "id": "trip-sharing-metadata",
+          "file": "app/layout.tsx",
+          "anchor": "export const metadata",
+          "selector": "meta[property=\"og:title\"]",
+          "variant": "canonical K-trEk link preview",
+          "states": [
+            "correct public canonical URL",
+            "same-origin Korea-at-night PNG",
+            "actual image dimensions",
+            "no legacy New York title or image"
+          ]
+        },
+        {
+          "id": "activity-view-toggle",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "aria-label=\"Activity view\"",
+          "selector": ".view-toggle",
+          "variant": "native list/grid pressed buttons to the right of centered categories",
+          "states": [
+            "list selected",
+            "grid selected",
+            "keyboard activation",
+            "mobile narrow controls",
+            "mode change measures available complete rows",
+            "grid starts on the page containing the focused activity"
+          ]
+        },
+        {
+          "id": "activity-compact-grid",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "aria-label={viewMode === 'grid' ? 'Activities grid' : 'Swipe through activities'}",
+          "selector": ".activity-grid",
+          "variant": "responsive square-left-photo cards paginated into measured complete rows",
+          "states": [
+            "computed columns and available height determine complete rows",
+            "at most fifteen cards from the current filtered page",
+            "no partial bottom rows",
+            "no inner vertical scrolling",
+            "square144pxdesktop and128pxmobile photographs",
+            "lazy image loading",
+            "title and city/district visible",
+            "heart and Details actions",
+            "empty filter",
+            "finite visible-card entry",
+            "reduced motion",
+            "detail opens from measured grid card",
+            "resize adapts page capacity and preserves approximate current position",
+            "one node-owned ResizeObserver or scoped native resize fallback",
+            "observer/listener released on mode change or unmount",
+            "size zero mounts no clipped cards and offers List view or a taller window"
+          ]
+        },
+        {
+          "id": "activity-footer-version",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "aria-label=\"Application version\"",
+          "selector": ".app-version",
+          "variant": "small package-version footer on the fixed trip shell",
+          "states": [
+            "readable version",
+            "noninteractive",
+            "mobile bottom inset"
+          ]
+        },
+        {
+          "id": "member-preference-notice",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "className=\"preference-notice\"",
+          "selector": ".preference-notice",
+          "variant": "server preference synchronization status",
+          "states": [
+            "failed read preserves existing server choices",
+            "save or restore failure surfaced",
+            "session expired returns to login",
+            "success clears error"
+          ]
+        },
+        {
+          "id": "activity-grid-pagination",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "aria-label=\"Activity pages\"",
+          "selector": ".grid-pagination",
+          "variant": "native previous/next and page status for measured complete-row pages",
+          "states": [
+            "page count recalculated from measured capacity",
+            "at most fifteen cards per page",
+            "one-page or zero-capacity pager hidden with layout row reserved",
+            "reserved row prevents measurement feedback",
+            "first/last controls disabled",
+            "filtered page total",
+            "category resets page one",
+            "detail return keeps page",
+            "keyboard activation",
+            "mobile viewport",
+            "reduced motion",
+            "existing finite animation owner",
+            "desktop1920x900measurement reduces15mountedcards to10and removes5partialcards"
+          ]
+        },
+        {
+          "id": "activity-grid-zero-capacity",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "className=\"grid-fit-notice\"",
+          "selector": ".grid-fit-notice",
+          "variant": "readable status instead of clipped cards when no complete row fits",
+          "states": [
+            "zero complete rows",
+            "List view suggestion",
+            "taller window suggestion",
+            "resize restores cards",
+            "no global page scroll"
+          ]
+        },
+        {
+          "id": "departure-selector",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "className=\"route-departure\"",
+          "selector": "#trip-departure",
+          "variant": "member detail native departure selector shared by map and all travel modes",
+          "states": [
+            "default Seoul Station",
+            "Jongno 1-ga via Jonggak",
+            "Sinchon Line2",
+            "Gangnam Station",
+            "Yangjae Station",
+            "custom server default without duplicate option",
+            "selection retained across cards until reload",
+            "cleared roads/totals while loading",
+            "superseded request aborted",
+            "late successes and errors ignored",
+            "retry preserves origin",
+            "keyboard focus",
+            "44px native mobile picker",
+            "unavailable to visitors"
+          ]
+        }
+      ],
+      "uses": [
+        "night-map",
+        "picks-drawer",
+        "vote-countdown",
+        "trip-access",
+        "trip-voice",
+        "host-reviews",
+        "trip-community"
+      ],
+      "checks": [
+        "scripts/prototype-smoke.mjs",
+        "tests/activities.test.mjs",
+        "tests/activity-import.test.mjs",
+        "tests/site-path.test.mjs",
+        "scripts/import-activity-photos.mjs",
+        "docs/MOTION_PERFORMANCE.md",
+        "tests/activity-english.test.mjs",
+        "tests/official-photo.test.mjs",
+        "tests/activity-coordinates.test.mjs",
+        "tests/kakao-directions.test.mjs",
+        "docs/KAKAO_DIRECTIONS.md",
+        "scripts/check-driving-routes.mjs",
+        "tests/activity-presentation.test.mjs",
+        "tests/vote-planning.test.mjs",
+        "tests/extra-food-import.test.mjs",
+        "docs/NOTO_SANS_KR.md",
+        "docs/PUBLIC_DEPLOYMENT.md",
+        "tests/card-morph.test.mjs",
+        "tests/animated-countdown.test.mjs",
+        "docs/MOTION_STYLE_IMPLEMENTATION_RESEARCH.md",
+        "docs/MOTION_REFINEMENTS_2026_11.md",
+        "tests/host-reviews.test.mjs",
+        "tests/food-menu-photos.test.mjs",
+        "tests/regional-candidates.test.mjs",
+        "docs/BROWSE_VOTE_UPDATE_2026_11.md",
+        "docs/TRANSPORT_SELECTION_2026_11.md",
+        "docs/TRANSIT_GEOMETRY_2026_11.md",
+        "tests/trip-auth.test.mjs",
+        "docs/ACCOUNT_ACCESS_2026_11.md",
+        "scripts/check-sharing-preview.mjs",
+        "tests/carousel-wheel.test.mjs",
+        "docs/TRACKPAD_SWIPE_2026_11.md",
+        "docs/SHARING_PREVIEW_2026_11.md",
+        "tests/trip-session.test.mjs",
+        "docs/MOBILE_STARTUP_2026_11.md",
+        "tests/inline-host-reviews.test.mjs",
+        "tests/trip-community.test.mjs",
+        "tests/trip-community-client.test.mjs",
+        "docs/INLINE_HOST_REVIEWS_2026_11.md",
+        "docs/TRIP_COMMUNITY_UI_2026_11.md",
+        "tests/activity-pagination.test.mjs",
+        "docs/GRID_PAGINATION_0_2_1.md",
+        "docs/WHOLE_GRID_ROWS.md",
+        "docs/ASSISTANT_LOCAL_0_3_0.md",
+        "tests/trip-origin.test.mjs",
+        "tests/trip-voice-ownership.test.mjs",
+        "docs/DEPARTURE_SELECTION_0_3_3.md"
+      ],
+      "customReason": "Local grid pagination uses native buttons and status text rather than the bundled anchor-link template, preserving the trip theme and local state ownership. Departure uses the platform native select for accessible keyboard/mobile pickers, styled with existing trip tokens; no additional package or duplicate route renderer."
+    },
+    {
+      "id": "picks-drawer",
+      "label": "Vote draft drawer",
+      "patterns": [
+        {
+          "slug": "morphing-area",
+          "relationship": "analogue"
+        }
+      ],
+      "implementation": {
+        "file": "app/activity-explorer.tsx",
+        "anchor": "className=\"backdrop\""
+      },
+      "styles": [
+        {
+          "file": "app/globals.css",
+          "anchor": ".backdrop {"
+        }
+      ],
+      "usages": [
+        {
+          "id": "my-picks",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "aria-labelledby=\"picks-title\"",
+          "selector": ".backdrop aside",
+          "variant": "browser-local demo vote",
+          "states": [
+            "empty",
+            "draft",
+            "submitted",
+            "disabled submit",
+            "up to twenty selections",
+            "deadline-closed voting preserves saved results",
+            "separate DB-backed favorites list",
+            "open saved-card details",
+            "remove a heart",
+            "per-account local vote draft",
+            "visitor drawer unavailable"
+          ]
+        }
+      ],
+      "uses": [],
+      "checks": [
+        "scripts/prototype-smoke.mjs"
+      ]
+    },
+    {
+      "id": "activity-admin",
+      "label": "Activity database editor",
+      "patterns": [],
+      "customReason": "Domain-specific grouped native form separating confirmed facts, illustrative samples and unknown values; no suitable free catalogue data editor matches the activity schema.",
+      "implementation": {
+        "file": "app/admin/activity-editor.tsx",
+        "anchor": "export function ActivityEditor"
+      },
+      "styles": [
+        {
+          "file": "app/admin/admin.module.css",
+          "anchor": ".shell {"
+        }
+      ],
+      "usages": [
+        {
+          "id": "admin-route",
+          "file": "app/admin/page.tsx",
+          "anchor": "<ActivityEditor",
+          "selector": "form",
+          "variant": "local D1 activity create and update",
+          "states": [
+            "existing",
+            "new",
+            "dirty",
+            "saving",
+            "saved",
+            "validation error",
+            "hidden record",
+            "access denied",
+            "database unavailable",
+            "optional host star selectors1to5",
+            "separate two-or-three-sentence host comments",
+            "compact location editable independently from full location"
+          ]
+        }
+      ],
+      "uses": [],
+      "checks": [
+        "tests/activities.test.mjs",
+        "docs/ACTIVITY_DATABASE.md",
+        "tests/host-reviews.test.mjs",
+        "db/migrations/0004_host_reviews_and_card_location.sql",
+        "docs/BROWSE_VOTE_UPDATE_2026_11.md"
+      ]
+    },
+    {
+      "id": "vote-countdown",
+      "label": "Animated voting deadline digits",
+      "patterns": [
+        {
+          "slug": "fluid-countdown",
+          "relationship": "analogue"
+        }
+      ],
+      "implementation": {
+        "file": "app/animated-countdown.tsx",
+        "anchor": "export function AnimatedCountdown"
+      },
+      "styles": [
+        {
+          "file": "app/animated-countdown.module.css",
+          "anchor": ".value {"
+        },
+        {
+          "file": "app/globals.css",
+          "anchor": ".vote-countdown time {"
+        }
+      ],
+      "usages": [
+        {
+          "id": "explorer-voting-clock",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "<AnimatedCountdown",
+          "selector": ".vote-countdown time",
+          "variant": "fixed New York deadline with existing one-second clock",
+          "states": [
+            "initial readable final digits",
+            "only changed numeric glyphs animate160ms",
+            "unchanged separators and digits stay still",
+            "semantic time with decorative glyphs hidden from assistive technology",
+            "inactive and hidden cancellation",
+            "resume without stale replay",
+            "reduced motion preference change",
+            "expired zero value",
+            "day-length change without motion",
+            "no additional timer or RAF",
+            "total hours never wrap at24",
+            "original seven-segment SVG digits with static unit labels",
+            "responsive centered dark panel; Noto Sans KR labels"
+          ]
+        }
+      ],
+      "uses": [],
+      "checks": [
+        "tests/animated-countdown.test.mjs",
+        "tests/vote-planning.test.mjs",
+        "docs/MOTION_PERFORMANCE.md",
+        "docs/MOTION_REFINEMENTS_2026_11.md",
+        "docs/DOOMSDAY_CLOCK.md",
+        "docs/BROWSE_VOTE_UPDATE_2026_11.md"
+      ]
+    },
+    {
+      "id": "trip-access",
+      "label": "Trip membership and visitor access",
+      "patterns": [],
+      "customReason": "Native name-first login and reserved host roles use the existing trip theme and server sessions; the free catalogue has no suitable account flow.",
+      "implementation": {
+        "file": "app/trip-login.tsx",
+        "anchor": "export function TripLogin"
+      },
+      "styles": [
+        {
+          "file": "app/globals.css",
+          "anchor": ".login-panel h1 {"
+        }
+      ],
+      "usages": [
+        {
+          "id": "trip-login-gate",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "<TripLogin",
+          "selector": ".login-stage",
+          "variant": "name-first member login or explicit visitor",
+          "states": [
+            "session loading",
+            "first name",
+            "new-name password",
+            "returning-name password",
+            "invalid input",
+            "wrong password",
+            "busy",
+            "reduced motion",
+            "visitor without hearts/votes/routes",
+            "first cards wait for intro/camera/access",
+            "Hi Cluster E greeting",
+            "explicit new-account password setup",
+            "existing-name Welcome",
+            "nonempty password with no character-count policy",
+            "visitor countdown visible and card click returns to login",
+            "Shawn and Sun set their own first password",
+            "normalized host name assigns administrator role",
+            "configured host requires its chosen password",
+            "stale initial setup cannot overwrite a configured password",
+            "small trackpad packets accumulate",
+            "collapsed cards cannot scroll vertically",
+            "scoped non-passive listener disposes on unmount",
+            "Ctrl pinch zoom stays native",
+            "initial session timeout opens login"
+          ]
+        },
+        {
+          "id": "trip-account-header",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "className=\"header-actions\"",
+          "selector": ".header-actions",
+          "variant": "member/admin account controls",
+          "states": [
+            "member favorites and picks",
+            "admin link",
+            "scoped session signout",
+            "mobile icon controls with count badges",
+            "expired session returns to login",
+            "small trackpad packets accumulate",
+            "collapsed cards cannot scroll vertically",
+            "scoped non-passive listener disposes on unmount",
+            "Ctrl pinch zoom stays native",
+            "initial session timeout opens login"
+          ]
+        }
+      ],
+      "uses": [],
+      "checks": [
+        "tests/trip-auth.test.mjs",
+        "docs/TRIP_AUTH.md",
+        "docs/ACCOUNT_ACCESS_2026_11.md",
+        "tests/trip-session.test.mjs",
+        "docs/MOBILE_STARTUP_2026_11.md"
+      ]
+    },
+    {
+      "id": "trip-voice",
+      "label": "Local AI trip host voice and text chat",
+      "patterns": [],
+      "customReason": "Native opt-in sound controls, one native chat dialog and explicit report confirmation reuse the trip theme, focus behavior and authenticated session. A catalogue voice-chat widget adds microphone behavior this trip-only text-and-playback surface does not need; no upstream package or code is copied.",
+      "implementation": {
+        "file": "app/trip-voice.tsx",
+        "anchor": "export function TripVoiceControl"
+      },
+      "styles": [
+        {
+          "file": "app/trip-voice.module.css",
+          "anchor": ".control {\n  position: relative;"
+        },
+        {
+          "file": "app/trip-voice.module.css",
+          "anchor": ".chat {\n  width: min(600px, calc(100vw - 32px));"
+        },
+        {
+          "file": "app/trip-voice.module.css",
+          "anchor": ".voiceSettings {\n  flex-shrink: 0;"
+        }
+      ],
+      "usages": [
+        {
+          "id": "trip-header-voice",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "<TripVoiceHost",
+          "selector": ".header-actions [data-trip-voice-phase]",
+          "variant": "local English trip host with opt-in speech and signed-in text chat",
+          "states": [
+            "enabled before sign-in",
+            "visitor without generation",
+            "successful favorite and vote additions only",
+            "twelve-second selection gap",
+            "loading",
+            "playing",
+            "visible AI disclosure and transcript",
+            "autoplay blocked with explicit replay",
+            "provider or configuration error with retry",
+            "muted request aborted and media released",
+            "hidden/pagehide interrupted without automatic resume",
+            "logout or identity switch cancels pending audio",
+            "320px narrow header",
+            "keyboard focus and native status output",
+            "first selection GETs one generic pre-generated MP3 without identity or prompt",
+            "one bounded generic Blob while enabled; cleared on mute/dispose",
+            "finite accepted-speech to native-play latency dataset while playing; no polling or physical-speaker claim",
+            "local loopback hosts only; public header has no voice control and public voice API/assets are denied",
+            "voice off by default without speech requests or media; signed-in interactions still record",
+            "first unheard account welcome after sign-in and intro",
+            "fixed excellent-choice reaction heard only once per account across cards, toggles and reloads",
+            "bounded per-account normalized heard-text and event-ID browser ledger",
+            "only successful native audio.play records heard content",
+            "blocked or failed playback remains retryable",
+            "assistant speech posts stored message ID only",
+            "actual shortened speech transcript shown with full text retained in chat",
+            "both spoken excerpt and original full reply deduplicate after successful play",
+            "no motion or frame loop; reduced-motion compatible",
+            "one initial visible-session tick and one visible heartbeat per minute",
+            "card-open, successful favorite and successful vote events record with sound off",
+            "background duration excluded; heartbeat/request pause on hidden",
+            "one quiet pagehide keepalive tick with stable retry ID",
+            "bounded32event session outbox and20message visible chat history",
+            "12second event and20second chat deadlines",
+            "identity change disposes media, timers, listeners and requests",
+            "20client mount/dispose cycles retain no timers and abort every active request",
+            "one header Voice button opens the native dialog without enabling speech",
+            "sound preference lives inside the dialog",
+            "chat or speech loading shows static named Thinking ellipsis and blocks writing/submission",
+            "memoized assistant owns chat/media state; opening or typing never rerenders the explorer or globe",
+            "stable card-open/selection ref preserves authenticated events",
+            "unchanged countdown ticks skip assistant rendering",
+            "sound-enabled proactive requests report Thinking and clear on reply, mute, hide or disposal"
+          ]
+        },
+        {
+          "id": "trip-chat-launch",
+          "file": "app/trip-voice.tsx",
+          "anchor": "aria-label=\"Open trip voice\"",
+          "selector": "button[aria-label=\"Open trip voice\"]",
+          "variant": "single native Voice dialog launcher with speech off or on",
+          "states": [
+            "one persistent header button",
+            "dialog opens without changing sound preference",
+            "visitor dialog has no question/report controls",
+            "native dialog expanded state",
+            "keyboard activation",
+            "mobile icon has stable accessible name"
+          ]
+        },
+        {
+          "id": "trip-chat-dialog",
+          "file": "app/trip-voice.tsx",
+          "anchor": "aria-labelledby=\"trip-chat-title\"",
+          "selector": "dialog[aria-labelledby=\"trip-chat-title\"]",
+          "variant": "native trip voice dialog with sound toggle, signed-in conversation, sources and explicit report drafts",
+          "states": [
+            "native modal focus containment",
+            "labeled question textarea with1000character limit",
+            "Send",
+            "empty prompt",
+            "bounded readable conversation log",
+            "full assistant reply with source titles and optional HTTPS links",
+            "loading",
+            "failure preserves question",
+            "explicit Retry question",
+            "native Escape leaves underlying card open",
+            "close restores Voice button focus",
+            "internal conversation pane scroll on small screens",
+            "report draft displayed before sending",
+            "no report created from rendering or generation",
+            "only explicit Ask Shawn sends existing report endpoint",
+            "in-flight report click guarded",
+            "confirmed Sent to Shawn state",
+            "speech failure keeps text answer readable",
+            "no animated or global body scrolling owner",
+            "sound on/off toggle inside dialog",
+            "chatBusy or speech loading displays static ellipsis with Thinking accessible name",
+            "question and Send disabled while thinking",
+            "delivered form submit guarded while thinking",
+            "mobile icon-only Send keeps explicit accessible name",
+            "visitor can inspect dialog without chat/report capability",
+            "proactive assistant generation blocks input with the same static Thinking ellipsis"
+          ]
+        },
+        {
+          "id": "trip-dialog-sound-toggle",
+          "file": "app/trip-voice.tsx",
+          "anchor": "className={styles.soundToggle}",
+          "selector": "dialog[aria-labelledby=\"trip-chat-title\"] button[aria-pressed]",
+          "variant": "native pressed sound preference inside the Voice dialog",
+          "states": [
+            "off by default",
+            "enabled",
+            "readable mobile label",
+            "explicit user toggle only",
+            "can mute while speech loads",
+            "no change to server session or voice availability gates"
+          ]
+        }
+      ],
+      "uses": [],
+      "checks": [
+        "tests/trip-voice-player.test.mjs",
+        "tests/vote-planning.test.mjs",
+        "docs/TRIP_VOICE_UI.md",
+        "tests/trip-voice.test.mjs",
+        "docs/TRIP_VOICE.md",
+        "tests/trip-voice-runtime.test.mjs",
+        "tests/trip-voice-scope.test.mjs",
+        "tests/trip-interaction-client.test.mjs",
+        "tests/trip-voice-ui.test.mjs",
+        "tests/trip-assistant.test.mjs",
+        "tests/trip-assistant-context.test.mjs",
+        "docs/ASSISTANT_LOCAL_0_3_0.md",
+        "tests/trip-voice-ownership.test.mjs",
+        "docs/VOICE_INPUT_PERFORMANCE_0_3_1.md"
+      ]
+    },
+    {
+      "id": "host-reviews",
+      "label": "Inline host comments and star ratings",
+      "patterns": [],
+      "customReason": "Native labeled radio groups, textareas and explicit save preserve accessible host review editing inside the existing cream detail card; no catalogue review editor matches this four-field authenticated workflow.",
+      "implementation": {
+        "file": "app/host-reviews.tsx",
+        "anchor": "export function HostReviews"
+      },
+      "styles": [
+        {
+          "file": "app/host-reviews.module.css",
+          "anchor": ".list {"
+        },
+        {
+          "file": "app/host-reviews.module.css",
+          "anchor": ".editor {"
+        }
+      ],
+      "usages": [
+        {
+          "id": "activity-host-reviews",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "<HostReviews",
+          "selector": ".detail-panel :is(form[aria-label^=\"Host comments for\"], ul[aria-label=\"Shawn and Sun comments\"])",
+          "variant": "canonical detail-card host reviews keyed by activity identity",
+          "states": [
+            "member read-only",
+            "host administrator edit",
+            "server-confirmed parent update",
+            "identity change cancels save"
+          ]
+        },
+        {
+          "id": "host-review-editor",
+          "file": "app/host-reviews.tsx",
+          "anchor": "aria-label={`Host comments for ${activity.title}`}",
+          "selector": "form[aria-label^=\"Host comments for\"]",
+          "variant": "Shawn or Sun editor with one explicit Save comments action",
+          "states": [
+            "independent unrated or 1\u20135 star radio groups",
+            "two labeled comment fields",
+            "10,000-character bounds",
+            "saving disables fields",
+            "trimmed null comments",
+            "confirmed successful save",
+            "failure preserves draft",
+            "malformed response rejected",
+            "12-second deadline",
+            "unmount abort and stale response suppression",
+            "narrow wrapping controls",
+            "keyboard radio selection",
+            "native status and alert"
+          ]
+        },
+        {
+          "id": "host-review-reader",
+          "file": "app/host-reviews.tsx",
+          "anchor": "aria-label=\"Shawn and Sun comments\"",
+          "selector": "ul[aria-label=\"Shawn and Sun comments\"]",
+          "variant": "two host comment and decorative star rows",
+          "states": [
+            "not rated yet",
+            "empty comment",
+            "existing comment",
+            "1\u20135 star accessible label",
+            "read-only member or visitor"
+          ]
+        }
+      ],
+      "uses": [],
+      "checks": [
+        "tests/host-reviews.test.mjs",
+        "tests/inline-host-reviews.test.mjs",
+        "tests/trip-community.test.mjs",
+        "docs/INLINE_HOST_REVIEWS_2026_11.md",
+        "docs/TRIP_COMMUNITY.md"
+      ]
+    },
+    {
+      "id": "trip-community",
+      "label": "Member reports, Shawn inbox and member preferences",
+      "patterns": [],
+      "customReason": "Native report form and one native dialog reuse the trip palette and focus behavior. The product requires a private Shawn-only inbox/member snapshot and identity-bound preference synchronization, rather than a catalogue member picker or animated chat widget.",
+      "implementation": {
+        "file": "app/trip-community.tsx",
+        "anchor": "export function CommunityControls"
+      },
+      "styles": [
+        {
+          "file": "app/trip-community.module.css",
+          "anchor": ".composer {"
+        },
+        {
+          "file": "app/trip-community.module.css",
+          "anchor": ".dialog {\n  width: min(760px, calc(100vw - 36px));"
+        },
+        {
+          "file": "app/trip-community.module.css",
+          "anchor": ".controls {\n  display: flex;"
+        }
+      ],
+      "usages": [
+        {
+          "id": "member-report-account",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "<ReportComposer key={user.id}",
+          "selector": ".account-menu form[aria-label=\"Report to Shawn\"]",
+          "variant": "every signed-in member can report directly above Sign out",
+          "states": [
+            "name-keyed request ownership",
+            "1\u20132000 trimmed characters",
+            "sending",
+            "saved",
+            "error retains draft",
+            "session expired",
+            "request disposal"
+          ]
+        },
+        {
+          "id": "shawn-community-header",
+          "file": "app/activity-explorer.tsx",
+          "anchor": "<CommunityControls user={user}",
+          "selector": ".header-actions :is(button[aria-label^=\"Reports\"], button[aria-label=\"Members and preferences\"])",
+          "variant": "Shawn-only report count and registered-member buttons",
+          "states": [
+            "Shawn administrator visible",
+            "Sun and ordinary member hidden",
+            "waits for intro readiness",
+            "first successful inbox read opens unread reports once per identity",
+            "explicit refresh on open",
+            "no polling",
+            "small-screen icon controls"
+          ]
+        },
+        {
+          "id": "member-report-form",
+          "file": "app/trip-community.tsx",
+          "anchor": "aria-label=\"Report to Shawn\"",
+          "selector": "form[aria-label=\"Report to Shawn\"]",
+          "variant": "native labeled textarea and send action",
+          "states": [
+            "keyboard accessible",
+            "busy disabled",
+            "accessible error and saved output",
+            "8-second request deadline",
+            "abort on unmount",
+            "Escape does not close underlying activity"
+          ]
+        },
+        {
+          "id": "shawn-reports-and-members-dialog",
+          "file": "app/trip-community.tsx",
+          "anchor": "aria-labelledby=\"community-title\"",
+          "selector": "dialog[aria-labelledby=\"community-title\"]",
+          "variant": "one native modal with report inbox or member/preference snapshot",
+          "states": [
+            "native top-layer focus containment",
+            "Escape and explicit close",
+            "trigger focus restored",
+            "loading",
+            "empty",
+            "error with retry",
+            "unread badge",
+            "dismiss leaves unread",
+            "explicit mark read up to 100 reports",
+            "read timestamp retained",
+            "member names and role",
+            "category interests",
+            "favorite activity titles",
+            "draft and submitted votes shown separately",
+            "internal pane scroll on narrow screens",
+            "no motion, timers or global body scroll changes"
+          ]
+        }
+      ],
+      "uses": [],
+      "checks": [
+        "tests/trip-community-client.test.mjs",
+        "tests/trip-community.test.mjs",
+        "docs/TRIP_COMMUNITY_UI_2026_11.md",
+        "docs/TRIP_COMMUNITY.md"
+      ]
+    }
+  ]
+}

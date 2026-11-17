@@ -1,0 +1,9 @@
+# Complete grid rows
+
+The prior fixed 15-card page was incorrect: at 1920×900 the grid had 391 px height and rendered five partially clipped third-row cards. The new page size comes from actual CSS columns, row height/gap, padding and the available grid height, capped at 15. Only complete rows render; remaining cards move to later pages. A 390 px mobile view naturally has fewer cards per page. Grid scrolling/scroll-offset bookkeeping was removed; native List gestures remain unchanged.
+
+`observeGridPageSize` owns one ResizeObserver while the grid is mounted, with a removable resize-event fallback. It measures CSS tracks rather than animated card bounds, bails after disposal, and keeps the first item approximately anchored when page size changes. The pager reserves its 36 px row even when invisible to prevent page-count/height feedback. A window that cannot fit one whole card shows a compact List/taller-window notice instead of clipped cards.
+
+Focused geometry/paging/observer/fallback tests are in `tests/activity-pagination.test.mjs`. Initial tests were red before the capacity/observer interfaces existed; all six now pass. At 1920×900 actual browser checks show ten cards, Page 1 of 12, zero outside-grid card bounds, and no grid/document scrolling after a wheel attempt. After paging, ten cards remain fully visible; detail/back preserves Page 2 of 12. At 1920×1080 all 15 fit, 390×844 fits three, and a 320×568 window shows the fallback notice with no clipped card. This supersedes the fixed 15-card/native-scroll behavior and earlier visual verdict in `GRID_PAGINATION_0_2_1.md`.
+
+The observer has no timer or animation loop; the existing finite card entrance and GPU owner are unchanged. Main local source files: `app/activity-explorer.tsx`, `app/globals.css` and `lib/activity-pagination.ts`. Responsive/resource evidence is in [the combined report](ASSISTANT_LOCAL_0_3_0.md). [Final screenshot](../.impeccable/review/whole-grid-rows-v0.3.0.jpg).

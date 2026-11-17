@@ -1,40 +1,36 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { sitePath } from '../lib/site-path';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
+const tripUrl = 'https://shawnai.win/ktravel';
+const shareImage = `${tripUrl}/trip/korea-night-map.png`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.SITE_URL ?? 'https://korean-events-nyc.shawn-kang.chatgpt.site',
-  ),
-  title: 'K-Scene NYC | 뉴욕 한국 공연·행사',
-  description:
-    '뉴욕과 근교의 한국 아티스트 공연, K-pop 콘서트, 문화 행사를 한눈에 확인하고 바로 예매하세요.',
-  icons: {
-    icon: '/k-scene-logo.jpg',
-    apple: '/k-scene-logo.jpg',
-  },
+  metadataBase: new URL(tripUrl),
+  title: 'K-trEk, without Shawn & Sun',
+  description: 'Explore, save and vote on ideas for our Korea trip.',
+  alternates: { canonical: tripUrl },
   openGraph: {
-    title: 'K-Scene NYC',
-    description: '뉴욕의 한국 공연과 이벤트',
-    images: [{ url: '/og.png', width: 1200, height: 630 }],
+    url: tripUrl,
+    siteName: 'K-trEk',
+    title: 'K-trEk, without Shawn & Sun',
+    description: 'Explore, save and vote on ideas for our Korea trip.',
+    images: [
+      {
+        url: shareImage,
+        width: 1672,
+        height: 941,
+        alt: 'Korea at night — K-trEk',
+      },
+    ],
     type: 'website',
-    locale: 'ko_KR',
+    locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'K-Scene NYC',
-    description: '뉴욕의 한국 공연과 이벤트',
-    images: ['/og.png'],
+    title: 'K-trEk, without Shawn & Sun',
+    description: 'Explore, save and vote on ideas for our Korea trip.',
+    images: [shareImage],
   },
 };
 
@@ -44,12 +40,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href={sitePath('/trip/fonts/noto-sans-kr.css')}
+        />
+        <link
+          rel="preload"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+          href={sitePath('/trip/fonts/noto-sans-kr-latin.woff2')}
+        />
+      </head>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

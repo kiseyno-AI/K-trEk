@@ -1,0 +1,78 @@
+{
+  "provenance": {
+    "description": "Recovered earliest successfully written inline NightMap SVG in this project; original stylized screen coordinates, not measured geography.",
+    "sourceFile": "app/page.tsx",
+    "sourceChangeAt": "2026-11-13T18:52:54.353Z",
+    "cssFile": "app/globals.css",
+    "cssChangeAt": "2026-11-13T18:54:23.445Z"
+  },
+  "viewBox": [0, 0, 100, 100],
+  "clusters": [
+    [43, 28, 10],
+    [47, 31, 5],
+    [54, 44, 6],
+    [61, 54, 5],
+    [67, 58, 8],
+    [77, 69, 12],
+    [50, 66, 6],
+    [39, 86, 7],
+    [70, 38, 4],
+    [32, 42, 4]
+  ],
+  "core": {
+    "fill": "#ffd98d",
+    "radius": 0.8,
+    "satelliteOffset": [2, -1],
+    "satelliteRadius": 0.3,
+    "dropShadowRadius": 2
+  },
+  "halo": {
+    "fill": "#f4c978",
+    "opacity": 0.07058823529411765,
+    "blur": 1.25
+  },
+  "twinkle": {
+    "minOpacity": 0.58,
+    "maxOpacity": 1,
+    "duration": 3.8,
+    "stagger": 0.17,
+    "easing": "ease-in-out",
+    "direction": "alternate"
+  },
+  "anchors": [
+    {
+      "id": "seoul",
+      "svg": [43, 28],
+      "longitude": 126.98,
+      "latitude": 37.57
+    },
+    {
+      "id": "busan",
+      "svg": [77, 69],
+      "longitude": 129.08,
+      "latitude": 35.18
+    },
+    {
+      "id": "jeju",
+      "svg": [39, 86],
+      "longitude": 126.53,
+      "latitude": 33.5
+    }
+  ],
+  "otherActivityAnchors": [
+    {
+      "id": "temple",
+      "svg": [67, 58]
+    },
+    {
+      "id": "yangyang",
+      "svg": [69, 25]
+    }
+  ],
+  "originalPaths": {
+    "mainland": "M39 9 54 12 61 18 67 21 69 29 64 36 69 45 76 53 78 62 73 72 63 78 54 74 48 68 43 61 35 58 32 49 35 41 31 33 34 25Z",
+    "jeju": "M32 84 40 81 48 84 44 89 34 89Z"
+  },
+  "lightMarkup": "{lights.map(([cx,cy,r], i) => <g key={i} className=\"city\" style={{ animationDelay: `${i * 170}ms` }}><circle cx={cx} cy={cy} r={r} className=\"halo\"/><circle cx={cx} cy={cy} r=\".8\" className=\"core\"/><circle cx={cx+2} cy={cy-1} r=\".3\" className=\"core\"/></g>)}",
+  "lightCSS": ".halo{fill:#f4c97812;filter:url(#glow)}\n.core{fill:#ffd98d;filter:drop-shadow(0 0 2px #ffd98d)}\n.city{animation:twinkle 3.8s ease-in-out infinite alternate}\n.city{opacity:0;animation:reveal 1s 1.4s forwards}\n@keyframes twinkle{to{opacity:.58}}"
+}
