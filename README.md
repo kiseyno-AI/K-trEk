@@ -13,11 +13,11 @@ A cinematic trip planner with a continuous night-map camera, experience cards, r
 - One uninterrupted globe → Korea → destination camera, with geographic outlines, city lights and route-aware labels.
 - Swipeable cards or a compact paginated grid across food, history, culture, nature, activities, shopping, nightlife and skin/beauty.
 - Select Seoul Station, Jongno 1-ga, Sinchon, Gangnam or Yangjae as the departure; fetch fresh driving, taxi-estimate and available bus/subway routes when it changes.
-- Name/password accounts, visitor browsing, favorites and a twenty-choice vote draft with a live deadline countdown.
-- Host comments and ratings, a card editor, member preferences and reports backed by D1.
+- Name/password accounts, visitor browsing, favorites and up to twenty choices submitted to D1, with a live deadline countdown.
+- Host comments and ratings, a card editor, member preferences and reports backed by D1. Shawn and Sun can open Votes for activity totals and each member’s submitted choices.
 - A local-only Voice/chat assistant with interaction context. Its providers require separate server-side configuration; it is not enabled on the public host.
 
-The checked-in candidate datasets contain 114 places. A fresh local setup starts with three illustrative samples; the expanded catalogue and import tools live in [`data/`](data) and [`scripts/`](scripts). Votes are account-scoped browser drafts/results; shared vote aggregation is not implemented. Actual database edits and participant records are not included in this repository.
+The checked-in candidate datasets contain 114 places. A fresh local setup starts with three illustrative samples; the expanded catalogue and import tools live in [`data/`](data) and [`scripts/`](scripts). Drafts are cached per account and synchronized to D1; submitted ballots are saved in D1 only by an explicit Submit/Update vote, and confirmed by the server. Updating replaces the member’s previous ballot rather than adding duplicate votes. Browser-only submissions from older versions must be submitted again. Actual database edits and participant records are not included in this repository.
 
 ## Screenshots
 
@@ -29,7 +29,7 @@ The checked-in candidate datasets contain 114 places. A fresh local setup starts
 
 <img src="docs/screenshots/mobile.jpg" alt="K-trEk mobile cards and category navigation" width="390">
 
-Screenshots show the local v0.3.3 implementation. The public site is released separately and may show an earlier version. Travel estimates are query-time values. Until [the initial import PR](https://github.com/kiseyno-AI/K-trEk/pull/1) is merged, run `git switch codex/k-trek-initial-review` after cloning to try this version locally.
+Screenshots show the local v0.3.3 implementation. The public site is released separately. Travel estimates are query-time values.
 
 ## Run locally
 
@@ -57,7 +57,7 @@ npm run ui:check
 git diff --check
 ```
 
-The initial import passes 287 tests locally. PRs run these checks in GitHub Actions; they do not deploy the site. Read [AGENTS.md](AGENTS.md) before making changes, and keep development on feature branches.
+The current suite passes 302 tests locally. PRs run these checks in GitHub Actions; they do not deploy the site. Read [AGENTS.md](AGENTS.md) before making changes, and keep development on feature branches.
 
 ## Project map
 

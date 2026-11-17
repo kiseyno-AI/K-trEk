@@ -19,6 +19,7 @@ import {
   type TripReport,
 } from '../lib/trip-community-client';
 import styles from './trip-community.module.css';
+import { HostVoteResults } from './host-vote-results';
 
 const dateFormat = new Intl.DateTimeFormat('en-US', {
   dateStyle: 'medium',
@@ -84,9 +85,15 @@ export function useMemberPreferences({
   const flushPreferences = useCallback(async () => {
     await sync.current?.flush();
   }, []);
+  const submitVote = useCallback(async (ids: string[]) => {
+    if (!sync.current)
+      throw new CommunityRequestError('Your choices are still loading. Please try again.');
+    return sync.current.submitVote(ids);
+  }, []);
   return {
     recordCategory,
     flushPreferences,
+    submitVote,
     syncError: syncStatus.owner === userId ? syncStatus.error : '',
   };
 }
@@ -183,10 +190,21 @@ export function CommunityControls(props: {
 }) {
   if (
     props.user?.role !== 'admin' ||
-    props.user.name.normalize('NFKC').toLowerCase() !== 'shawn'
+    !['shawn', 'sun'].includes(props.user.name.normalize('NFKC').toLowerCase())
   )
     return null;
-  return <ShawnCommunity key={props.user.id} {...props} />;
+  return (
+    <div className={styles.controls}>
+      <HostVoteResults
+        key={`${props.user.id}:votes`}
+        activities={props.activities}
+        ready={props.ready}
+        onSessionExpired={props.onSessionExpired}
+      />
+      {props.user.name.normalize('NFKC').toLowerCase() === 'shawn' &&
+        <ShawnCommunity key={props.user.id} {...props} />}
+    </div>
+  );
 }
 
 function ShawnCommunity({

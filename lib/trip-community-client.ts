@@ -26,6 +26,8 @@ export type TripMember = MemberPreferences & {
   favoriteIds: string[];
 };
 
+export type TripVoter = Pick<TripMember, 'id' | 'name' | 'submittedVoteIds'>;
+
 export class CommunityRequestError extends Error {
   readonly status: number;
   constructor(message: string, status = 0) {
@@ -91,6 +93,7 @@ export function createMemberPreferenceSync(options: {
   let writing = false;
   let currentRead: Promise<void> | null = null;
   let currentWrite: Promise<void> | null = null;
+  let currentVote: Promise<string[]> | null = null;
   let votesChanged = false;
   let saved = '';
   let timer: ReturnType<typeof setTimeout> | undefined;
@@ -176,18 +179,14 @@ export function createMemberPreferenceSync(options: {
           preferences.updatedAt !== null && !votesChanged
             ? [...stored.draftVoteIds]
             : choices.draftVoteIds,
-        submittedVoteIds:
-          preferences.updatedAt !== null && !votesChanged
-            ? [...stored.submittedVoteIds]
-            : choices.submittedVoteIds,
+        submittedVoteIds: [...stored.submittedVoteIds],
       };
       ready = true;
       options.onError('');
-      if (preferences.updatedAt !== null && !votesChanged)
-        options.onRestore({
-          draftVoteIds: choices.draftVoteIds,
-          submittedVoteIds: choices.submittedVoteIds,
-        });
+      options.onRestore({
+        draftVoteIds: choices.draftVoteIds,
+        submittedVoteIds: choices.submittedVoteIds,
+      });
       if (key(choices) !== saved) schedule();
     } catch (error) {
       failure(error);
@@ -200,6 +199,46 @@ export function createMemberPreferenceSync(options: {
   };
   startRead();
   return {
+    submitVote(ids: string[]): Promise<string[]> {
+      if (currentVote) return currentVote;
+      const submittedVoteIds = [...ids];
+      const previousWrite = currentWrite;
+      const operation = (async () => {
+        clearTimeout(timer);
+        if (!ready) startRead();
+        await currentRead;
+        if (previousWrite) await previousWrite;
+        if (disposed || !ready)
+          throw new CommunityRequestError('Your choices could not be loaded. Please try again.');
+        clearTimeout(timer);
+        const snapshot = { ...choices, submittedVoteIds };
+        writing = true;
+        try {
+          const { preferences } = await communityRequest<{ preferences: StoredMemberPreferences }>(
+            '/api/preferences', controller.signal,
+            { method: 'PUT', body: { ...snapshot, submitVote: true } },
+          );
+          if (disposed) throw new CommunityRequestError('Vote submission was canceled.');
+          if (!preferences || !Number.isFinite(preferences.updatedAt) ||
+            !Array.isArray(preferences.submittedVoteIds) ||
+            JSON.stringify(preferences.submittedVoteIds) !== JSON.stringify(submittedVoteIds))
+            throw new CommunityRequestError('The server did not confirm your vote. Please try again.');
+          choices = { ...choices, submittedVoteIds };
+          saved = key(snapshot);
+          options.onError('');
+          return [...submittedVoteIds];
+        } catch (error) {
+          failure(error);
+          throw error;
+        } finally {
+          writing = false;
+          if (!disposed && key(choices) !== saved) schedule();
+        }
+      })();
+      currentVote = operation.finally(() => { currentVote = null; });
+      currentWrite = currentVote.then(() => {}, () => {});
+      return currentVote;
+    },
     async flush() {
       clearTimeout(timer);
       if (!ready) await currentRead;

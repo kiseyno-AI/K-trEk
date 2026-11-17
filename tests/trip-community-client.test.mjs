@@ -7,6 +7,35 @@ import {
 
 const settle = () => new Promise((resolve) => setImmediate(resolve));
 
+void test('a submitted ballot is confirmed only after the database response, and a failed save stays failed', async (t) => {
+  const writes = [];
+  let finish;
+  t.mock.method(globalThis, 'fetch', async (_url, init) => {
+    if (init.method === 'GET') return Response.json({ preferences: {
+      categoryIds: [], draftVoteIds: ['one'], submittedVoteIds: [], updatedAt: 1,
+    } });
+    writes.push(JSON.parse(init.body));
+    return new Promise(resolve => { finish = resolve; });
+  });
+  const sync = createMemberPreferenceSync({
+    initialVotes: { draftVoteIds: ['one'], submittedVoteIds: [] },
+    onRestore() {}, onError() {},
+  });
+  t.after(() => sync.dispose());
+  await settle();
+  let confirmed = false;
+  const pending = sync.submitVote(['one']).then(ids => { confirmed = true; return ids; });
+  await settle();
+  assert.equal(confirmed, false);
+  assert.equal(writes[0].submitVote, true);
+  finish(Response.json({ preferences: { ...writes[0], updatedAt: 2 } }));
+  assert.deepEqual(await pending, ['one']);
+  const failed = sync.submitVote(['two']);
+  await settle();
+  finish(Response.json({ error: 'Database unavailable.' }, { status: 503 }));
+  await assert.rejects(failed, /Database unavailable/);
+});
+
 void test('stored votes restore before any write and do not seed over existing member choices', async (t) => {
   const requests = [];
   const restored = [];
@@ -381,7 +410,7 @@ void test('choices made during initial read are preserved, categories deduplicat
   sync.updateVotes(['fresh'], []);
   finishRead();
   await settle();
-  assert.deepEqual(restored, []);
+  assert.deepEqual(restored, [{ draftVoteIds: ['fresh'], submittedVoteIds: [] }]);
   t.mock.timers.tick(300);
   await settle();
   assert.deepEqual(writes[0], {

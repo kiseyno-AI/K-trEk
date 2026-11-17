@@ -298,6 +298,9 @@ export default function ActivityExplorer({
   const [favoriteIds, setFavoriteIds] = useState<string[]>([]);
   const [draftVoteIds, setDraftVoteIds] = useState<string[]>([]);
   const [submittedVoteIds, setSubmittedVoteIds] = useState<string[]>([]);
+  const [voteSaving, setVoteSaving] = useState(false);
+  const [voteError, setVoteError] = useState('');
+  const voteRequest = useRef<AbortController | null>(null);
   const [votesHydratedFor, setVotesHydratedFor] = useState<string | null>(null);
   const [category, setCategory] = useState('all');
   const [displayCategory, setDisplayCategory] = useState('all');
@@ -451,6 +454,8 @@ export default function ActivityExplorer({
       setFavoriteIds([]);
       setDraftVoteIds([]);
       setSubmittedVoteIds([]);
+      setVoteSaving(false);
+      setVoteError('');
       setVotesHydratedFor(null);
       setAccountError('');
       if (user) {
@@ -472,7 +477,6 @@ export default function ActivityExplorer({
         };
         setDraftVoteIds(readVotes(`korea-trip-draft-vote:${user.id}`));
         setVotesHydratedFor(user.id);
-        setSubmittedVoteIds(readVotes(`korea-trip-submitted-vote:${user.id}`));
         setFavoriteSaving(true);
         void fetch(sitePath('/api/favorites'), {
           cache: 'no-store',
@@ -501,6 +505,8 @@ export default function ActivityExplorer({
     return () => {
       controller.abort();
       favoriteRequest.current?.abort();
+      voteRequest.current?.abort();
+      voteRequest.current = null;
     };
   }, [user, availableActivityIds, expireSession]);
   const restorePreferences = useCallback((votes: {
@@ -509,11 +515,10 @@ export default function ActivityExplorer({
   }) => {
     if (!user) return;
     localStorage.setItem(`korea-trip-draft-vote:${user.id}`, JSON.stringify(votes.draftVoteIds));
-    localStorage.setItem(`korea-trip-submitted-vote:${user.id}`, JSON.stringify(votes.submittedVoteIds));
     setDraftVoteIds(votes.draftVoteIds);
     setSubmittedVoteIds(votes.submittedVoteIds);
   }, [user]);
-  const { recordCategory, syncError, flushPreferences } = useMemberPreferences({
+  const { recordCategory, syncError, flushPreferences, submitVote: saveVote } = useMemberPreferences({
     user,
     hydrated: Boolean(user && votesHydratedFor === user.id),
     draftVoteIds,
@@ -826,7 +831,7 @@ export default function ActivityExplorer({
     }
   };
   const toggleDraft = (id: string) => {
-    if (!user) return;
+    if (!user || voteRequest.current) return;
     // oxlint-disable-next-line react/react-compiler -- This clock read runs only in click handlers; the child action ref confuses purity inference.
     const next = remainingTime(Date.now()).expired
       ? draftVoteIds
@@ -852,13 +857,21 @@ export default function ActivityExplorer({
     setPicksOpen(false);
     queueMicrotask(() => returnFocus.current?.focus());
   };
-  const submitVote = () => {
-    if (user && draftVoteIds.length && !remainingTime(Date.now()).expired) {
-      localStorage.setItem(
-        `korea-trip-submitted-vote:${user.id}`,
-        JSON.stringify(draftVoteIds),
-      );
-      setSubmittedVoteIds(draftVoteIds);
+  const submitVote = async () => {
+    if (!user || voteRequest.current || !draftVoteIds.length || remainingTime(Date.now()).expired) return;
+    const request = new AbortController();
+    voteRequest.current = request;
+    setVoteSaving(true);
+    setVoteError('');
+    try {
+      const confirmed = await saveVote([...draftVoteIds]);
+      if (!request.signal.aborted) setSubmittedVoteIds(confirmed);
+    } catch (error) {
+      if (!request.signal.aborted)
+        setVoteError(error instanceof Error ? error.message : 'Your vote was not saved. Please try again.');
+    } finally {
+      if (!request.signal.aborted) setVoteSaving(false);
+      if (voteRequest.current === request) voteRequest.current = null;
     }
   };
 
@@ -1045,7 +1058,7 @@ export default function ActivityExplorer({
                     className="select"
                     aria-pressed={draftVoteIds.includes(detail.id)}
                     disabled={
-                      countdown.expired ||
+                      voteSaving || countdown.expired ||
                       (!draftVoteIds.includes(detail.id) &&
                         draftVoteIds.length >= MAX_VOTES)
                     }
@@ -1679,7 +1692,7 @@ export default function ActivityExplorer({
                           disabled={
                             picksMode === 'favorites'
                               ? favoriteSaving
-                              : countdown.expired
+                              : voteSaving || countdown.expired
                           }
                           onClick={() =>
                             picksMode === 'favorites'
@@ -1703,17 +1716,21 @@ export default function ActivityExplorer({
             </div>
             {picksMode === 'votes' && submittedVoteIds.length > 0 && (
               <p className="submitted" aria-live="polite">
-                <Check /> Demo vote submitted for {submittedVoteIds.length}{' '}
-                activities.
+                <Check /> Saved to the trip database: {submittedVoteIds.length}{' '}{submittedVoteIds.length === 1 ? 'activity' : 'activities'}.
               </p>
             )}
+            {picksMode === 'votes' && submittedVoteIds.length > 0 &&
+              (draftVoteIds.length !== submittedVoteIds.length || draftVoteIds.some(id => !submittedVoteIds.includes(id))) && (
+                <p>Draft changes are not submitted yet.</p>
+              )}
+            {picksMode === 'votes' && voteError && <p className="vote-error" role="alert">{voteError}</p>}
             {picksMode === 'votes' && (
               <button
                 className="submit"
-                disabled={!draftVoteIds.length || countdown.expired}
+                disabled={voteSaving || !draftVoteIds.length || countdown.expired}
                 onClick={submitVote}
               >
-                Submit vote <ArrowRight />
+                {voteSaving ? 'Saving vote…' : submittedVoteIds.length ? 'Update vote' : 'Submit vote'} <ArrowRight />
               </button>
             )}
             <button className="keep" onClick={closePicks}>

@@ -1,6 +1,7 @@
 import { createHash, randomUUID } from 'node:crypto';
 import { CATEGORIES, parseActivity } from './activities.ts';
 import { readAdminJson } from './admin-access.ts';
+import { MAX_VOTES, remainingTime } from './vote-planning.ts';
 import {
   normalizeTripName,
   tripRequestOrigin,
@@ -13,7 +14,9 @@ export type TripPreferences = {
   submittedVoteIds: string[];
   updatedAt: number | null;
 };
-export type TripPreferenceInput = Omit<TripPreferences, 'updatedAt'>;
+export type TripPreferenceInput = Omit<TripPreferences, 'updatedAt'> & {
+  submitVote?: boolean;
+};
 export type TripReport = {
   id: string;
   userId: string;
@@ -29,6 +32,7 @@ export type TripMember = TripUser & {
   submittedVoteIds: string[];
   favoriteIds: string[];
 };
+export type TripVoter = Pick<TripMember, 'id' | 'name' | 'submittedVoteIds'>;
 export type HostReviews = {
   shawn_comment: string | null;
   sun_comment: string | null;
@@ -233,8 +237,16 @@ export function createTripCommunityHandlers(
     members: guarded(async (request) => {
       if (request.method !== 'GET')
         return reply({ error: 'Method not allowed.' }, 405);
-      await member(request, 'shawn');
-      return reply({ members: await store.members() });
+      const votesOnly = new URL(request.url).searchParams.get('view') === 'votes';
+      await member(request, votesOnly ? 'hosts' : 'shawn');
+      const members = await store.members();
+      if (votesOnly) {
+        const votes: TripVoter[] = members
+          .filter((entry) => entry.submittedVoteIds.length > 0)
+          .map(({ id, name, submittedVoteIds }) => ({ id, name, submittedVoteIds }));
+        return reply({ votes });
+      }
+      return reply({ members });
     }),
     preferences: guarded(async (request) => {
       if (!['GET', 'PUT'].includes(request.method))
@@ -242,7 +254,13 @@ export function createTripCommunityHandlers(
       const user = await member(request);
       if (request.method === 'PUT') {
         const input = await body(request);
-        onlyKeys(input, ['categoryIds', 'draftVoteIds', 'submittedVoteIds']);
+        onlyKeys(input, [
+          'categoryIds', 'draftVoteIds', 'submittedVoteIds',
+          ...(Object.hasOwn(input, 'submitVote') ? ['submitVote'] : []),
+        ]);
+        if (Object.hasOwn(input, 'submitVote') && typeof input.submitVote !== 'boolean')
+          throw new CommunityError('Choose whether to confirm your vote.');
+        const submitVote = input.submitVote === true;
         const categories = stringList(
           input.categoryIds,
           Object.keys(CATEGORIES).length,
@@ -251,28 +269,34 @@ export function createTripCommunityHandlers(
         );
         const draft = stringList(
           input.draftVoteIds,
-          20,
+          MAX_VOTES,
           'Draft votes',
           activityId,
         );
         const submitted = stringList(
           input.submittedVoteIds,
-          20,
+          MAX_VOTES,
           'Submitted votes',
           activityId,
         );
+        if (submitVote && submitted.length === 0)
+          throw new CommunityError('Confirm at least one activity.');
         const published = new Set(await store.publishedIds());
-        if ([...draft, ...submitted].some((id) => !published.has(id)))
+        if ([...draft, ...(submitVote ? submitted : [])].some((id) => !published.has(id)))
           throw new CommunityError('Choose only published activities.');
         await limit(`preferences:${user.id}`, 120, 60000);
+        const savedAt = now();
+        if (submitVote && remainingTime(savedAt).expired)
+          throw new CommunityError('Voting has closed.', 409);
         await store.savePreferences(
           user.id,
           {
             categoryIds: categories,
             draftVoteIds: draft,
             submittedVoteIds: submitted,
+            submitVote,
           },
-          now(),
+          savedAt,
         );
       }
       return reply({ preferences: await store.preferences(user.id) });

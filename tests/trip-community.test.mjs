@@ -8,7 +8,7 @@ import { createTripCommunityStore } from '../lib/trip-community-store.ts';
 import { createTripAuthStore } from '../lib/trip-auth-store.ts';
 import { authenticateWithStore } from '../lib/trip-auth.ts';
 
-async function fixture() {
+async function fixture(initialNow = 1700000000000) {
   const db = new DatabaseSync(':memory:');
   db.exec('PRAGMA foreign_keys=ON;');
   const folder = new URL('../db/migrations/', import.meta.url);
@@ -42,7 +42,7 @@ async function fixture() {
       return Promise.all(statements.map((statement) => statement.run()));
     },
   };
-  let now = 1700000000000;
+  let now = initialNow;
   const cookies = {};
   for (const [name, role, token] of [
     ['Alex', 'member', '1'],
@@ -66,13 +66,15 @@ async function fixture() {
     );
   }
   const auth = createTripAuthStore(d1);
+  const store = createTripCommunityStore(d1);
   return {
     db,
+    store,
     cookies,
     advance: (ms) => {
       now += ms;
     },
-    handlers: createTripCommunityHandlers(createTripCommunityStore(d1), {
+    handlers: createTripCommunityHandlers(store, {
       authenticate: (request) => authenticateWithStore(request, auth, now),
       now: () => now,
     }),
@@ -96,6 +98,104 @@ function request(
     ...(body ? { body: JSON.stringify(body) } : {}),
   });
 }
+
+await test('ordinary preference sync cannot erase or replace a previously submitted ballot', async (t) => {
+  const { db, cookies, handlers } = await fixture();
+  t.after(() => db.close());
+  db.prepare(
+    'INSERT INTO trip_member_preferences(user_id,category_ids,draft_vote_ids,submitted_vote_ids,updated_at) VALUES(?,?,?,?,?)',
+  ).run('alex', '[]', '["busan"]', '["busan"]', 1700000000000);
+  for (const submittedVoteIds of [[], ['seoul']]) {
+    const response = await handlers.preferences(request('preferences', 'PUT', {
+      categoryIds: ['food'], draftVoteIds: ['seoul'], submittedVoteIds,
+    }, cookies.alex));
+    assert.equal(response.status, 200);
+    assert.deepEqual((await response.json()).preferences.submittedVoteIds, ['busan']);
+  }
+  const stored = await handlers.preferences(request('preferences', 'GET', null, cookies.alex));
+  assert.deepEqual((await stored.json()).preferences.submittedVoteIds, ['busan']);
+  const firstSync = await handlers.preferences(request('preferences', 'PUT', {
+    categoryIds: [], draftVoteIds: ['seoul'], submittedVoteIds: ['seoul'],
+  }, cookies.taylor));
+  assert.equal(firstSync.status, 200);
+  assert.deepEqual((await firstSync.json()).preferences.submittedVoteIds, [], 'autosync cannot create a ballot either');
+});
+
+await test('explicit confirmation saves up to twenty published choices and returns only the canonical stored ballot', async (t) => {
+  const { db, cookies, handlers } = await fixture();
+  t.after(() => db.close());
+  const choices = ['seoul', ...Array.from({ length: 19 }, (_, i) => `vote-place-${i}`)];
+  for (const id of choices.slice(1))
+    db.prepare('INSERT INTO activities(id,name_ko,name_en,published) VALUES(?,?,?,1)').run(id, id, id);
+  const confirmed = await handlers.preferences(request('preferences', 'PUT', {
+    categoryIds: ['food'], draftVoteIds: choices, submittedVoteIds: choices, submitVote: true,
+  }, cookies.alex));
+  assert.equal(confirmed.status, 200);
+  assert.deepEqual((await confirmed.json()).preferences, {
+    categoryIds: ['food'], draftVoteIds: choices, submittedVoteIds: choices, updatedAt: 1700000000000,
+  });
+  const stale = await handlers.preferences(request('preferences', 'PUT', {
+    categoryIds: ['history'], draftVoteIds: [], submittedVoteIds: [], submitVote: false,
+  }, cookies.alex));
+  assert.equal(stale.status, 200);
+  assert.deepEqual((await stale.json()).preferences.submittedVoteIds, choices);
+  const freshRead = await handlers.preferences(request('preferences', 'GET', null, cookies.alex));
+  assert.deepEqual((await freshRead.json()).preferences.submittedVoteIds, choices);
+});
+
+await test('server time closes explicit voting at the deadline without blocking ordinary preference sync', async (t) => {
+  const { db, cookies, handlers, advance } = await fixture(Date.parse('2027-01-16T04:59:59Z') - 1);
+  t.after(() => db.close());
+  const ballot = { categoryIds: [], draftVoteIds: ['seoul'], submittedVoteIds: ['seoul'], submitVote: true };
+  assert.equal((await handlers.preferences(request('preferences', 'PUT', ballot, cookies.alex))).status, 200);
+  advance(1);
+  const expired = await handlers.preferences(request('preferences', 'PUT', {
+    ...ballot, submittedVoteIds: ['busan'],
+  }, cookies.alex));
+  assert.equal(expired.status, 409);
+  assert.deepEqual((await (await handlers.preferences(request('preferences', 'GET', null, cookies.alex))).json()).preferences.submittedVoteIds, ['seoul']);
+  const autosync = await handlers.preferences(request('preferences', 'PUT', {
+    categoryIds: ['history'], draftVoteIds: [], submittedVoteIds: [],
+  }, cookies.alex));
+  assert.equal(autosync.status, 200);
+  assert.deepEqual((await autosync.json()).preferences.submittedVoteIds, ['seoul']);
+});
+
+await test('confirmed ballots reject empty, duplicate, hidden, oversized and forged submission payloads', async (t) => {
+  const { db, cookies, handlers } = await fixture();
+  t.after(() => db.close());
+  const ballot = { categoryIds: [], draftVoteIds: [], submittedVoteIds: ['seoul'], submitVote: true };
+  for (const invalid of [
+    { ...ballot, submittedVoteIds: [] },
+    { ...ballot, submittedVoteIds: ['seoul', 'seoul'] },
+    { ...ballot, submittedVoteIds: ['hidden'] },
+    { ...ballot, submittedVoteIds: ['missing'] },
+    { ...ballot, submittedVoteIds: Array.from({ length: 21 }, (_, i) => `vote-place-${i}`) },
+    { ...ballot, submitVote: 'true' }, { ...ballot, submitVote: 1 }, { ...ballot, submitVote: null },
+    { ...ballot, userId: 'shawn' },
+  ]) {
+    const response = await handlers.preferences(request('preferences', 'PUT', invalid, cookies.alex));
+    assert.equal(response.status, 400);
+  }
+  assert.equal((await handlers.preferences(request('preferences', 'PUT', ballot))).status, 401);
+  assert.deepEqual((await (await handlers.preferences(request('preferences', 'GET', null, cookies.alex))).json()).preferences.submittedVoteIds, []);
+});
+
+await test('the store atomically preserves explicit ballots whichever concurrent autosync is written first', async (t) => {
+  const { db, store } = await fixture();
+  t.after(() => db.close());
+  const autosync = { categoryIds: [], draftVoteIds: [], submittedVoteIds: [] };
+  await Promise.all([
+    store.savePreferences('alex', { ...autosync, submittedVoteIds: ['seoul'], submitVote: true }, 1700000000000),
+    store.savePreferences('alex', autosync, 1700000000001),
+  ]);
+  assert.deepEqual((await store.preferences('alex')).submittedVoteIds, ['seoul']);
+  await Promise.all([
+    store.savePreferences('taylor', { ...autosync, submittedVoteIds: ['seoul'] }, 1700000000000),
+    store.savePreferences('taylor', { ...autosync, submittedVoteIds: ['busan'], submitVote: true }, 1700000000001),
+  ]);
+  assert.deepEqual((await store.preferences('taylor')).submittedVoteIds, ['busan']);
+});
 
 await test('preferences are validated, persisted for the signed-in member and never expose another member selection', async () => {
   const { db, cookies, handlers } = await fixture();
@@ -124,7 +224,7 @@ await test('preferences are validated, persisted for the signed-in member and ne
     submittedVoteIds: ['busan'],
   };
   const saved = await handlers.preferences(
-    request('preferences', 'PUT', input, cookies.alex),
+    request('preferences', 'PUT', { ...input, submitVote: true }, cookies.alex),
   );
   assert.equal(saved.status, 200);
   assert.deepEqual((await saved.json()).preferences, {
@@ -314,6 +414,7 @@ await test('only Shawn receives registered members and their published preferenc
         categoryIds: ['food'],
         draftVoteIds: ['seoul'],
         submittedVoteIds: ['busan'],
+        submitVote: true,
       },
       cookies.alex,
     ),
@@ -364,6 +465,45 @@ await test('only Shawn receives registered members and their published preferenc
   assert.deepEqual(updated.draftVoteIds, []);
   assert.deepEqual(updated.favoriteIds, []);
   db.close();
+});
+
+await test('Shawn and Sun can read only nonempty published ballots through the private vote view', async (t) => {
+  const { db, cookies, handlers, store } = await fixture();
+  t.after(() => db.close());
+  assert.equal((await handlers.members(request('members?view=votes'))).status, 401);
+  for (const cookie of [cookies.alex, cookies.taylor])
+    assert.equal((await handlers.members(request('members?view=votes', 'GET', null, cookie))).status, 403);
+  for (const [cookie, choices] of [[cookies.alex, ['seoul', 'busan']], [cookies.taylor, ['busan']]]) {
+    const saved = await handlers.preferences(request('preferences', 'PUT', {
+      categoryIds: ['food'], draftVoteIds: ['seoul'], submittedVoteIds: choices, submitVote: true,
+    }, cookie));
+    assert.equal(saved.status, 200);
+  }
+  db.prepare("INSERT INTO trip_favorites(user_id,activity_id,created_at) VALUES('alex','seoul',1700000000000)").run();
+  for (const cookie of [cookies.shawn, cookies.sun]) {
+    const response = await handlers.members(request('members?view=votes', 'GET', null, cookie));
+    assert.equal(response.status, 200);
+    assert.equal(response.headers.get('Cache-Control'), 'no-store');
+    assert.equal(response.headers.get('Vary'), 'Cookie');
+    assert.deepEqual(await response.json(), { votes: [
+      { id: 'alex', name: 'Alex', submittedVoteIds: ['seoul', 'busan'] },
+      { id: 'taylor', name: 'Taylor', submittedVoteIds: ['busan'] },
+    ] });
+  }
+  assert.equal((await handlers.members(request('members', 'GET', null, cookies.sun))).status, 403);
+  assert.equal((await handlers.reports(request('reports', 'GET', null, cookies.sun))).status, 403);
+  db.prepare("UPDATE activities SET published=0 WHERE id='busan'").run();
+  const filtered = await handlers.members(request('members?view=votes', 'GET', null, cookies.sun));
+  assert.deepEqual(await filtered.json(), { votes: [{ id: 'alex', name: 'Alex', submittedVoteIds: ['seoul'] }] });
+  db.prepare("UPDATE activities SET published=0 WHERE id='seoul'").run();
+  assert.deepEqual(await (await handlers.members(request('members?view=votes', 'GET', null, cookies.shawn))).json(), { votes: [] });
+  for (const user of [
+    { id: 'sun', name: 'Sun', role: 'member' },
+    { id: 'alex', name: 'Alex', role: 'admin' },
+  ]) {
+    const restricted = createTripCommunityHandlers(store, { authenticate: async () => user });
+    assert.equal((await restricted.members(request('members?view=votes'))).status, 403);
+  }
 });
 
 await test('Shawn and Sun can update only the four host review fields on a published activity', async () => {
@@ -578,7 +718,7 @@ await test('list limits and persistent report throttling reject spam without ins
         (_, index) => `activity-${index}`,
       ),
     },
-    { ...input, submittedVoteIds: ['missing'] },
+    { ...input, submittedVoteIds: ['missing'], submitVote: true },
   ]) {
     assert.equal(
       (

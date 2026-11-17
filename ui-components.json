@@ -30,7 +30,7 @@
   "sources": [
     {
       "file": "app/activity-explorer.tsx",
-      "sha256": "832df1d00a6b1c2301941c47ddc7d5c77ae4232927055edefa9ea3e61ac3cf92",
+      "sha256": "14edbd7549a584a6699ec68eded094fac52757be37c1870a0529d94a02e4d088",
       "components": [
         "activity-explorer",
         "night-map",
@@ -157,7 +157,7 @@
     },
     {
       "file": "app/globals.css",
-      "sha256": "c610cb199aa9dc25dd1ed655ce66e9a93c9a721e2c51588d4c305b0c1c594968",
+      "sha256": "4f6f6d21f83bce11055d2ec8ecbfe03cfd8542453924276710458d3441294b42",
       "components": [
         "activity-explorer",
         "night-map",
@@ -219,7 +219,7 @@
       "components": [
         "trip-community"
       ],
-      "sha256": "cba0b49fa44f2b31396053069be345dd19ee678c729a6bc0daf43be20979d7bf"
+      "sha256": "1abf092d5307590ceff6315ac08b7ae24b9f427a8faa6078b2ef44c11b89fcf1"
     },
     {
       "file": "app/trip-login.tsx",
@@ -366,19 +366,19 @@
       "file": "lib/trip-community-client.ts",
       "components": [],
       "supportReason": "Browser-safe bounded authenticated JSON and identity-owned preference synchronization: read before write, restore/seed after hydration, explicit unique category choices, finite debounce, serialized latest-wins writes, logout flush and abort/disposal; no UI root.",
-      "sha256": "a1eebec14d61905137a87bbfb9ddd18f2957b0a6f59ddb5a95a492e6f7d78f6c"
+      "sha256": "3b11c6e38da18f033948b6471959cb90bea2c0be2af9428ff207154659605c9e"
     },
     {
       "file": "lib/trip-community-store.ts",
       "components": [],
       "supportReason": "Server-only prepared D1 persistence for member preferences, bounded unread-first reports, registered-member snapshots and four-field published-activity review updates; no component roots.",
-      "sha256": "978a8385ca3f3340fafd1ec9168066d10fbd114be721f40e1b6f539fdddcf6b3"
+      "sha256": "432dba7dde77d79ad3d050dd1f0ab80d49c2bd39e22de473df1466bc1fda32b9"
     },
     {
       "file": "lib/trip-community.ts",
       "components": [],
       "supportReason": "Server-only community public request handlers: authoritative session/normalized host permissions, exact bounded input validation, persistent rate limits, generic errors and private responses for reports, preferences, members and inline reviews.",
-      "sha256": "6c8648030759ec6c78a8a20ef5975a1bd237816dd1ed1a39105691c07323d918"
+      "sha256": "646a2ad6178209e1eeb79748c6d18e12a8cdce2b116e1eaa69ed55bd1e8c5375"
     },
     {
       "file": "lib/trip-interaction-client.ts",
@@ -433,6 +433,13 @@
       "sha256": "daeea5d86a2830257ef0186a97d1b11e73b801c5d16a008554f1fd9f60f841bd",
       "components": [],
       "supportReason": "Shared twenty-pick limit, New York deadline arithmetic and km/mile formatting; no timer ownership."
+    },
+    {
+      "file": "app/host-vote-results.tsx",
+      "sha256": "1a735132ef8fc902f7b165debd27b519346fc2ab8424c6d47d3f0cdfd44c7399",
+      "components": [
+        "trip-community"
+      ]
     }
   ],
   "components": [
@@ -952,7 +959,7 @@
           "file": "app/activity-explorer.tsx",
           "anchor": "aria-labelledby=\"picks-title\"",
           "selector": ".backdrop aside",
-          "variant": "browser-local demo vote",
+          "variant": "account-owned draft and server-confirmed D1 ballot",
           "states": [
             "empty",
             "draft",
@@ -964,13 +971,21 @@
             "open saved-card details",
             "remove a heart",
             "per-account local vote draft",
-            "visitor drawer unavailable"
+            "visitor drawer unavailable",
+            "saving disables edits and duplicate submission",
+            "server acknowledgement required for success",
+            "save failure retains draft and enables retry",
+            "draft edits distinct from submitted ballot",
+            "server canonical restore across sessions"
           ]
         }
       ],
       "uses": [],
       "checks": [
-        "scripts/prototype-smoke.mjs"
+        "scripts/prototype-smoke.mjs",
+        "tests/trip-voice-ownership.test.mjs",
+        "tests/trip-community-client.test.mjs",
+        "docs/VOTE_PERSISTENCE_0_3_5.md"
       ]
     },
     {
@@ -1400,9 +1415,9 @@
     },
     {
       "id": "trip-community",
-      "label": "Member reports, Shawn inbox and member preferences",
+      "label": "Member reports, preferences and host group votes",
       "patterns": [],
-      "customReason": "Native report form and one native dialog reuse the trip palette and focus behavior. The product requires a private Shawn-only inbox/member snapshot and identity-bound preference synchronization, rather than a catalogue member picker or animated chat widget.",
+      "customReason": "Native report form and one native dialog reuse the trip palette and focus behavior. The product requires a private Shawn-only inbox/member snapshot and identity-bound preference synchronization, rather than a catalogue member picker or animated chat widget. A separate native host vote-results dialog reuses the same styles and request helper without new motion or polling.",
       "implementation": {
         "file": "app/trip-community.tsx",
         "anchor": "export function CommunityControls"
@@ -1493,6 +1508,28 @@
             "internal pane scroll on narrow screens",
             "no motion, timers or global body scroll changes"
           ]
+        },
+        {
+          "id": "host-vote-results",
+          "file": "app/host-vote-results.tsx",
+          "anchor": "aria-labelledby=\"vote-results-title\"",
+          "selector": "dialog[aria-labelledby=\"vote-results-title\"]",
+          "variant": "Shawn and Sun aggregate and named submitted ballots",
+          "states": [
+            "host-only launcher",
+            "loading on open",
+            "empty",
+            "activity totals",
+            "per-member selections",
+            "error and explicit retry",
+            "401 expiry",
+            "8-second request deadline",
+            "abort on close and unmount",
+            "Escape and backdrop dismissal",
+            "focus restored",
+            "existing internal pane scroll",
+            "no new animation or polling"
+          ]
         }
       ],
       "uses": [],
@@ -1500,7 +1537,9 @@
         "tests/trip-community-client.test.mjs",
         "tests/trip-community.test.mjs",
         "docs/TRIP_COMMUNITY_UI_2026_11.md",
-        "docs/TRIP_COMMUNITY.md"
+        "docs/TRIP_COMMUNITY.md",
+        "tests/host-vote-results.test.mjs",
+        "docs/VOTE_PERSISTENCE_0_3_5.md"
       ]
     }
   ]
