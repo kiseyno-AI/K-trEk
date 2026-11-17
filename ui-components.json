@@ -412,9 +412,9 @@
     },
     {
       "file": "lib/trip-voice-scope.ts",
-      "sha256": "78922e66e173c76455903f23bfc28250265b7eed16365fc6b459a0fa72c49506",
+      "sha256": "824b6771980ee04386f320ae5aead28735f41ef624c4279b13149b51e662d0a8",
       "components": [],
-      "supportReason": "Shared loopback-host gate keeps experimental voice controls and API unavailable through the public proxy."
+      "supportReason": "Shared production kill switch and explicit loopback-development gate for the page and assistant/voice endpoints; no UI root."
     },
     {
       "file": "lib/trip-voice.ts",
@@ -1228,7 +1228,10 @@
             "memoized assistant owns chat/media state; opening or typing never rerenders the explorer or globe",
             "stable card-open/selection ref preserves authenticated events",
             "unchanged countdown ticks skip assistant rendering",
-            "sound-enabled proactive requests report Thinking and clear on reply, mute, hide or disposal"
+            "sound-enabled proactive requests report Thinking and clear on reply, mute, hide or disposal",
+            "production mode never mounts Voice even behind localhost proxy",
+            "production page/API share a hard deny before assistant work",
+            "disabled Voice creates zero player or interaction-client owners"
           ]
         },
         {
@@ -1312,7 +1315,8 @@
         "tests/trip-assistant-context.test.mjs",
         "docs/ASSISTANT_LOCAL_0_3_0.md",
         "tests/trip-voice-ownership.test.mjs",
-        "docs/VOICE_INPUT_PERFORMANCE_0_3_1.md"
+        "docs/VOICE_INPUT_PERFORMANCE_0_3_1.md",
+        "docs/PUBLIC_VOICE_OFF_0_3_4.md"
       ]
     },
     {

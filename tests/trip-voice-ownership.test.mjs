@@ -19,7 +19,7 @@ const activity = toActivity(parseActivity({
 
 // A small hook owner/reconciliation harness: browser, media and network owners
 // are replaced; actual page/control callbacks, memo and state ownership run.
-async function mountedPage({ fetch: fetchMock } = {}) {
+async function mountedPage({ fetch: fetchMock, voiceEnabled = true } = {}) {
   let current;
   let clock = Date.parse('2026-11-16T12:00:00Z');
   const dirty = new Set(), effects = [], microtasks = [], timers = new Map();
@@ -110,8 +110,14 @@ async function mountedPage({ fetch: fetchMock } = {}) {
       };
       if (id === '../lib/trip-session') return { readTripSession: async () => ({ id: 'member-one', name: 'Alex', role: 'member' }) };
       if (id === '../lib/site-path') return { sitePath: (value) => value };
-      if (id === '../lib/trip-voice-player') return { createTripVoicePlayer: () => media };
-      if (id === '../lib/trip-interaction-client') return { createTripInteractionClient: () => client };
+      if (id === '../lib/trip-voice-player') return { createTripVoicePlayer: () => {
+        counts.set('voice player', (counts.get('voice player') ?? 0) + 1);
+        return media;
+      } };
+      if (id === '../lib/trip-interaction-client') return { createTripInteractionClient: () => {
+        counts.set('voice interaction client', (counts.get('voice interaction client') ?? 0) + 1);
+        return client;
+      } };
       if (!id.startsWith('.')) return require(id);
       let target = path.resolve(path.dirname(file), id);
       if (!path.extname(target)) target += id === './trip-voice' ? '.tsx' : '.ts';
@@ -136,7 +142,7 @@ async function mountedPage({ fetch: fetchMock } = {}) {
     return owner;
   }
   const App = load(path.join(root, 'app/activity-explorer.tsx')).default;
-  const tree = reconcile(React.createElement(App, { activities: [activity], origin: DEFAULT_TRIP_ORIGIN, voiceEnabled: true }));
+  const tree = reconcile(React.createElement(App, { activities: [activity], origin: DEFAULT_TRIP_ORIGIN, voiceEnabled }));
   async function settle() {
     for (let i = 0; i < 24; i++) {
       while (effects.length) effects.shift()();
@@ -163,6 +169,19 @@ async function mountedPage({ fetch: fetchMock } = {}) {
     tick: async () => { clock += 1000; intervals.forEach((callback) => callback()); await settle(); },
   };
 }
+
+await test('disabled Voice never creates audio or interaction owners during card navigation and voting', async () => {
+  const view = await mountedPage({ voiceEnabled: false });
+  assert.equal(view.find((node) => node.props['aria-label'] === 'Open trip voice'), null);
+  view.find((node) => node.type === 'article' && node.props['data-activity-id'] === activity.id).props.onClick({ currentTarget: null });
+  await view.settle();
+  view.find((node) => node.type === 'button' && node.props.className === 'select').props.onClick();
+  await view.tick();
+  assert.equal(view.count('TripVoiceHost'), 0);
+  assert.equal(view.count('voice player'), 0);
+  assert.equal(view.count('voice interaction client'), 0);
+  assert.deepEqual(view.events, []);
+});
 
 await test('opening and typing in Voice update only the assistant owner, leaving the page and globe untouched', async () => {
   const view = await mountedPage();

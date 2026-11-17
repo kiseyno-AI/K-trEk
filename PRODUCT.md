@@ -55,6 +55,8 @@ Support keyboard navigation, visible focus, touch targets, readable contrast, re
 
 ## Current travel and voting presentation
 
+Production v0.3.4 disables the entire Voice/chat assistant through the shared production gate: no control, hook, audio/interaction owners or provider requests. Local loopback development retains Voice. See [public Voice off](docs/PUBLIC_VOICE_OFF_0_3_4.md).
+
 All text uses self-hosted Noto Sans KR. Category navigation is centered in the same viewport frame as its title. Voting accepts20draft selections and closes at2027-01-15 23:59:59 America/New_York; a segmented digital countdown shows total hours, minutes and seconds, ticking once per second while the document is active, stops atzero, and preserves saved vote results. Public interface labels remain English.
 
 In local v0.3.3, members can select Seoul Station, Jongno 1-ga (Jonggak Station meeting point), Sinchon Station (Line 2), Gangnam Station or Yangjae Station as Departure inside a card. Selection lasts for the current page visit, including other cards. Every change clears stale roads/totals, cancels superseded requests and fetches new driving/transit estimates; origin markers and the existing continuous camera use the same selected coordinates. A server-configured custom default remains available. [Departure verification](docs/DEPARTURE_SELECTION_0_3_3.md).
