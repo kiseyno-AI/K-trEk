@@ -45,6 +45,9 @@ export default defineConfig(async () => {
   const { cloudflare } = await import('@cloudflare/vite-plugin');
 
   return {
+    cacheDir: process.env.KTRAVEL_DEV_STATE_PATH
+      ? `${process.env.KTRAVEL_DEV_STATE_PATH}/node_modules/.vite`
+      : undefined,
     css: { postcss: { plugins: [tailwindcss()] } },
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
@@ -53,6 +56,10 @@ export default defineConfig(async () => {
       vinext(),
       sites(),
       cloudflare({
+        inspectorPort: process.env.KTRAVEL_DEV_STATE_PATH ? false : undefined,
+        persistState: {
+          path: process.env.KTRAVEL_DEV_STATE_PATH || '.wrangler/local-state',
+        },
         viteEnvironment: { name: 'rsc', childEnvironments: ['ssr'] },
         config: localBindingConfig,
       }),

@@ -1,0 +1,756 @@
+{
+  "checked_at": "2026-11-15",
+  "description": "Actual clinic/branch photographs from official public sources. Reuse permission remains unverified; these are not licensed or owned assets.",
+  "photos": [
+    {
+      "key": "clinic-oracle",
+      "image_url": "https://cdn.imweb.me/upload/S20240109cd40ec667ea67/d7d02dc77d116.jpg",
+      "image_rights": "official_reference",
+      "sourcePage": "https://en.cdoracleclinic.com/",
+      "originalUrl": "https://cdn.imweb.me/upload/S20240109cd40ec667ea67/d7d02dc77d116.jpg",
+      "downloadUrl": "https://cdn.imweb.me/upload/S20240109cd40ec667ea67/d7d02dc77d116.jpg",
+      "sourceTitle": "Cheongdam OracleClinic facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://en.cdoracleclinic.com/",
+      "author": "Photographer not identified; published by Cheongdam OracleClinic",
+      "attribution": "Cheongdam OracleClinic · official source reference · reuse license unverified",
+      "changes": "Unmodified remote image reference; source website controls availability.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://en.cdoracleclinic.com/",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "612 Seolleung-ro, Gangnam-gu, Seoul",
+        "sourcePage": "https://en.cdoracleclinic.com/",
+        "details": "Official homepage lists the Cheongdam address and publishes this clinic-space image in its location section."
+      },
+      "capture": {
+        "method": "direct_remote_reference",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/jpeg; charset=utf-8",
+            "finalUrl": "https://cdn.imweb.me/upload/S20240109cd40ec667ea67/d7d02dc77d116.jpg",
+            "referer": null,
+            "bytes": 291949,
+            "signature": "ffd8ffe10018457869660000"
+          },
+          {
+            "status": 200,
+            "contentType": "image/jpeg; charset=utf-8",
+            "finalUrl": "https://cdn.imweb.me/upload/S20240109cd40ec667ea67/d7d02dc77d116.jpg",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 291949,
+            "signature": "ffd8ffe10018457869660000"
+          }
+        ]
+      },
+      "width": 1920,
+      "height": 315,
+      "bytes": 291949,
+      "sourcePublisher": "Cheongdam OracleClinic"
+    },
+    {
+      "key": "clinic-cnp-dogok",
+      "image_url": "/trip/photos/clinic-cnp-dogok.webp",
+      "image_rights": "official_reference",
+      "sourcePage": "https://www.cnpskin.com/pc/cnp/community/news/notice.html?bmain=view&jijummid=cnpskin26&page=98&uid=17252",
+      "originalUrl": "https://www.cnpskin.com/cheditor/attach/201507/20150715164654_dfbroexv.jpg",
+      "downloadUrl": "https://www.cnpskin.com/cheditor/attach/201507/20150715164654_dfbroexv.jpg",
+      "sourceTitle": "CNP Skin Clinic Dogok Yangjae facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://www.cnpskin.com/pc/cnp/community/news/notice.html?bmain=view&jijummid=cnpskin26&page=98&uid=17252",
+      "author": "Photographer not identified; published by CNP Skin Clinic Dogok Yangjae",
+      "attribution": "CNP Skin Clinic Dogok Yangjae · official source reference · reuse license unverified",
+      "changes": "Cropped the two actual building photographs from the official directions guide; converted to WebP.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://www.cnpskin.com/pc/cnp/community/news/notice.html?bmain=view&jijummid=cnpskin26&page=98&uid=17252",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "3F Mokwon Building, 248 Gangnam-daero, Gangnam-gu, Seoul",
+        "sourcePage": "https://www.cnpskin.com/pc/cnp/community/news/notice.html?bmain=view&jijummid=cnpskin26&page=98&uid=17252",
+        "details": "Official Dogok Yangjae directions post shows the CNP sign on Mokwon Building; the current official English branch page still lists 248 Gangnam-daero, 3F.",
+        "additionalSources": [
+          "https://www.cnpskin.com/pc/cnp-eng/about-us/branches.html?bmain=view&uid=28"
+        ]
+      },
+      "capture": {
+        "method": "official_source_crop",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "region": {
+          "left": 124,
+          "top": 584,
+          "width": 566,
+          "height": 376
+        },
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "sha256": "951eeab9c9158f701254965f98d7f53dbe92a6dfa17ce671a6c47ee7dc7df090",
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://www.cnpskin.com/cheditor/attach/201507/20150715164654_dfbroexv.jpg",
+            "referer": null,
+            "bytes": 241070,
+            "signature": "ffd8ffe000104a4649460001"
+          },
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://www.cnpskin.com/cheditor/attach/201507/20150715164654_dfbroexv.jpg",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 241070,
+            "signature": "ffd8ffe000104a4649460001"
+          }
+        ]
+      },
+      "width": 566,
+      "height": 376,
+      "bytes": 52056,
+      "sourcePublisher": "CNP Skin Clinic Dogok Yangjae"
+    },
+    {
+      "key": "clinic-leaders-cheongdam",
+      "image_url": "https://leaders-eng.com/img/main-sect-network-img12.jpg",
+      "image_rights": "official_reference",
+      "sourcePage": "https://leaders-eng.com/",
+      "originalUrl": "https://leaders-eng.com/img/main-sect-network-img12.jpg",
+      "downloadUrl": "https://leaders-eng.com/img/main-sect-network-img12.jpg",
+      "sourceTitle": "LEADERS Dermatology Cheongdam Luxury Street facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://leaders-eng.com/",
+      "author": "Photographer not identified; published by LEADERS Dermatology Cheongdam Luxury Street",
+      "attribution": "LEADERS Dermatology Cheongdam Luxury Street · official source reference · reuse license unverified",
+      "changes": "Unmodified remote image reference; source website controls availability.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://leaders-eng.com/",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "3F Diana Building, 445 Apgujeong-ro, Gangnam-gu, Seoul",
+        "sourcePage": "https://leaders-eng.com/",
+        "details": "Official Network section identifies this exact image as CheongdamLuxuryStreet and its modal lists 445 Apgujeong-ro; distinct from the Cheongdam Dosan-daero branch."
+      },
+      "capture": {
+        "method": "direct_remote_reference",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://leaders-eng.com/img/main-sect-network-img12.jpg",
+            "referer": null,
+            "bytes": 50614,
+            "signature": "ffd8ffee002141646f626500"
+          },
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://leaders-eng.com/img/main-sect-network-img12.jpg",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 50614,
+            "signature": "ffd8ffee002141646f626500"
+          }
+        ]
+      },
+      "width": 406,
+      "height": 430,
+      "bytes": 50614,
+      "sourcePublisher": "LEADERS Dermatology Cheongdam Luxury Street"
+    },
+    {
+      "key": "clinic-renewme-dongdaemun",
+      "image_url": "https://english.renewmi.com/images/about/dm_big_picture_01.webp",
+      "image_rights": "official_reference",
+      "sourcePage": "https://english.renewmi.com/about/dongdaemun/",
+      "originalUrl": "https://english.renewmi.com/images/about/dm_big_picture_01.webp",
+      "downloadUrl": "https://english.renewmi.com/images/about/dm_big_picture_01.webp",
+      "sourceTitle": "Renewme Skin Clinic Dongdaemun facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://english.renewmi.com/about/dongdaemun/",
+      "author": "Photographer not identified; published by Renewme Skin Clinic Dongdaemun",
+      "attribution": "Renewme Skin Clinic Dongdaemun · official source reference · reuse license unverified",
+      "changes": "Unmodified remote image reference; source website controls availability.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://english.renewmi.com/about/dongdaemun/",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "2F Giseung Plus Building, 251 Eulji-ro, Jung-gu, Seoul",
+        "sourcePage": "https://english.renewmi.com/about/dongdaemun/",
+        "details": "Official Dongdaemun Clinic Tour labels this photograph Reception Desk and gives 251 Eulji-ro."
+      },
+      "capture": {
+        "method": "direct_remote_reference",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/webp",
+            "finalUrl": "https://english.renewmi.com/images/about/dm_big_picture_01.webp",
+            "referer": null,
+            "bytes": 27668,
+            "signature": "524946460c6c000057454250"
+          },
+          {
+            "status": 200,
+            "contentType": "image/webp",
+            "finalUrl": "https://english.renewmi.com/images/about/dm_big_picture_01.webp",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 27668,
+            "signature": "524946460c6c000057454250"
+          }
+        ]
+      },
+      "width": 974,
+      "height": 609,
+      "bytes": 27668,
+      "sourcePublisher": "Renewme Skin Clinic Dongdaemun"
+    },
+    {
+      "key": "clinic-banobagi",
+      "image_url": "https://english.skinbanobagi.com/app/layout/web/images_skin/main_visual01-1.jpg",
+      "image_rights": "official_reference",
+      "sourcePage": "https://english.skinbanobagi.com/",
+      "originalUrl": "https://english.skinbanobagi.com/app/layout/web/images_skin/main_visual01-1.jpg",
+      "downloadUrl": "https://english.skinbanobagi.com/app/layout/web/images_skin/main_visual01-1.jpg",
+      "sourceTitle": "BANOBAGI Dermatologic Clinic facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://english.skinbanobagi.com/",
+      "author": "Photographer not identified; published by BANOBAGI Dermatologic Clinic",
+      "attribution": "BANOBAGI Dermatologic Clinic · official source reference · reuse license unverified",
+      "changes": "Unmodified remote image reference; source website controls availability.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://english.skinbanobagi.com/",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "Doonam Building, 219 Bongeunsa-ro, Gangnam-gu, Seoul",
+        "sourcePage": "https://english.skinbanobagi.com/",
+        "details": "The official hero photograph shows the BANOBAGI and Korean dermatology clinic signs; the official clinic location page lists 219 Bongeunsa-ro. The Nonhyeon 2023 AVEC project independently matches this building; no Yeoksam 503 branch photo was used.",
+        "additionalSources": [
+          "https://english.skinbanobagi.com/web/skinSub/infomation.php",
+          "https://avec.or.kr/%EB%85%BC%ED%98%84-%EB%B0%94%EB%85%B8%EB%B0%94%EA%B8%B0-%ED%94%BC%EB%B6%80%EA%B3%BC/"
+        ]
+      },
+      "capture": {
+        "method": "direct_remote_reference",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://english.skinbanobagi.com/app/layout/web/images_skin/main_visual01-1.jpg",
+            "referer": null,
+            "bytes": 1299258,
+            "signature": "ffd8ffe10018457869660000"
+          },
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://english.skinbanobagi.com/app/layout/web/images_skin/main_visual01-1.jpg",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 1299258,
+            "signature": "ffd8ffe10018457869660000"
+          }
+        ]
+      },
+      "width": 1920,
+      "height": 1210,
+      "bytes": 1299258,
+      "sourcePublisher": "BANOBAGI Dermatologic Clinic"
+    },
+    {
+      "key": "clinic-arumdaun-nara",
+      "image_url": "/trip/photos/clinic-arumdaun-nara.webp",
+      "image_rights": "official_reference",
+      "sourcePage": "https://medicaltour.gangnam.go.kr/medical/clinic/view.do?medical_seq=48",
+      "originalUrl": "https://medicaltour.gangnam.go.kr/file/access.do?program=medical.image.full&fileName=M_1407652552739.jpg",
+      "downloadUrl": "https://medicaltour.gangnam.go.kr/file/access.do?program=medical.image.full&fileName=M_1407652552739.jpg",
+      "sourceTitle": "Arumdaun Nara Dermatology Gangnam / Gangnam Medical Tourism facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://medicaltour.gangnam.go.kr/medical/clinic/view.do?medical_seq=48",
+      "author": "Photographer not identified; published by Arumdaun Nara Dermatology Gangnam / Gangnam Medical Tourism",
+      "attribution": "Arumdaun Nara Dermatology Gangnam / Gangnam Medical Tourism · official source reference · reuse license unverified",
+      "changes": "Resized without upscaling and converted to WebP.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://medicaltour.gangnam.go.kr/medical/clinic/view.do?medical_seq=48",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "12F Mijin Plaza, 390 Gangnam-daero, Gangnam-gu, Seoul",
+        "sourcePage": "https://medicaltour.gangnam.go.kr/medical/clinic/view.do?medical_seq=48",
+        "details": "Gangnam government medical tourism partner profile identifies Arumdaun Nara at 390 Gangnam-daero and labels the facility gallery for that hospital; Seoul medical tourism profile 2229 corroborates 12F Mijin Plaza.",
+        "additionalSources": [
+          "https://medical.visitseoul.net/organization/hospital/hospitalDetail/2229"
+        ]
+      },
+      "capture": {
+        "method": "official_source_format_conversion",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "sha256": "9fc096c366ee7d7069baf19ef2ce71495058f4b50b6086bc6835440d91ad2406",
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "application/octet-stream; charset=utf-8",
+            "finalUrl": "https://medicaltour.gangnam.go.kr/file/access.do?program=medical.image.full&fileName=M_1407652552739.jpg",
+            "referer": null,
+            "bytes": 30124,
+            "signature": "ffd8ffe000104a4649460001"
+          },
+          {
+            "status": 200,
+            "contentType": "application/octet-stream; charset=utf-8",
+            "finalUrl": "https://medicaltour.gangnam.go.kr/file/access.do?program=medical.image.full&fileName=M_1407652552739.jpg",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 30124,
+            "signature": "ffd8ffe000104a4649460001"
+          }
+        ]
+      },
+      "width": 495,
+      "height": 329,
+      "bytes": 32188,
+      "sourcePublisher": "Arumdaun Nara Dermatology Gangnam / Gangnam Medical Tourism"
+    },
+    {
+      "key": "clinic-wells-apgujeong",
+      "image_url": "https://wellsskin.com/assets/img/wells-clinic-apgujeong-front-desk-1280.webp",
+      "image_rights": "official_reference",
+      "sourcePage": "https://wellsskin.com/clinic/",
+      "originalUrl": "https://wellsskin.com/assets/img/wells-clinic-apgujeong-front-desk-1280.webp",
+      "downloadUrl": "https://wellsskin.com/assets/img/wells-clinic-apgujeong-front-desk-1280.webp",
+      "sourceTitle": "WELLS Dermatology Clinic facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://wellsskin.com/clinic/",
+      "author": "Photographer not identified; published by WELLS Dermatology Clinic",
+      "attribution": "WELLS Dermatology Clinic · official source reference · reuse license unverified",
+      "changes": "Unmodified remote image reference; source website controls availability.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://wellsskin.com/clinic/",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "8F Apgujeong Building, 842 Nonhyeon-ro, Gangnam-gu, Seoul",
+        "sourcePage": "https://wellsskin.com/clinic/",
+        "details": "Official clinic tour identifies the Front desk photograph and lists 8F, 842 Nonhyeon-ro."
+      },
+      "capture": {
+        "method": "direct_remote_reference",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/webp",
+            "finalUrl": "https://wellsskin.com/assets/img/wells-clinic-apgujeong-front-desk-1280.webp",
+            "referer": null,
+            "bytes": 51500,
+            "signature": "5249464624c9000057454250"
+          },
+          {
+            "status": 200,
+            "contentType": "image/webp",
+            "finalUrl": "https://wellsskin.com/assets/img/wells-clinic-apgujeong-front-desk-1280.webp",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 51500,
+            "signature": "5249464624c9000057454250"
+          }
+        ]
+      },
+      "width": 1280,
+      "height": 720,
+      "bytes": 51500,
+      "sourcePublisher": "WELLS Dermatology Clinic"
+    },
+    {
+      "key": "clinic-id-gangnam",
+      "image_url": "https://d2ufsw33tc3szc.cloudfront.net/media/ContentSlotItem/2194/photo/80289094-686f-4919-a3c8-d678bea47050.jpg",
+      "image_rights": "official_reference",
+      "sourcePage": "https://www.idclinic.co.kr/en",
+      "originalUrl": "https://d2ufsw33tc3szc.cloudfront.net/media/ContentSlotItem/2194/photo/80289094-686f-4919-a3c8-d678bea47050.jpg",
+      "downloadUrl": "https://d2ufsw33tc3szc.cloudfront.net/media/ContentSlotItem/2194/photo/80289094-686f-4919-a3c8-d678bea47050.jpg",
+      "sourceTitle": "id Clinic Gangnam facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://www.idclinic.co.kr/en",
+      "author": "Photographer not identified; published by id Clinic Gangnam",
+      "attribution": "id Clinic Gangnam · official source reference · reuse license unverified",
+      "changes": "Unmodified remote image reference; source website controls availability.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://www.idclinic.co.kr/en",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "11F, 437 Gangnam-daero, Seocho-gu, Seoul",
+        "sourcePage": "https://www.idclinic.co.kr/en",
+        "details": "Official branch section labels this photograph Gangnam Lobby immediately above the Gangnam branch address 437 Gangnam-daero, 11F; it is not the Sinsa lobby."
+      },
+      "capture": {
+        "method": "direct_remote_reference",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://d2ufsw33tc3szc.cloudfront.net/media/ContentSlotItem/2194/photo/80289094-686f-4919-a3c8-d678bea47050.jpg",
+            "referer": null,
+            "bytes": 687770,
+            "signature": "ffd8ffe000104a4649460001"
+          },
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://d2ufsw33tc3szc.cloudfront.net/media/ContentSlotItem/2194/photo/80289094-686f-4919-a3c8-d678bea47050.jpg",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 687770,
+            "signature": "ffd8ffe000104a4649460001"
+          }
+        ]
+      },
+      "width": 1280,
+      "height": 720,
+      "bytes": 687770,
+      "sourcePublisher": "id Clinic Gangnam"
+    },
+    {
+      "key": "clinic-jfeel-hongdae",
+      "image_url": "https://hongdae.jfeelclinic.com/_files/63MZxQGUD.jpg",
+      "image_rights": "official_reference",
+      "sourcePage": "https://hongdae.jfeelclinic.com/?idx=c5ffd1dac60588/c60c1a75a4bdef/c60f0da9ffbcff/c60f0dab5fbd04",
+      "originalUrl": "https://hongdae.jfeelclinic.com/_files/63MZxQGUD.jpg",
+      "downloadUrl": "https://hongdae.jfeelclinic.com/_files/63MZxQGUD.jpg",
+      "sourceTitle": "JFEEL Clinic Hongdae facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://hongdae.jfeelclinic.com/?idx=c5ffd1dac60588/c60c1a75a4bdef/c60f0da9ffbcff/c60f0dab5fbd04",
+      "author": "Photographer not identified; published by JFEEL Clinic Hongdae",
+      "attribution": "JFEEL Clinic Hongdae · official source reference · reuse license unverified",
+      "changes": "Unmodified remote image reference; source website controls availability.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://hongdae.jfeelclinic.com/?idx=c5ffd1dac60588/c60c1a75a4bdef/c60f0da9ffbcff/c60f0dab5fbd04",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "5F and 7F Mirae Plaza, 166 Yanghwa-ro, Mapo-gu, Seoul",
+        "sourcePage": "https://hongdae.jfeelclinic.com/?idx=c5ffd1dac60588/c60c1a75a4bdef/c60f0da9ffbcff/c60f0dab5fbd04",
+        "details": "Official Hongdae facility page title explicitly identifies the fifth-floor desk; the branch footer lists 166 Yanghwa-ro, 5F and 7F."
+      },
+      "capture": {
+        "method": "direct_remote_reference",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://hongdae.jfeelclinic.com/_files/63MZxQGUD.jpg",
+            "referer": null,
+            "bytes": 480980,
+            "signature": "ffd8ffe10018457869660000"
+          },
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://hongdae.jfeelclinic.com/_files/63MZxQGUD.jpg",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 480980,
+            "signature": "ffd8ffe10018457869660000"
+          }
+        ]
+      },
+      "width": 1294,
+      "height": 728,
+      "bytes": 480980,
+      "sourcePublisher": "JFEEL Clinic Hongdae"
+    },
+    {
+      "key": "clinic-lienjang-gangnam",
+      "image_url": "https://gangnam.lienjang.com/images/black/black_space_01.jpg",
+      "image_rights": "official_reference",
+      "sourcePage": "https://gangnam.lienjang.com/en",
+      "originalUrl": "https://gangnam.lienjang.com/images/black/black_space_01.jpg",
+      "downloadUrl": "https://gangnam.lienjang.com/images/black/black_space_01.jpg",
+      "sourceTitle": "LIENJANG BLACK Gangnam facility reference",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://gangnam.lienjang.com/en",
+      "author": "Photographer not identified; published by LIENJANG BLACK Gangnam",
+      "attribution": "LIENJANG BLACK Gangnam · official source reference · reuse license unverified",
+      "changes": "Unmodified remote image reference; source website controls availability.",
+      "checked_at": "2026-11-15",
+      "rightsEvidence": {
+        "status": "official_reference",
+        "sourcePage": "https://gangnam.lienjang.com/en",
+        "reusePermission": "No explicit reuse license was found. This reference is not claimed to be licensed or owned.",
+        "copyrightNotice": "Copyright remains with the relevant rightsholder; no permission or endorsement is inferred."
+      },
+      "branchEvidence": {
+        "addressEN": "343 Gangnam Tower, 403 Gangnam-daero, Seocho-gu, Seoul",
+        "sourcePage": "https://gangnam.lienjang.com/en",
+        "details": "Official Gangnam site labels this asset as its premium lounge and lists 403 Gangnam-daero in the footer; no Myeongdong branch image was used."
+      },
+      "capture": {
+        "method": "direct_remote_reference",
+        "checked_at": "2026-11-15",
+        "patientFaces": false,
+        "generatedImage": false,
+        "visualInspection": "Actual named clinic facility; no patient faces; checked against branch-specific official source."
+      },
+      "httpEvidence": {
+        "checked_at": "2026-11-15",
+        "requests": [
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://gangnam.lienjang.com/images/black/black_space_01.jpg",
+            "referer": null,
+            "bytes": 4644651,
+            "signature": "ffd8ffe000104a4649460001"
+          },
+          {
+            "status": 200,
+            "contentType": "image/jpeg",
+            "finalUrl": "https://gangnam.lienjang.com/images/black/black_space_01.jpg",
+            "referer": "https://shawnai.win/ktravel/",
+            "bytes": 4644651,
+            "signature": "ffd8ffe000104a4649460001"
+          }
+        ]
+      },
+      "width": 2437,
+      "height": 1606,
+      "bytes": 4644651,
+      "sourcePublisher": "LIENJANG BLACK Gangnam"
+    }
+  ],
+  "activities": [
+    {
+      "id": "wellness-cheongdam-oracle",
+      "name_ko": "청담오라클피부과",
+      "photo_key": "clinic-oracle",
+      "image_url": "https://cdn.imweb.me/upload/S20240109cd40ec667ea67/d7d02dc77d116.jpg",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Cheongdam OracleClinic reception and waiting area, 612 Seolleung-ro.",
+      "captionEN": "Cheongdam OracleClinic reception and waiting area, 612 Seolleung-ro.",
+      "attribution": "Cheongdam OracleClinic · official source reference · reuse license unverified",
+      "attributionEN": "Cheongdam OracleClinic · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://en.cdoracleclinic.com/",
+      "sourcePage": "https://en.cdoracleclinic.com/"
+    },
+    {
+      "id": "wellness-cnp-dogok",
+      "name_ko": "차앤박피부과 도곡양재",
+      "photo_key": "clinic-cnp-dogok",
+      "image_url": "/trip/photos/clinic-cnp-dogok.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "CNP Skin Clinic Dogok Yangjae, Mokwon Building exterior (2015 official directions archive).",
+      "captionEN": "CNP Skin Clinic Dogok Yangjae, Mokwon Building exterior (2015 official directions archive).",
+      "attribution": "CNP Skin Clinic Dogok Yangjae · official source reference · reuse license unverified",
+      "attributionEN": "CNP Skin Clinic Dogok Yangjae · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://www.cnpskin.com/pc/cnp/community/news/notice.html?bmain=view&jijummid=cnpskin26&page=98&uid=17252",
+      "sourcePage": "https://www.cnpskin.com/pc/cnp/community/news/notice.html?bmain=view&jijummid=cnpskin26&page=98&uid=17252"
+    },
+    {
+      "id": "wellness-leaders-cheongdam",
+      "name_ko": "리더스피부과 청담명품거리점",
+      "photo_key": "clinic-leaders-cheongdam",
+      "image_url": "https://leaders-eng.com/img/main-sect-network-img12.jpg",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "LEADERS Dermatology Cheongdam Luxury Street branch interior.",
+      "captionEN": "LEADERS Dermatology Cheongdam Luxury Street branch interior.",
+      "attribution": "LEADERS Dermatology Cheongdam Luxury Street · official source reference · reuse license unverified",
+      "attributionEN": "LEADERS Dermatology Cheongdam Luxury Street · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://leaders-eng.com/",
+      "sourcePage": "https://leaders-eng.com/"
+    },
+    {
+      "id": "wellness-renewme-dongdaemun",
+      "name_ko": "리뉴미피부과 동대문점",
+      "photo_key": "clinic-renewme-dongdaemun",
+      "image_url": "https://english.renewmi.com/images/about/dm_big_picture_01.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Renewme Skin Clinic Dongdaemun reception desk.",
+      "captionEN": "Renewme Skin Clinic Dongdaemun reception desk.",
+      "attribution": "Renewme Skin Clinic Dongdaemun · official source reference · reuse license unverified",
+      "attributionEN": "Renewme Skin Clinic Dongdaemun · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://english.renewmi.com/about/dongdaemun/",
+      "sourcePage": "https://english.renewmi.com/about/dongdaemun/"
+    },
+    {
+      "id": "wellness-banobagi",
+      "name_ko": "바노바기피부과",
+      "photo_key": "clinic-banobagi",
+      "image_url": "https://english.skinbanobagi.com/app/layout/web/images_skin/main_visual01-1.jpg",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "BANOBAGI Dermatologic Clinic exterior at 219 Bongeunsa-ro.",
+      "captionEN": "BANOBAGI Dermatologic Clinic exterior at 219 Bongeunsa-ro.",
+      "attribution": "BANOBAGI Dermatologic Clinic · official source reference · reuse license unverified",
+      "attributionEN": "BANOBAGI Dermatologic Clinic · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://english.skinbanobagi.com/",
+      "sourcePage": "https://english.skinbanobagi.com/"
+    },
+    {
+      "id": "wellness-arumdaun-nara",
+      "name_ko": "강남 아름다운나라피부과",
+      "photo_key": "clinic-arumdaun-nara",
+      "image_url": "/trip/photos/clinic-arumdaun-nara.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "Arumdaun Nara Gangnam clinic lounge, from its official medical tourism profile.",
+      "captionEN": "Arumdaun Nara Gangnam clinic lounge, from its official medical tourism profile.",
+      "attribution": "Arumdaun Nara Dermatology Gangnam / Gangnam Medical Tourism · official source reference · reuse license unverified",
+      "attributionEN": "Arumdaun Nara Dermatology Gangnam / Gangnam Medical Tourism · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://medicaltour.gangnam.go.kr/medical/clinic/view.do?medical_seq=48",
+      "sourcePage": "https://medicaltour.gangnam.go.kr/medical/clinic/view.do?medical_seq=48"
+    },
+    {
+      "id": "wellness-wells-apgujeong",
+      "name_ko": "웰스피부과 압구정",
+      "photo_key": "clinic-wells-apgujeong",
+      "image_url": "https://wellsskin.com/assets/img/wells-clinic-apgujeong-front-desk-1280.webp",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "WELLS Dermatology Clinic Apgujeong front desk.",
+      "captionEN": "WELLS Dermatology Clinic Apgujeong front desk.",
+      "attribution": "WELLS Dermatology Clinic · official source reference · reuse license unverified",
+      "attributionEN": "WELLS Dermatology Clinic · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://wellsskin.com/clinic/",
+      "sourcePage": "https://wellsskin.com/clinic/"
+    },
+    {
+      "id": "wellness-id-gangnam",
+      "name_ko": "아이디의원 강남점",
+      "photo_key": "clinic-id-gangnam",
+      "image_url": "https://d2ufsw33tc3szc.cloudfront.net/media/ContentSlotItem/2194/photo/80289094-686f-4919-a3c8-d678bea47050.jpg",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "id Clinic Gangnam reception lobby.",
+      "captionEN": "id Clinic Gangnam reception lobby.",
+      "attribution": "id Clinic Gangnam · official source reference · reuse license unverified",
+      "attributionEN": "id Clinic Gangnam · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://www.idclinic.co.kr/en",
+      "sourcePage": "https://www.idclinic.co.kr/en"
+    },
+    {
+      "id": "wellness-jfeel-hongdae",
+      "name_ko": "제이필의원 홍대점",
+      "photo_key": "clinic-jfeel-hongdae",
+      "image_url": "https://hongdae.jfeelclinic.com/_files/63MZxQGUD.jpg",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "JFEEL Clinic Hongdae, fifth-floor reception desk.",
+      "captionEN": "JFEEL Clinic Hongdae, fifth-floor reception desk.",
+      "attribution": "JFEEL Clinic Hongdae · official source reference · reuse license unverified",
+      "attributionEN": "JFEEL Clinic Hongdae · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://hongdae.jfeelclinic.com/?idx=c5ffd1dac60588/c60c1a75a4bdef/c60f0da9ffbcff/c60f0dab5fbd04",
+      "sourcePage": "https://hongdae.jfeelclinic.com/?idx=c5ffd1dac60588/c60c1a75a4bdef/c60f0da9ffbcff/c60f0dab5fbd04"
+    },
+    {
+      "id": "wellness-lienjang-gangnam",
+      "name_ko": "리엔장 강남",
+      "photo_key": "clinic-lienjang-gangnam",
+      "image_url": "https://gangnam.lienjang.com/images/black/black_space_01.jpg",
+      "image_rights": "official_reference",
+      "role": "venue",
+      "caption": "LIENJANG BLACK Gangnam lounge at 403 Gangnam-daero.",
+      "captionEN": "LIENJANG BLACK Gangnam lounge at 403 Gangnam-daero.",
+      "attribution": "LIENJANG BLACK Gangnam · official source reference · reuse license unverified",
+      "attributionEN": "LIENJANG BLACK Gangnam · official source reference · reuse license unverified",
+      "license": "Official source reference · reuse license unverified",
+      "licenseURL": "https://gangnam.lienjang.com/en",
+      "sourcePage": "https://gangnam.lienjang.com/en"
+    }
+  ]
+}

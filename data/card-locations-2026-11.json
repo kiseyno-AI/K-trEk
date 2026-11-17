@@ -1,0 +1,377 @@
+[
+  {
+    "id": "culture-bukchon-crafts",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-ddp",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-gugak-saturday",
+    "card_location": "Seoul \u00b7 Seocho-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-hanboknam",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-hikr-ground",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-ikseondong",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-leeum",
+    "card_location": "Seoul \u00b7 Yongsan-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-mmca-seoul",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-nanta-myeongdong",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "culture-national-museum",
+    "card_location": "Seoul \u00b7 Yongsan-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-1million-dance",
+    "card_location": "Seoul \u00b7 Seongdong-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-branme-color",
+    "card_location": "Seoul \u00b7 Seongdong-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-eland-cruise",
+    "card_location": "Seoul \u00b7 Yeongdeungpo-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-kiwoom-baseball",
+    "card_location": "Seoul \u00b7 Guro-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-lotte-world",
+    "card_location": "Seoul \u00b7 Songpa-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-n-seoul-tower",
+    "card_location": "Seoul \u00b7 Yongsan-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-ongo-cooking",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-paju-dmz",
+    "card_location": "Paju, Gyeonggi",
+    "basis": "Existing city/region identity; conditional trip note omitted from compact label"
+  },
+  {
+    "id": "experience-running-man",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "experience-seoul-sky",
+    "card_location": "Seoul \u00b7 Songpa-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-balwoo-gongyang",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-bicena",
+    "card_location": "Seoul \u00b7 Songpa-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-born-and-bred",
+    "card_location": "Seoul \u00b7 Seongdong-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-byeokje-galbi-bangi",
+    "card_location": "Seoul \u00b7 Songpa-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-gwanghwamun-mijin",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-hadongkwan-myeongdong",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-hanilkwan-apgujeong",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-hwa-hae-dang",
+    "card_location": "Seoul \u00b7 Yeongdeungpo-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-jin-jin",
+    "card_location": "Seoul \u00b7 Mapo-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-korea-house",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-myeongdong-kyoja-main",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-samcheonggak",
+    "card_location": "Seoul \u00b7 Seongbuk-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-samwon-garden",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-tosokchon-samgyetang",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "food-woo-lae-oak",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "history-bukchon",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "history-changdeokgung",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "history-deoksugung",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "history-gyeongbokgung",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "history-jongmyo",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "history-korean-folk-village",
+    "card_location": "Yongin, Gyeonggi",
+    "basis": "Existing city/region identity; conditional trip note omitted from compact label"
+  },
+  {
+    "id": "history-naksan-city-wall",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "history-seodaemun-prison",
+    "card_location": "Seoul \u00b7 Seodaemun-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "history-suwon-hwaseong",
+    "card_location": "Suwon, Gyeonggi",
+    "basis": "Existing city/region identity; conditional trip note omitted from compact label"
+  },
+  {
+    "id": "history-war-memorial",
+    "card_location": "Seoul \u00b7 Yongsan-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "nature-banpo-hangang",
+    "card_location": "Seoul \u00b7 Seocho-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "nature-dumulmeori",
+    "card_location": "Yangpyeong, Gyeonggi",
+    "basis": "Existing city/region identity; conditional trip note omitted from compact label"
+  },
+  {
+    "id": "nature-gwanggyo-lake",
+    "card_location": "Suwon, Gyeonggi",
+    "basis": "Existing city/region identity; conditional trip note omitted from compact label"
+  },
+  {
+    "id": "nature-haneul-park",
+    "card_location": "Seoul \u00b7 Mapo-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "nature-hwadam",
+    "card_location": "Gwangju, Gyeonggi",
+    "basis": "Existing city/region identity; conditional trip note omitted from compact label"
+  },
+  {
+    "id": "nature-olympic-park",
+    "card_location": "Seoul \u00b7 Songpa-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "nature-seokchon-lake",
+    "card_location": "Seoul \u00b7 Songpa-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "nature-seonyudo-park",
+    "card_location": "Seoul \u00b7 Yeongdeungpo-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "nature-seoul-botanic-park",
+    "card_location": "Seoul \u00b7 Gangseo-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "nature-seoul-forest",
+    "card_location": "Seoul \u00b7 Seongdong-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-adererror-seongsu",
+    "card_location": "Seoul \u00b7 Seongdong-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-coex-library",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-gwangjang-market",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-haus-nowhere-dosan",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-musinsa-daelim",
+    "card_location": "Seoul \u00b7 Seongdong-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-myeongdong",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-olive-young-n",
+    "card_location": "Seoul \u00b7 Seongdong-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-shinsegae-main",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-ssamzigil",
+    "card_location": "Seoul \u00b7 Jongno-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "shopping-the-hyundai",
+    "card_location": "Seoul \u00b7 Yeongdeungpo-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-arumdaun-nara",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-banobagi",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-cheongdam-oracle",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-cnp-dogok",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-id-gangnam",
+    "card_location": "Seoul \u00b7 Seocho-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-jfeel-hongdae",
+    "card_location": "Seoul \u00b7 Mapo-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-leaders-cheongdam",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-lienjang-gangnam",
+    "card_location": "Seoul \u00b7 Seocho-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-renewme-dongdaemun",
+    "card_location": "Seoul \u00b7 Jung-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  },
+  {
+    "id": "wellness-wells-apgujeong",
+    "card_location": "Seoul \u00b7 Gangnam-gu",
+    "basis": "Verified venue coordinate against the existing SGIS-derived Seoul district geometry"
+  }
+]

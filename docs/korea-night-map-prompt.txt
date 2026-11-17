@@ -1,0 +1,6 @@
+Use case: stylized-concept
+Asset type: full-viewport website background after intro
+Primary request: a beautiful photorealistic orbital night view centered on the Korean peninsula, clearly recognizable South Korea with varied warm city-light clusters, surrounded by deep navy sea and a subtle cool atmospheric horizon.
+Composition/framing: 16:9 landscape, Korea centered and large enough to remain readable behind a central activity card, with darker ocean around the peninsula for UI contrast.
+Lighting/mood: premium travel documentary, quiet and cinematic, warm lights against deep blue-black ocean, refined rather than sci-fi.
+Constraints: no text, labels, logos, watermark, drawn national border, red outline, interface elements, exaggerated neon, or data overlays.

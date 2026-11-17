@@ -1,0 +1,1098 @@
+{
+  "checked_on": "2026-11-13",
+  "source": "https://www.spaceui.one/components",
+  "upstream_commit": "6489d244d1652470efdc810a79a289ebd966c177",
+  "components": [
+    {
+      "slug": "avatar-extended",
+      "name": "Avatar Extended",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/avatar-extended",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/avatar-extended",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/avatar-extended.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-avatar-extended",
+          "url": "https://www.spaceui.one/r/components-spaceui-avatar-extended.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-avatar-extended"
+        }
+      ]
+    },
+    {
+      "slug": "avatar-group",
+      "name": "Avatar Group",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/avatar-group",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/avatar-group",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/avatar-group.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-avatar-group",
+          "url": "https://www.spaceui.one/r/components-spaceui-avatar-group.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-avatar-group"
+        }
+      ]
+    },
+    {
+      "slug": "frost-blurred",
+      "name": "Frost Blurred",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/frost-blurred",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/frost-blurred",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/frost-blurred.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-frost-blurred",
+          "url": "https://www.spaceui.one/r/components-spaceui-frost-blurred.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-frost-blurred"
+        }
+      ]
+    },
+    {
+      "slug": "bouncy-accordion",
+      "name": "Bouncy Accordion",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/bouncy-accordion",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/bouncy-accordion",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/bouncy-accordion.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-bouncy-accordion",
+          "url": "https://www.spaceui.one/r/components-spaceui-bouncy-accordion.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-bouncy-accordion"
+        }
+      ]
+    },
+    {
+      "slug": "detachable-accordion",
+      "name": "Detachable Accordion",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/detachable-accordion",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/detachable-accordion",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/detachable-accordion.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-detachable-accordion",
+          "url": "https://www.spaceui.one/r/components-spaceui-detachable-accordion.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-detachable-accordion"
+        }
+      ]
+    },
+    {
+      "slug": "tick-slider",
+      "name": "Tick Slider",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/tick-slider",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/tick-slider",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/tick-slider.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-tick-slider",
+          "url": "https://www.spaceui.one/r/components-spaceui-tick-slider.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-tick-slider"
+        }
+      ]
+    },
+    {
+      "slug": "liquid-switch",
+      "name": "Liquid Switch",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/liquid-switch",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/liquid-switch",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/liquid-switch.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-liquid-switch",
+          "url": "https://www.spaceui.one/r/components-spaceui-liquid-switch.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-liquid-switch"
+        }
+      ]
+    },
+    {
+      "slug": "theme-toggle",
+      "name": "Theme Toggle",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/theme-toggle",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/theme-toggle",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/theme-toggle.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-theme-toggle",
+          "url": "https://www.spaceui.one/r/components-spaceui-theme-toggle.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-theme-toggle"
+        }
+      ]
+    },
+    {
+      "slug": "liquid-sortable-list",
+      "name": "Liquid Sortable List",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/liquid-sortable-list",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/liquid-sortable-list",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/liquid-sortable-list.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-liquid-sortable-list",
+          "url": "https://www.spaceui.one/r/components-spaceui-liquid-sortable-list.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-liquid-sortable-list"
+        }
+      ]
+    },
+    {
+      "slug": "interactive-checklist",
+      "name": "Interactive Checklist",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/interactive-checklist",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/interactive-checklist",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/interactive-checklist.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-interactive-checklist",
+          "url": "https://www.spaceui.one/r/components-spaceui-interactive-checklist.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-interactive-checklist"
+        }
+      ]
+    },
+    {
+      "slug": "team-roster-selector",
+      "name": "Team Roster Selector",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/team-roster-selector",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/team-roster-selector",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/team-roster-selector.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-team-roster-selector",
+          "url": "https://www.spaceui.one/r/components-spaceui-team-roster-selector.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-team-roster-selector"
+        }
+      ]
+    },
+    {
+      "slug": "member-selector",
+      "name": "Member Selector",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/member-selector",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/member-selector",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/member-selector.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-member-selector",
+          "url": "https://www.spaceui.one/r/components-spaceui-member-selector.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-member-selector"
+        }
+      ]
+    },
+    {
+      "slug": "slide-to-confirm",
+      "name": "Slide To Confirm",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/slide-to-confirm",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/slide-to-confirm",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/slide-to-confirm.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-slide-to-confirm",
+          "url": "https://www.spaceui.one/r/components-spaceui-slide-to-confirm.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-slide-to-confirm"
+        }
+      ]
+    },
+    {
+      "slug": "squircle",
+      "name": "Squircle",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/squircle",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/squircle",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/squircle.mdx",
+      "registry_items": [],
+      "package": "@usespaceui/squircle",
+      "install": "npm install @usespaceui/squircle",
+      "registry_note": "No ComponentInstallation registry item is documented; package-based Tailwind plugin and CSS Houdini worklet."
+    },
+    {
+      "slug": "interest-picker",
+      "name": "Interest Picker",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/interest-picker",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/interest-picker",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/interest-picker.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-interest-picker",
+          "url": "https://www.spaceui.one/r/components-spaceui-interest-picker.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-interest-picker"
+        }
+      ]
+    },
+    {
+      "slug": "voice-chat-widget",
+      "name": "Voice Chat Widget",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/voice-chat-widget",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/voice-chat-widget",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/voice-chat-widget.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-voice-chat-widget",
+          "url": "https://www.spaceui.one/r/components-spaceui-voice-chat-widget.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-voice-chat-widget"
+        }
+      ]
+    },
+    {
+      "slug": "badge-squircle",
+      "name": "Badge Squircle",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/badge-squircle",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/badge-squircle",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/badge-squircle.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-badge-squircle",
+          "url": "https://www.spaceui.one/r/components-spaceui-badge-squircle.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-badge-squircle"
+        }
+      ]
+    },
+    {
+      "slug": "morphing-area",
+      "name": "Morphing Area",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/morphing-area",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/morphing-area",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/morphing-area.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-morphing-area",
+          "url": "https://www.spaceui.one/r/components-spaceui-morphing-area.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-morphing-area"
+        }
+      ]
+    },
+    {
+      "slug": "user-presence-avatar",
+      "name": "User Presence Avatar",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/user-presence-avatar",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/user-presence-avatar",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/user-presence-avatar.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-user-presence-avatar",
+          "url": "https://www.spaceui.one/r/components-spaceui-user-presence-avatar.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-user-presence-avatar"
+        }
+      ]
+    },
+    {
+      "slug": "event-calendar",
+      "name": "Event Calendar",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/event-calendar",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/event-calendar",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/event-calendar.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-event-calendar",
+          "url": "https://www.spaceui.one/r/components-spaceui-event-calendar.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-event-calendar"
+        }
+      ]
+    },
+    {
+      "slug": "tournament-bracket",
+      "name": "Tournament Bracket",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/tournament-bracket",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/tournament-bracket",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/tournament-bracket.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-tournament-bracket",
+          "url": "https://www.spaceui.one/r/components-spaceui-tournament-bracket.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-tournament-bracket"
+        }
+      ]
+    },
+    {
+      "slug": "status-badge",
+      "name": "Status Badge",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/status-badge",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/status-badge",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/status-badge.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-status-badge",
+          "url": "https://www.spaceui.one/r/components-spaceui-status-badge.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-status-badge"
+        }
+      ]
+    },
+    {
+      "slug": "github-activity",
+      "name": "GitHub Activity",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/github-activity",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/github-activity",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/github-activity.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-github-activity",
+          "url": "https://www.spaceui.one/r/components-spaceui-github-activity.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-github-activity"
+        }
+      ]
+    },
+    {
+      "slug": "section-scrollspy",
+      "name": "Section Scrollspy",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/section-scrollspy",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/section-scrollspy",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/section-scrollspy.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-section-scrollspy",
+          "url": "https://www.spaceui.one/r/components-spaceui-section-scrollspy.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-section-scrollspy"
+        }
+      ]
+    },
+    {
+      "slug": "liquid-metal-border",
+      "name": "Liquid Metal Border",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/liquid-metal-border",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/liquid-metal-border",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/liquid-metal-border.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-liquid-metal-border",
+          "url": "https://www.spaceui.one/r/components-spaceui-liquid-metal-border.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-liquid-metal-border"
+        }
+      ]
+    },
+    {
+      "slug": "morph-icon",
+      "name": "Morph Icon",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/morph-icon",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/morph-icon",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/morph-icon.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-morph-icon",
+          "url": "https://www.spaceui.one/r/components-spaceui-morph-icon.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-morph-icon"
+        }
+      ]
+    },
+    {
+      "slug": "adaptive-density-grid",
+      "name": "Adaptive Density Grid",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/adaptive-density-grid",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/adaptive-density-grid",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/adaptive-density-grid.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-adaptive-density-grid",
+          "url": "https://www.spaceui.one/r/components-spaceui-adaptive-density-grid.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-adaptive-density-grid"
+        }
+      ]
+    },
+    {
+      "slug": "dirt-carousel",
+      "name": "Dirt Carousel",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/dirt-carousel",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/dirt-carousel",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/dirt-carousel.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-dirt-carousel",
+          "url": "https://www.spaceui.one/r/components-spaceui-dirt-carousel.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-dirt-carousel"
+        }
+      ]
+    },
+    {
+      "slug": "doodle-callout",
+      "name": "Doodle Callout",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/doodle-callout",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/doodle-callout",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/doodle-callout.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-doodle-callout",
+          "url": "https://www.spaceui.one/r/components-spaceui-doodle-callout.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-doodle-callout"
+        }
+      ]
+    },
+    {
+      "slug": "gooey-experiments",
+      "name": "Gooey Experiments",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/gooey-experiments",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/gooey-experiments",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/gooey-experiments.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-gooey-tooltip",
+          "url": "https://www.spaceui.one/r/components-spaceui-gooey-tooltip.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-gooey-tooltip"
+        },
+        {
+          "name": "components-spaceui-gooey-info-popover",
+          "url": "https://www.spaceui.one/r/components-spaceui-gooey-info-popover.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-gooey-info-popover"
+        },
+        {
+          "name": "components-spaceui-gooey-slots-tooltip",
+          "url": "https://www.spaceui.one/r/components-spaceui-gooey-slots-tooltip.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-gooey-slots-tooltip"
+        },
+        {
+          "name": "components-spaceui-gooey-blobs",
+          "url": "https://www.spaceui.one/r/components-spaceui-gooey-blobs.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-gooey-blobs"
+        }
+      ]
+    },
+    {
+      "slug": "pin-list",
+      "name": "Pin List",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/pin-list",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/pin-list",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/pin-list.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-pin-list",
+          "url": "https://www.spaceui.one/r/components-spaceui-pin-list.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-pin-list"
+        }
+      ]
+    },
+    {
+      "slug": "phone-input",
+      "name": "Phone Input",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/phone-input",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/phone-input",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/phone-input.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-phone-input",
+          "url": "https://www.spaceui.one/r/components-spaceui-phone-input.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-phone-input"
+        }
+      ]
+    },
+    {
+      "slug": "gradient-file-upload",
+      "name": "Gradient File Upload",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/gradient-file-upload",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/gradient-file-upload",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/gradient-file-upload.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-gradient-file-upload",
+          "url": "https://www.spaceui.one/r/components-spaceui-gradient-file-upload.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-gradient-file-upload"
+        }
+      ]
+    },
+    {
+      "slug": "date-selector",
+      "name": "Date Selector",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/date-selector",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/date-selector",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/date-selector.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-date-selector",
+          "url": "https://www.spaceui.one/r/components-spaceui-date-selector.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-date-selector"
+        }
+      ]
+    },
+    {
+      "slug": "rating",
+      "name": "Rating",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/rating",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/rating",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/rating.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-rating",
+          "url": "https://www.spaceui.one/r/components-spaceui-rating.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-rating"
+        }
+      ]
+    },
+    {
+      "slug": "filters",
+      "name": "Filters",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/filters",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/filters",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/filters.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-filters",
+          "url": "https://www.spaceui.one/r/components-spaceui-filters.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-filters"
+        }
+      ]
+    },
+    {
+      "slug": "resizable",
+      "name": "Resizable",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/resizable",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/resizable",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/resizable.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-resizable",
+          "url": "https://www.spaceui.one/r/components-spaceui-resizable.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-resizable"
+        }
+      ]
+    },
+    {
+      "slug": "scrollspy",
+      "name": "Scrollspy",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/scrollspy",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/scrollspy",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/scrollspy.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-scrollspy",
+          "url": "https://www.spaceui.one/r/components-spaceui-scrollspy.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-scrollspy"
+        }
+      ]
+    },
+    {
+      "slug": "data-grid",
+      "name": "Data Grid",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/data-grid",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/data-grid",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/data-grid.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-data-grid",
+          "url": "https://www.spaceui.one/r/components-spaceui-data-grid.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-data-grid"
+        }
+      ]
+    },
+    {
+      "slug": "sortable",
+      "name": "Sortable",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/sortable",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/sortable",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/sortable.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-sortable",
+          "url": "https://www.spaceui.one/r/components-spaceui-sortable.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-sortable"
+        }
+      ]
+    },
+    {
+      "slug": "kanban",
+      "name": "Kanban",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/kanban",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/kanban",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/kanban.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-kanban",
+          "url": "https://www.spaceui.one/r/components-spaceui-kanban.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-kanban"
+        }
+      ]
+    },
+    {
+      "slug": "timeline",
+      "name": "Timeline",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/timeline",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/timeline",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/timeline.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-timeline",
+          "url": "https://www.spaceui.one/r/components-spaceui-timeline.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-timeline"
+        }
+      ]
+    },
+    {
+      "slug": "notification-list",
+      "name": "Notification List",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/notification-list",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/notification-list",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/notification-list.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-notification-list",
+          "url": "https://www.spaceui.one/r/components-spaceui-notification-list.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-notification-list"
+        }
+      ]
+    },
+    {
+      "slug": "icon-stack",
+      "name": "Icon Stack",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/icon-stack",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/icon-stack",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/icon-stack.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-icon-stack",
+          "url": "https://www.spaceui.one/r/components-spaceui-icon-stack.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-icon-stack"
+        }
+      ]
+    },
+    {
+      "slug": "image-dark",
+      "name": "Image Dark",
+      "category": "Components",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/image-dark",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/image-dark",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/image-dark.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-image-dark",
+          "url": "https://www.spaceui.one/r/components-spaceui-image-dark.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-image-dark"
+        }
+      ]
+    },
+    {
+      "slug": "button-squircle",
+      "name": "Button Squircle",
+      "category": "Button",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/button-squircle",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/button-squircle",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/button-squircle.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-button-squircle",
+          "url": "https://www.spaceui.one/r/components-spaceui-button-squircle.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-button-squircle"
+        }
+      ]
+    },
+    {
+      "slug": "glass-button",
+      "name": "Glass Button",
+      "category": "Button",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/glass-button",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/glass-button",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/glass-button.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-glass-button",
+          "url": "https://www.spaceui.one/r/components-spaceui-glass-button.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-glass-button"
+        }
+      ]
+    },
+    {
+      "slug": "like-button",
+      "name": "Like Button",
+      "category": "Button",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/like-button",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/like-button",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/like-button.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-like-button",
+          "url": "https://www.spaceui.one/r/components-spaceui-like-button.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-like-button"
+        }
+      ]
+    },
+    {
+      "slug": "handle-reel",
+      "name": "Handle Reel",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/handle-reel",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/handle-reel",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/handle-reel.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-handle-reel",
+          "url": "https://www.spaceui.one/r/components-spaceui-handle-reel.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-handle-reel"
+        }
+      ]
+    },
+    {
+      "slug": "fluid-countdown",
+      "name": "Fluid Countdown",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/fluid-countdown",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/fluid-countdown",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/fluid-countdown.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-fluid-countdown",
+          "url": "https://www.spaceui.one/r/components-spaceui-fluid-countdown.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-fluid-countdown"
+        }
+      ]
+    },
+    {
+      "slug": "words-preloader",
+      "name": "Words Preloader",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/words-preloader",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/words-preloader",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/words-preloader.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-words-preloader",
+          "url": "https://www.spaceui.one/r/components-spaceui-words-preloader.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-words-preloader"
+        }
+      ]
+    },
+    {
+      "slug": "blur-reveal-text",
+      "name": "Blur Reveal Text",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/blur-reveal-text",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/blur-reveal-text",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/blur-reveal-text.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-blur-reveal-text",
+          "url": "https://www.spaceui.one/r/components-spaceui-blur-reveal-text.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-blur-reveal-text"
+        }
+      ]
+    },
+    {
+      "slug": "morphing-text",
+      "name": "Morphing Text",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/morphing-text",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/morphing-text",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/morphing-text.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-morphing-text",
+          "url": "https://www.spaceui.one/r/components-spaceui-morphing-text.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-morphing-text"
+        }
+      ]
+    },
+    {
+      "slug": "flip-text",
+      "name": "Flip Text",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/flip-text",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/flip-text",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/flip-text.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-flip-text",
+          "url": "https://www.spaceui.one/r/components-spaceui-flip-text.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-flip-text"
+        }
+      ]
+    },
+    {
+      "slug": "gooey-text-reveal",
+      "name": "Gooey Text Reveal",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/gooey-text-reveal",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/gooey-text-reveal",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/gooey-text-reveal.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-gooey-text-reveal",
+          "url": "https://www.spaceui.one/r/components-spaceui-gooey-text-reveal.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-gooey-text-reveal"
+        }
+      ]
+    },
+    {
+      "slug": "scroll-text-reveal",
+      "name": "Scroll Text Reveal",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/scroll-text-reveal",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/scroll-text-reveal",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/scroll-text-reveal.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-scroll-text-reveal",
+          "url": "https://www.spaceui.one/r/components-spaceui-scroll-text-reveal.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-scroll-text-reveal"
+        }
+      ]
+    },
+    {
+      "slug": "textmoji",
+      "name": "Textmoji",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/textmoji",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/textmoji",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/textmoji.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-textmoji",
+          "url": "https://www.spaceui.one/r/components-spaceui-textmoji.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-textmoji"
+        }
+      ]
+    },
+    {
+      "slug": "animoji",
+      "name": "Textmoji Animated",
+      "category": "Text",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/animoji",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/animoji",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/animoji.mdx",
+      "registry_items": [
+        {
+          "name": "components-spaceui-animoji",
+          "url": "https://www.spaceui.one/r/components-spaceui-animoji.json",
+          "install": "npx shadcn@latest add @spaceui/components-spaceui-animoji"
+        }
+      ]
+    },
+    {
+      "slug": "thinking",
+      "name": "Thinking Orb",
+      "category": "Orb",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/thinking",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/thinking",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/thinking.mdx",
+      "registry_items": [
+        {
+          "name": "components-orb-thinking",
+          "url": "https://www.spaceui.one/r/components-orb-thinking.json",
+          "install": "npx shadcn@latest add @spaceui/components-orb-thinking"
+        }
+      ]
+    },
+    {
+      "slug": "loading",
+      "name": "Loading Orb",
+      "category": "Orb",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/loading",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/loading",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/loading.mdx",
+      "registry_items": [
+        {
+          "name": "components-orb-loading",
+          "url": "https://www.spaceui.one/r/components-orb-loading.json",
+          "install": "npx shadcn@latest add @spaceui/components-orb-loading"
+        }
+      ]
+    },
+    {
+      "slug": "smooth",
+      "name": "Smooth Orb",
+      "category": "Orb",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/smooth",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/smooth",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/smooth.mdx",
+      "registry_items": [
+        {
+          "name": "components-orb-smooth",
+          "url": "https://www.spaceui.one/r/components-orb-smooth.json",
+          "install": "npx shadcn@latest add @spaceui/components-orb-smooth"
+        }
+      ]
+    },
+    {
+      "slug": "bloop",
+      "name": "Bloop Orb",
+      "category": "Orb",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/bloop",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/bloop",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/bloop.mdx",
+      "registry_items": [
+        {
+          "name": "components-orb-bloop",
+          "url": "https://www.spaceui.one/r/components-orb-bloop.json",
+          "install": "npx shadcn@latest add @spaceui/components-orb-bloop"
+        }
+      ]
+    },
+    {
+      "slug": "bubble",
+      "name": "Bubble Background",
+      "category": "Backgrounds",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/bubble",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/bubble",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/bubble.mdx",
+      "registry_items": [
+        {
+          "name": "components-backgrounds-bubble",
+          "url": "https://www.spaceui.one/r/components-backgrounds-bubble.json",
+          "install": "npx shadcn@latest add @spaceui/components-backgrounds-bubble"
+        }
+      ]
+    },
+    {
+      "slug": "gradient",
+      "name": "Gradient Background",
+      "category": "Backgrounds",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/gradient",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/gradient",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/gradient.mdx",
+      "registry_items": [
+        {
+          "name": "components-backgrounds-gradient",
+          "url": "https://www.spaceui.one/r/components-backgrounds-gradient.json",
+          "install": "npx shadcn@latest add @spaceui/components-backgrounds-gradient"
+        }
+      ]
+    },
+    {
+      "slug": "cloud",
+      "name": "Cloud",
+      "category": "Shader",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/cloud",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/cloud",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/cloud.mdx",
+      "registry_items": [
+        {
+          "name": "components-shader-cloud",
+          "url": "https://www.spaceui.one/r/components-shader-cloud.json",
+          "install": "npx shadcn@latest add @spaceui/components-shader-cloud"
+        }
+      ]
+    },
+    {
+      "slug": "paper-shader",
+      "name": "Paper Shader",
+      "category": "Shader",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/paper-shader",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/paper-shader",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/paper-shader.mdx",
+      "registry_items": [
+        {
+          "name": "components-shader-paper-shader",
+          "url": "https://www.spaceui.one/r/components-shader-paper-shader.json",
+          "install": "npx shadcn@latest add @spaceui/components-shader-paper-shader"
+        }
+      ]
+    },
+    {
+      "slug": "mesh-gradient",
+      "name": "Mesh Gradient",
+      "category": "Shader",
+      "access": "free",
+      "url": "https://www.spaceui.one/components/mesh-gradient",
+      "markdown_url": "https://www.spaceui.one/llms.mdx/components/mesh-gradient",
+      "source_doc_url": "https://raw.githubusercontent.com/usespaceui/ui/6489d244d1652470efdc810a79a289ebd966c177/src/content/library/components/mesh-gradient.mdx",
+      "registry_items": [
+        {
+          "name": "components-shader-mesh-gradient",
+          "url": "https://www.spaceui.one/r/components-shader-mesh-gradient.json",
+          "install": "npx shadcn@latest add @spaceui/components-shader-mesh-gradient"
+        }
+      ]
+    }
+  ],
+  "scope": "67 free cards from /components; excludes paid entries and the separate blocks, templates, tools and primitives collections.",
+  "access_note": "Only entries publicly marked free on 2026-11-13 are retained; recheck current access before fetching code.",
+  "license_sources": [
+    "https://www.spaceui.one/license",
+    "https://www.spaceui.one/terms",
+    "https://github.com/usespaceui/ui/blob/6489d244d1652470efdc810a79a289ebd966c177/LICENSE"
+  ]
+}
