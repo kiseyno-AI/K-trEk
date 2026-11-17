@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
+import { setImmediate } from 'node:timers/promises';
 import { createTripInteractionClient } from '../lib/trip-interaction-client.ts';
 
-const settle = async () => {
-  for (let i = 0; i < 12; i += 1) await Promise.resolve();
-};
+// Response.json() chains take different microtask counts across Node versions.
+const settle = () => setImmediate();
 function fixture(extra = {}) {
   const requests = [],
     replies = [],

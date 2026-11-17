@@ -29,7 +29,7 @@ The checked-in candidate datasets contain 114 places. A fresh local setup starts
 
 <img src="docs/screenshots/mobile.jpg" alt="K-trEk mobile cards and category navigation" width="390">
 
-Screenshots show the local v0.3.3 implementation. The public site is released separately and may show an earlier version. Travel estimates are query-time values. Until the initial import PR is merged, use its source branch to try this version locally.
+Screenshots show the local v0.3.3 implementation. The public site is released separately and may show an earlier version. Travel estimates are query-time values. Until [the initial import PR](https://github.com/kiseyno-AI/K-trEk/pull/1) is merged, run `git switch codex/k-trek-initial-review` after cloning to try this version locally.
 
 ## Run locally
 
